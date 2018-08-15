@@ -1,0 +1,8 @@
+.more-for-your-car .container .cards .row .card {
+  border: none; }
+  .more-for-your-car .container .cards .row .card .img {
+    background-color: #309dd5;
+    background-size: 80%; }
+  @media (max-width: 991.98px) {
+    .more-for-your-car .container .cards .row .card .card-title, .more-for-your-car .container .cards .row .card .card-text {
+      height: auto !important; } }

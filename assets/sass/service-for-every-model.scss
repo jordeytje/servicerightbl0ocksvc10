@@ -1,0 +1,11 @@
+@import "variable";
+
+.service-for-every-model {
+  .list {
+    p {
+      a {
+        color: $green;
+      }
+    }
+  }
+}

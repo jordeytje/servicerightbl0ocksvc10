@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9faf837a-dbf0-4d6d-8192-b8743cc852a3" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5703658">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="all.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/all.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="4676" column="53" lean-forward="false" selection-start-line="4676" selection-start-column="32" selection-end-line="4676" selection-end-column="53" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#svg#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#15;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#17;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#19;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#20;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#20;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#21;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#22;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#24;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#25;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#27;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#30;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#32;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#37;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="service-for-every-model.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/service-for-every-model.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="102" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="serviceright-garage-by-city.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/serviceright-garage-by-city.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="129" column="6" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="129" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/footer.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fixed-nav.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixed-nav.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fiatLogo.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/img/fiatLogo.svg">
+              <provider selected="true" editor-type-id="images">
+                <state />
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="vertical" split-proportion="0.15453528">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="global.scss" pinned="true" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/global.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="387">
+                      <caret line="467" column="11" lean-forward="false" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="11" />
+                      <folding>
+                        <element signature="e#3170#3833#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="_variable.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/_variable.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="17">
+                      <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="19" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="references.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/references.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="289">
+                      <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="fixed-nav.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/fixed-nav.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="65">
+                      <caret line="390" column="26" lean-forward="false" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/header.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="95">
+                      <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="popup.scss" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/assets/sass/popup.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="405">
+                      <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#4522#4608#0" expanded="false" />
+                        <element signature="e#4726#4832#0" expanded="false" />
+                        <element signature="e#4848#4871#0" expanded="false" />
+                        <element signature="e#4889#4912#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="faq.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/faq.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="204">
+                      <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="12" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="how-does-it-work.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/how-does-it-work.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="153">
+                      <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="footer.scss" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/sass/footer.scss">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="153">
+                      <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="1271">
+                      <caret line="418" column="0" lean-forward="true" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#2512#3237#0" expanded="false" />
+                        <element signature="e#3320#4312#0" expanded="false" />
+                        <element signature="e#4397#4700#0" expanded="false" />
+                        <element signature="e#6795#7183#0" expanded="false" />
+                        <element signature="e#7924#9120#0" expanded="false" />
+                        <element signature="e#9247#9417#0" expanded="false" />
+                        <element signature="e#9751#9959#0" expanded="false" />
+                        <element signature="e#10080#10142#0" expanded="false" />
+                        <element signature="e#10184#10487#0" expanded="false" />
+                        <element signature="e#10546#10621#0" expanded="false" />
+                        <element signature="e#10706#10873#0" expanded="false" />
+                        <element signature="e#10939#11415#0" expanded="false" />
+                        <element signature="e#11601#11882#0" expanded="false" />
+                        <element signature="e#11993#12210#0" expanded="false" />
+                        <element signature="e#12303#12804#0" expanded="false" />
+                        <element signature="e#12896#13185#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="customSelectize.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/assets/js/customSelectize.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="659">
+                      <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>svg</find>
+      <find>fixed-nav</find>
+      <find>aggrega</find>
+      <find>fixed</find>
+      <find>kenteken</find>
+      <find>font-face</find>
+      <find>openSans-Bold</find>
+      <find>kente</find>
+      <find>@f</find>
+      <find>licensep</find>
+      <find>license</find>
+      <find>cust</find>
+      <find>three-columns</find>
+      <find>btn-cta</find>
+      <find>btn</find>
+      <find>star-ratings-sprite</find>
+      <find>navbar-f</find>
+      <find>popover</find>
+      <find>footer</find>
+      <find>servicer</find>
+      <find>for every</find>
+      <find>serviceright</find>
+      <find>Kleine beurt</find>
+      <find>service-for-ever</find>
+      <find>header</find>
+      <find>mobile</find>
+      <find>aggregate</find>
+      <find>licensepla</find>
+      <find>licenseplate</find>
+      <find>no-licen</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>sr-hover</replace>
+      <replace>sr-card</replace>
+      <replace>btn-cta</replace>
+      <replace>$gray</replace>
+      <replace>(&quot;assets/img/star_sprite_xxs_correct_svg.svg&quot;)</replace>
+      <replace>&quot;assets/img/star_sprite_xxs_correct_svg.svg&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/container-fluid-tester.html" />
+        <option value="$PROJECT_DIR$/assets/sass/car-maintenance.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/container-fluid-tester.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/serviceright-garage-by-city.scss" />
+        <option value="$PROJECT_DIR$/faqBootstrap.html" />
+        <option value="$PROJECT_DIR$/assets/js/mobileSwipe.js" />
+        <option value="$PROJECT_DIR$/assets/sass/all-services.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/why-serviceright.scss" />
+        <option value="$PROJECT_DIR$/why-serviceright.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/all-services.html" />
+        <option value="$PROJECT_DIR$/assets/sass/all-brands.scss" />
+        <option value="$PROJECT_DIR$/assets/js/customScrollMagic.js" />
+        <option value="$PROJECT_DIR$/assets/css/all.css" />
+        <option value="$PROJECT_DIR$/assets/sass/benefit-actions.scss" />
+        <option value="$PROJECT_DIR$/all-brands.html" />
+        <option value="$PROJECT_DIR$/assets/css/all.min.css" />
+        <option value="$PROJECT_DIR$/assets/sass/faq.scss" />
+        <option value="$PROJECT_DIR$/faq.html" />
+        <option value="$PROJECT_DIR$/assets/sass/all.scss" />
+        <option value="$PROJECT_DIR$/servicepoints.html" />
+        <option value="$PROJECT_DIR$/how-does-it-work.html" />
+        <option value="$PROJECT_DIR$/references.html" />
+        <option value="$PROJECT_DIR$/assets/sass/serviceright-garages.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/servicepoints.scss" />
+        <option value="$PROJECT_DIR$/benefit-actions.html" />
+        <option value="$PROJECT_DIR$/assets/sass/distributieriem.scss" />
+        <option value="$PROJECT_DIR$/three-columns.html" />
+        <option value="$PROJECT_DIR$/assets/sass/three-columns.scss" />
+        <option value="$PROJECT_DIR$/serviceright-garages.html" />
+        <option value="$PROJECT_DIR$/car-maintenance.html" />
+        <option value="$PROJECT_DIR$/assets/sass/more-for-your-car.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/references.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/how-does-it-work.scss" />
+        <option value="$PROJECT_DIR$/distributieriem.html" />
+        <option value="$PROJECT_DIR$/more-for-your-car.html" />
+        <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/assets/img/dropdown-arrow.svg" />
+        <option value="$PROJECT_DIR$/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/fixed-nav.html" />
+        <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/service-for-every-model.html" />
+        <option value="$PROJECT_DIR$/serviceright-garage-by-city.html" />
+        <option value="$PROJECT_DIR$/assets/sass/footer.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/global.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/fixed-nav.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/header.scss" />
+        <option value="$PROJECT_DIR$/assets/sass/popup.scss" />
+        <option value="$PROJECT_DIR$/all.html" />
+        <option value="$PROJECT_DIR$/assets/js/customSelectize.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3. stappen/website" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="global&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;var&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/_variable.scss&#10;fixed&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/fixed-nav.html&#10;fixe&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/fixed-nav.html&#10;header&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/header.html&#10;faq&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/faq.scss&#10;how&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/how-does-it-work.html&#10;footer&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/footer.html&#10;serv&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garage-by-city.html&#10;more&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/more-for-your-car.html&#10;car&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/car-maintenance.html&#10;service&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garages.html&#10;all-s&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-services.html&#10;thre&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/three-columns.html&#10;distribu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;benefi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;why&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/why-serviceright.html&#10;refer&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/references.html&#10;all&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-brands.html&#10;hea&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/header.html&#10;pop&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;refere&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/references.scss&#10;foo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/footer.html&#10;th&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/three-columns.html&#10;three&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/three-columns.scss&#10;distri&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;bene&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;glo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;fix&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/fixed-nav.scss&#10;ser&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/servicepoints.html&#10;icon&#9;FILE&#9;jar://C:/Program Files/JetBrains/PhpStorm 2017.3.2/plugins/php/lib/php.jar!/stubs/iconv/iconv.php&#10;popu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;js&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/js/custom.js&#10;servi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/servicepoints.html&#10;servicepoin&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/servicepoints.scss&#10;GARA&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garages.html&#10;refe&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/references.scss&#10;benef&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;fa&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/faq.html&#10;po&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;distr&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;ben&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;be&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/benefit-actions.scss&#10;fi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/fixed-nav.scss&#10;globa&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;cu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/js/custom.js&#10;more-fo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/more-for-your-car.html&#10;all-serv&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-services.html&#10;service-for&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/service-for-every-model.html&#10;ref&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/references.html" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\fonts" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\img" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\img" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\video" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\js" />
+      <recent name="F:\Work related stuff\Fiverr\didarrashid\1. serviceright\website\assets\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9faf837a-dbf0-4d6d-8192-b8743cc852a3" name="Default" comment="" />
+      <created>1525540576895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525540576895</updated>
+      <workItem from="1525540578153" duration="35000" />
+      <workItem from="1528907875674" duration="2669000" />
+      <workItem from="1528914657579" duration="37000" />
+      <workItem from="1528998754607" duration="16858000" />
+      <workItem from="1529015726719" duration="2497000" />
+      <workItem from="1529059825020" duration="36392000" />
+      <workItem from="1529149842710" duration="17997000" />
+      <workItem from="1529179322458" duration="3401000" />
+      <workItem from="1529255803637" duration="1783000" />
+      <workItem from="1529334212009" duration="3408000" />
+      <workItem from="1529338522713" duration="299000" />
+      <workItem from="1529437596956" duration="14281000" />
+      <workItem from="1529518113206" duration="9885000" />
+      <workItem from="1529529214600" duration="874000" />
+      <workItem from="1529587000871" duration="392000" />
+      <workItem from="1529616637311" duration="143000" />
+      <workItem from="1529682091461" duration="10073000" />
+      <workItem from="1529753280034" duration="1250000" />
+      <workItem from="1529844182915" duration="846000" />
+      <workItem from="1529853075409" duration="649000" />
+      <workItem from="1530035356932" duration="21687000" />
+      <workItem from="1530058757869" duration="1104000" />
+      <workItem from="1530274798071" duration="44320000" />
+      <workItem from="1530356201270" duration="3184000" />
+      <workItem from="1530371161107" duration="6474000" />
+      <workItem from="1530400721601" duration="3911000" />
+      <workItem from="1530476431800" duration="590000" />
+      <workItem from="1530477045883" duration="118000" />
+      <workItem from="1530481273837" duration="3442000" />
+      <workItem from="1530539120160" duration="5430000" />
+      <workItem from="1530577400756" duration="7081000" />
+      <workItem from="1530616201191" duration="26248000" />
+      <workItem from="1530652133973" duration="20527000" />
+      <workItem from="1530690187723" duration="12140000" />
+      <workItem from="1530778594966" duration="48315000" />
+      <workItem from="1530868189692" duration="306000" />
+      <workItem from="1530869183836" duration="3727000" />
+      <workItem from="1530883836583" duration="1394000" />
+      <workItem from="1530963242263" duration="2307000" />
+      <workItem from="1530966150785" duration="12000" />
+      <workItem from="1531223291787" duration="3972000" />
+      <workItem from="1531307896464" duration="8231000" />
+      <workItem from="1532081409778" duration="3647000" />
+      <workItem from="1532100468736" duration="660000" />
+      <workItem from="1532169288977" duration="611000" />
+      <workItem from="1532270912430" duration="2100000" />
+      <workItem from="1532341419062" duration="15000" />
+      <workItem from="1533136763471" duration="2199000" />
+      <workItem from="1533209670622" duration="264000" />
+      <workItem from="1533417104234" duration="2915000" />
+      <workItem from="1533477809926" duration="3816000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="364516000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14134616" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115384616" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10554371" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/all.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="0" column="35329" lean-forward="false" selection-start-line="0" selection-start-column="35329" selection-end-line="0" selection-end-column="35329" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq-copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/full-references-modal.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/sass/serviceright-garages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/iconv/iconv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/all-brands.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="219" column="5" lean-forward="false" selection-start-line="219" selection-start-column="1" selection-end-line="219" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/servicepoints.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/distributieriem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/three-columns.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/more-for-your-car.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/how-does-it-work.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/star_sprite_xxs_correct_svg.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-brands.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicepoints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/references.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="749" column="40" lean-forward="false" selection-start-line="749" selection-start-column="40" selection-end-line="749" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/why-serviceright.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="197" column="7" lean-forward="false" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benefit-actions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="125" column="22" lean-forward="false" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distributieriem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="68" column="7" lean-forward="false" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three-columns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car-maintenance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/all.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/faq.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/websiteOld/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="137" column="7" lean-forward="true" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/how-does-it-work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="333" column="49" lean-forward="false" selection-start-line="333" selection-start-column="49" selection-end-line="333" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more-for-your-car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="175" column="23" lean-forward="false" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceright-garages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="245" column="26" lean-forward="false" selection-start-line="245" selection-start-column="26" selection-end-line="245" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="78" column="40" lean-forward="false" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all-services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="688" column="7" lean-forward="false" selection-start-line="688" selection-start-column="7" selection-end-line="688" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/drawing.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/blue-arrow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/fiatLogo.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/dropdown-arrow.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/_variable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixed-nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceright-garage-by-city.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="129" column="6" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="129" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-for-every-model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="102" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="467" column="11" lean-forward="false" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="11" />
+          <folding>
+            <element signature="e#3170#3833#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/fixed-nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="390" column="26" lean-forward="false" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/references.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/popup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#4522#4608#0" expanded="false" />
+            <element signature="e#4726#4832#0" expanded="false" />
+            <element signature="e#4848#4871#0" expanded="false" />
+            <element signature="e#4889#4912#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="418" column="0" lean-forward="true" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+          <folding>
+            <element signature="e#2512#3237#0" expanded="false" />
+            <element signature="e#3320#4312#0" expanded="false" />
+            <element signature="e#4397#4700#0" expanded="false" />
+            <element signature="e#6795#7183#0" expanded="false" />
+            <element signature="e#7924#9120#0" expanded="false" />
+            <element signature="e#9247#9417#0" expanded="false" />
+            <element signature="e#9751#9959#0" expanded="false" />
+            <element signature="e#10080#10142#0" expanded="false" />
+            <element signature="e#10184#10487#0" expanded="false" />
+            <element signature="e#10546#10621#0" expanded="false" />
+            <element signature="e#10706#10873#0" expanded="false" />
+            <element signature="e#10939#11415#0" expanded="false" />
+            <element signature="e#11601#11882#0" expanded="false" />
+            <element signature="e#11993#12210#0" expanded="false" />
+            <element signature="e#12303#12804#0" expanded="false" />
+            <element signature="e#12896#13185#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="4676" column="53" lean-forward="false" selection-start-line="4676" selection-start-column="32" selection-end-line="4676" selection-end-column="53" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#17;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#19;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#20;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#20;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#21;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#22;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#24;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#25;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#27;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#30;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#32;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#37;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/customSelectize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

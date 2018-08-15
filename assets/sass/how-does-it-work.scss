@@ -1,0 +1,180 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.how-does-it-work {
+  .arrow-before {
+    top: -4rem;
+    left: -4.4rem;
+    -moz-transform: scaleX(-1) rotate(30deg);
+    -o-transform: scaleX(-1) rotate(30deg);
+    -webkit-transform: scaleX(-1) rotate(30deg);
+    transform: scaleX(-1) rotate(30deg);
+  }
+
+  .video {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background: url("../img/videoBg.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+
+    .overlay {
+      background: rgba(255,255,255,0.3);
+      transition: background 200ms;
+
+      .video-content {
+        h2 {
+          color: white;
+          font-weight: bold;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 24px;
+          }
+        }
+
+        .play-button {
+          height: 100px;
+          width: 100px;
+          border: 5px solid white;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          transition: 200ms transform;
+
+          i {
+            font-size: 27px;
+            color: white;
+          }
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      &:hover {
+        background: rgba(68,153,210,0.5);
+      }
+    }
+  }
+
+  .steps {
+    color: #5e6057;
+
+    .row {
+      .step {
+        position: relative;
+
+        .img {
+          height: 100px;
+          width: 100px;
+          margin: 0 auto;
+
+          svg {
+            * {
+              transition: all 100ms;
+            }
+          }
+
+          &:hover {
+            svg {
+              path, rect {
+                fill: rgba(68,153,210,0.7);
+                stroke: rgba(68,153,210,0.7);
+              }
+            }
+          }
+        }
+
+        .step-1-img {
+          svg {
+            .st1 {
+              stroke: #7F817A;
+            }
+          }
+
+          &:hover {
+            svg {
+              .st1 {
+                fill: rgba(68,153,210,0.7);
+                stroke: rgba(68,153,210,0.7);
+              }
+            }
+          }
+        }
+
+        .step-2-img {
+          &:hover {
+            svg {
+              #Layer_2 {
+                rect {
+                  fill: #fff;
+                  stroke: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        .popup-on-hover {
+          display: none;
+        }
+
+        &:hover {
+          .popup-on-hover {
+            display: block;
+            left: 2rem;
+            right: 2rem;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+    }
+  }
+
+  .btn {
+    &:before {
+      left: -70px;
+      bottom: 10px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &.alternative-1 {
+    .video-container {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      position: relative;
+
+      #video-bg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        min-width: 100%;
+        background-size: cover;
+
+        .video {
+          background: none;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      #video-bg {
+        display: none;
+      }
+    }
+  }
+}
+

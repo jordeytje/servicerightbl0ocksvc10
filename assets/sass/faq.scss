@@ -1,0 +1,72 @@
+@import "variable";
+
+.faq {
+  overflow: hidden;
+
+  .container {
+    .faq-item {
+      a {
+        color: $title-gray;
+        text-decoration: none;
+      }
+
+      .title-text {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .more-button {
+        color: $lightblue;
+        border: 2px solid $lightblue;
+        border-radius: 100%;
+        padding: 5px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+      }
+
+      .plus-icon{
+        position: relative;
+        width: 30px;
+        height: 30px;
+
+        &:before,
+        &:after{
+          content: "";
+          position: absolute;
+          background-color: $blue;
+          transition: transform 0.25s ease-out;
+        }
+
+        /* Vertical line */
+        &:before{
+          top: 2px;
+          left: 50%;
+          width: 4px;
+          height: 80%;
+          margin-left: -2px;
+        }
+
+        /* horizontal line */
+        &:after{
+          top: 50%;
+          left: 3px;
+          width: 80%;
+          height: 4px;
+          margin-top: -2px;
+        }
+
+        &.minus-icon{
+          cursor: pointer;
+
+          &:before{ transform: rotate(90deg); }
+          &:after{ transform: rotate(180deg); }
+        }
+      }
+
+      .card-body {
+        padding: 0;
+      }
+    }
+  }
+}

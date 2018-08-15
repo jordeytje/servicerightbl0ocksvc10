@@ -1,0 +1,53 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+.all-services {
+  .service {
+    .row {
+      position: relative;
+
+      .absolute {
+        z-index: 1;
+      }
+
+      p {
+        color: $title-gray;
+
+        @include  media-breakpoint-down(sm) {
+          margin-top: 0 !important;
+        }
+      }
+
+      svg {
+        height: 100px;
+        width: 100px;
+
+        * {
+          transition: 200ms;
+        }
+
+        @include media-breakpoint-down(md) {
+          height: 75px;
+          width: 75px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          height: 50px;
+          width: 50px;
+        }
+      }
+
+      &:hover {
+        svg {
+          * {
+            fill: rgba(68,153,210,0.7) !important;
+            stroke: rgba(68,153,210,0.7) !important;
+          }
+        }
+      }
+    }
+  }
+}

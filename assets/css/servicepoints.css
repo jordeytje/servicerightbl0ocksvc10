@@ -1,0 +1,49 @@
+.servicepoints .arrow-after {
+  top: -4rem;
+  right: -4rem;
+  transform: rotate(20deg); }
+  @media (max-width: 1199.98px) {
+    .servicepoints .arrow-after {
+      right: -4.8rem; } }
+
+.servicepoints .container .content .row .locations .province .location {
+  text-align: center; }
+  .servicepoints .container .content .row .locations .province .location p a:hover {
+    text-decoration: none; }
+  .servicepoints .container .content .row .locations .province .location p.dropdown:hover {
+    cursor: pointer; }
+
+.servicepoints .container .content .row .locations .province .more-locations {
+  display: none;
+  text-align: center; }
+
+@media (max-width: 767.98px) {
+  .servicepoints .container .content .row .locations .btn p {
+    font-size: 18px; } }
+
+.servicepoints .container .content .row .locations .btn:after {
+  right: -2.5rem;
+  bottom: 1rem; }
+  @media (max-width: 991.98px) {
+    .servicepoints .container .content .row .locations .btn:after {
+      display: none; } }
+
+.servicepoints .container .content .row .maps-details .maps .img {
+  height: 270px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover; }
+  @media (max-width: 1199.98px) {
+    .servicepoints .container .content .row .maps-details .maps .img {
+      height: 304px; } }
+  @media (max-width: 767.98px) {
+    .servicepoints .container .content .row .maps-details .maps .img {
+      height: 200px; } }
+
+.servicepoints .container .content .row .maps-details .maps .brands .brand {
+  position: relative; }
+  .servicepoints .container .content .row .maps-details .maps .brands .brand img {
+    width: 80%; }
+  .servicepoints .container .content .row .maps-details .maps .brands .brand .popup-on-hover {
+    display: none; }
+  .servicepoints .container .content .row .maps-details .maps .brands .brand:hover .popup-on-hover {
+    display: block; }

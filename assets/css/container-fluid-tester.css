@@ -1,0 +1,33 @@
+.container-fluid:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  /* set arrow to left */
+  right: 0;
+  /* set arrow to right */
+  margin-left: auto;
+  margin-right: auto;
+  width: .5rem;
+  /* Width makes the tip of the triangle flat. 0 for just a pointy tip and defines the width that has to be centered*/
+  z-index: 1;
+  /* Used to keep the triangle visible on top of the next div below the current div */
+  border-top: 1.5rem solid white;
+  /* Determines the height and the color of the triangle */
+  border-left: 2rem solid transparent;
+  /* Determines the width of the triangle together with the border-right */
+  border-right: 2rem solid transparent;
+  /* Determines the width of the triangle together with the border-left */
+  bottom: -1.5rem;
+  /* Positions the triangle below the div by setting this value to the same value as the border-top */ }
+
+.container-fluid:nth-child(even) {
+  background-color: #f6f6f6;
+  /* Alternate background-color */ }
+
+.container-fluid:nth-child(even):before {
+  border-top: 1.5rem solid #f6f6f6;
+  /* Alternate triangle color */ }
+
+.without:before {
+  display: none !important;
+  /* make the triangle dissapear */ }

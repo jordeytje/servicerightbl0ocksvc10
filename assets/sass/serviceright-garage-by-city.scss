@@ -1,0 +1,35 @@
+@import "variable";
+
+.serviceright-garage-by-city {
+  .container {
+    .inner {
+      h5 {
+        span {
+          text-transform: uppercase;
+          transition: color 200ms;
+
+          &:hover {
+            color: $green;
+            cursor: pointer;
+          }
+
+          &.active {
+            color: $green;
+          }
+        }
+      }
+    }
+
+    .filter {
+      margin: 0 auto;
+    }
+
+    .filter-items-list {
+      p {
+        a {
+          color: $green;
+        }
+      }
+    }
+  }
+}

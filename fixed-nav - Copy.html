@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fixed nav</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--bootstrap for sass mixins for some reason it doesn't work through the cdn-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/selectize.default.css">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/fixed-nav.css">
+</head>
+<body>
+
+    <div class="container-fluid without">
+    <div class="header fixed-nav fixed-top">
+        <div class="container">
+            <div class="navbar-parent pt-2 pb-2">
+
+                <div class="row">
+                    <div class="col-4 logo d-flex align-items-center">
+                        <div class="img"></div>
+                    </div>
+
+                    <div data-toggle="modal" data-target="#aggregate-rating-modal" class="clickable col-4 open-popup mt-2 review d-flex justify-content-center align-items-center flex-column flex-md-row">
+                        <div class="score">
+                            <p class="sr-text mb-0 font-weight-bold">9.5 <span>/ 10</span> </p>
+                        </div>
+                        <div class="ratings ml-md-3">
+                            <p class="sr-text mb-0">3535 beoordelingen</p>
+                            <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 licenseplate-box">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 discount text-center d-flex justify-content-center flex-row flex-lg-column">
+                                <p class="font-weight-bold mr-2 mr-lg-0">20%</p>
+                                <p class="font-weight-bold">Korting</p>
+                                <div class="arrow">
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+    <g>
+        <path d="M35.6,0.6c0.3,5.7,0.5,11.5,0.3,17.3c-0.3,5.8-1,11.6-3.3,17.1c-1.1,2.7-2.7,5.3-4.7,7.6c-1,1.1-2.1,2.1-3.3,3
+            c-0.6,0.4-1.3,0.8-1.9,1.2c-0.7,0.3-1.3,0.7-2,1c-2.7,1.2-5.6,2.1-8.5,2.4c-1.5,0.2-2.9,0.4-4.4,0.4c-1.5,0.1-2.9,0-4.3-0.1l0-0.2
+            c1.4-0.2,2.9-0.4,4.3-0.7c1.4-0.2,2.8-0.5,4.2-0.8c2.7-0.7,5.4-1.6,7.9-2.9c5-2.5,9-6.5,11.3-11.7c2.3-5.1,3.3-10.8,3.7-16.5
+            c0.5-5.7,0.5-11.5,0.5-17.2L35.6,0.6z"/>
+    </g>
+    <g>
+        <path d="M12.5,44.2c-3,2.7-6.3,5.1-9.7,7.4l-0.3-1.4c1.1,0.2,2.2,0.3,3.3,0.4c1.1,0.1,2.2,0.3,3.3,0.6c2.2,0.5,4.3,1.1,6.4,2l0,0.2
+            c-1.1,0.2-2.3,0.2-3.4,0.1c-1.1,0-2.2-0.1-3.3-0.3c-1.1-0.1-2.2-0.4-3.3-0.7l-3.2-0.8l-1.9-0.5L2,50.2c3.5-2,7-4,10.3-6.2
+            L12.5,44.2z"/>
+    </g>
+    </svg>
+                                </div>
+                            </div>
+
+                            <div class="col-7 licenseplate d-flex align-items-center">
+                                <input type="text" name="licenseplate" maxlength="8" placeholder="Vul uw kenteken in">
+                            </div>
+
+                            <a href="#" class="fixed-nav-btn btn mt-0 btn-cta btn-block link_unstyled">Boek nu</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 contact d-flex flex-row justify-content-end">
+                        <div class="icon flipped d-flex align-items-center mr-3">
+                            <a href="tel:088-2220-000" class="absolute"></a>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details flex-column justify-content-center align-items-center">
+                            <p>
+                                <a href="" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                        <button type="button" class="nav-button navbar-toggle collapsed ml-sm-3" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="toggle-contact-details flex-column justify-content-center align-items-center">
+                            <p>
+                                <a href="" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-menu-items">
+                    <div class="d-flex flex-wrap flex-column flex-md-row align-items-center justify-content-around">
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Auto onderhoud</p>
+                        </div>
+                        <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                            <p class="sr-text">Onderhoud</p>
+                            <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                            <div class="submenu">
+                                <div class="submenu-item">
+                                    <a href="" class="absolute"></a>
+                                    <p class="sr-text">Submenu item</p>
+                                </div>
+
+                                <div class="submenu-item">
+                                    <a href="" class="absolute"></a>
+                                    <p class="sr-text">Submenu item</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                            <p class="sr-text">Reparaties</p>
+                            <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                            <div class="submenu">
+                                <div class="submenu-item">
+                                    <a href="" class="absolute"></a>
+                                    <p class="sr-text">Submenu item</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Schadeherstel</p>
+                        </div>
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Cleaning</p>
+                        </div>
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Acties</p>
+                        </div>
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Hoe werkt het</p>
+                        </div>
+                        <div class="menu-item">
+                            <a href="" class="absolute"></a>
+                            <p class="sr-text">Veelgestelde vragen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="aggregate-rating-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-3 score pt-3 pb-3">
+                            <h2 class="white font-weight-bold mb-0 text-center">9.5</h2>
+                        </div>
+
+                        <div class="col-7 title-text pt-3 pb-3">
+                            <h3 class="mb-0 white">Gemiddeld uit 3728 beoordelingen</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row review-list">
+                            <div class="review col-12 pt-0 pt-md-3">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-sm-4">
+                                        <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                    </div>
+                                    <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+                            <div class="review col-12 pt-0 pt-md-3">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-sm-4">
+                                        <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                    </div>
+                                    <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+                            <div class="review col-12 pt-0 pt-md-3">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-sm-4">
+                                        <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                    </div>
+                                    <p class="col-6 col-sm-8 mb-0 font-weight-bold">Alex Huchshorn - Honda (Alblasserdam)</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+                            <div class="review col-12 pt-0 pt-md-3">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-sm-4">
+                                        <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                    </div>
+                                    <p class="col-6 col-sm-8 mb-0 font-weight-bold">Alex Huchshorn - Honda (Alblasserdam)</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+                            <div class="review col-12 pt-0 pt-md-3">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-sm-4">
+                                        <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                    </div>
+                                    <p class="col-6 col-sm-8 mb-0 font-weight-bold">Alex Huchshorn - Honda (Alblasserdam)</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+                            <div class="view-all col-12">
+                                <p>
+                                    <a href="" class="link-unstyled">Bekijk alle 3750 beoordelingen.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer">
+        <h2>DIT IS EEN SPACER ZODAT DE FIXED NAV GETEST KAN WORDEN</h2>
+    </div>
+
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!--ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!--jquery visible-->
+    <script src="assets/js/jquery.visible.min.js"></script>
+
+    <!--selectize-->
+    <script src="assets/js/selectize.min.js"></script>
+    <script src="assets/js/customSelectize.js"></script>
+
+    <!--MOBILESWYPE-->
+    <script src="assets/js/jquery.bcSwipe.min.js"></script>
+
+    <!--custom-->
+    <script src="assets/js/mobileSwipe.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+.popover {
+  z-index: 1061 !important; }
+
+.modal#aggregate-rating-modal {
+  border-radius: 15px; }
+  .modal#aggregate-rating-modal .modal-content {
+    border-radius: 15px;
+    border: none; }
+    .modal#aggregate-rating-modal .modal-content .modal-header {
+      padding: 0 15px;
+      background: #484848;
+      border-radius: 15px 15px 0 0; }
+      .modal#aggregate-rating-modal .modal-content .modal-header .row {
+        width: 100%; }
+        .modal#aggregate-rating-modal .modal-content .modal-header .row .score {
+          background: #449ad2;
+          border-top-left-radius: 15px; }
+          .modal#aggregate-rating-modal .modal-content .modal-header .row .score h2 {
+            font-size: 40px;
+            font-style: italic; }
+            @media (max-width: 767.98px) {
+              .modal#aggregate-rating-modal .modal-content .modal-header .row .score h2 {
+                font-size: 30px; } }
+          @media (max-width: 767.98px) {
+            .modal#aggregate-rating-modal .modal-content .modal-header .row .score {
+              display: flex;
+              align-items: center; } }
+        .modal#aggregate-rating-modal .modal-content .modal-header .row .title-text h3 {
+          font-size: 18px; }
+    .modal#aggregate-rating-modal .modal-content .modal-body {
+      background: #f6f6f6;
+      border-radius: 0 0 15px 15px; }
+      .modal#aggregate-rating-modal .modal-content .modal-body .review-list {
+        height: 100%; }
+        .modal#aggregate-rating-modal .modal-content .modal-body .review-list .review .star-ratings-sprite {
+          transform: scale(0.5);
+          margin-left: -30px; }
+        @media (max-width: 767.98px) {
+          .modal#aggregate-rating-modal .modal-content .modal-body .review-list {
+            overflow-y: scroll; } }
+      .modal#aggregate-rating-modal .modal-content .modal-body .view-all p a {
+        text-decoration: underline; }
+    .modal#aggregate-rating-modal .modal-content .modal-footer {
+      border-top: none;
+      background: #f6f6f6;
+      border-radius: 0 0 15px 15px; }
+
+.modal#no-licenseplate-modal .modal-header {
+  border: none; }
+  .modal#no-licenseplate-modal .modal-header .row {
+    width: 100%; }
+    .modal#no-licenseplate-modal .modal-header .row .title-text h3 {
+      font-size: 18px; }
+    .modal#no-licenseplate-modal .modal-header .row .title-text:after {
+      transform: scale(0.5);
+      right: -1rem;
+      top: 1rem; }
+      @media (max-width: 767.98px) {
+        .modal#no-licenseplate-modal .modal-header .row .title-text:after {
+          display: none; } }
+    .modal#no-licenseplate-modal .modal-header .row .close {
+      padding: 0;
+      margin: 0; }
+      .modal#no-licenseplate-modal .modal-header .row .close span {
+        font-size: 45px; }
+
+.modal#no-licenseplate-modal .brand-select,
+.modal#no-licenseplate-modal .model-select,
+.modal#no-licenseplate-modal .buildyear-select,
+.modal#no-licenseplate-modal .fuel-select {
+  opacity: 0.2; }
+  .modal#no-licenseplate-modal .brand-select.active,
+  .modal#no-licenseplate-modal .model-select.active,
+  .modal#no-licenseplate-modal .buildyear-select.active,
+  .modal#no-licenseplate-modal .fuel-select.active {
+    opacity: 1; }
+
+.modal#full-reference-modal .modal-body {
+  border: none; }
+  .modal#full-reference-modal .modal-body .review {
+    border-radius: 15px; }
+    .modal#full-reference-modal .modal-body .review .inner .star-ratings-sprite {
+      margin: 0 auto !important;
+      transform: scale(0.5); }
+      @media (max-width: 991.98px) {
+        .modal#full-reference-modal .modal-body .review .inner .star-ratings-sprite {
+          margin-left: -30px; } }
+      @media (max-width: 767.98px) {
+        .modal#full-reference-modal .modal-body .review .inner .star-ratings-sprite {
+          margin: 0 auto; } }
+
+.modal#full-reference-modal .modal-footer {
+  border: none; }
+
+.modal#licenseplate-mobile .licenseplate-box {
+  position: relative; }
+  .modal#licenseplate-mobile .licenseplate-box .hover {
+    transition: 400ms all ease-in-out; }
+    .modal#licenseplate-mobile .licenseplate-box .hover .licenseplate {
+      text-transform: uppercase;
+      border: 2px solid #ffffff;
+      background-color: #FEC62E;
+      color: #7b7b7b;
+      border-radius: 6px 0 0 6px;
+      padding: 10px 0 10px 20px;
+      font-size: 22px;
+      text-align: center;
+      width: 100%;
+      max-width: 35rem;
+      height: unset;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/EU-section-with-NL.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 15px; }
+      @media (max-width: 767.98px) {
+        .modal#licenseplate-mobile .licenseplate-box .hover .licenseplate {
+          margin-top: 0;
+          font-size: 16px; } }
+  .modal#licenseplate-mobile .licenseplate-box:before {
+    top: -5rem;
+    left: -3rem;
+    filter: invert(0%);
+    -moz-transform: scaleX(-1) rotate(-30deg);
+    -o-transform: scaleX(-1) rotate(-30deg);
+    -webkit-transform: scaleX(-1) rotate(-30deg);
+    transform: scaleX(-1) rotate(-30deg); }
+    @media (max-width: 767.98px) {
+      .modal#licenseplate-mobile .licenseplate-box:before {
+        display: none; } }
+
+.modal#licenseplate-mobile .submit-licenseplate {
+  padding: 10px;
+  opacity: 0.3;
+  transition: opacity 200ms;
+  border-radius: 0 6px 6px 0;
+  border: 2px solid white;
+  border-left: 0;
+  height: auto; }
+  @media (max-width: 767.98px) {
+    .modal#licenseplate-mobile .submit-licenseplate {
+      margin-top: 0; } }
+
+.modal#licenseplate-mobile .select-service {
+  opacity: 0.3; }
+
+.modal#licenseplate-mobile .no-licenseplate p {
+  font-size: 13px;
+  text-decoration: underline; }
+
+.modal#licenseplate-mobile .title {
+  font-size: 21px;
+  font-weight: normal;
+  font-style: italic; }
+
+.modal .modal-header .close {
+  padding: 0;
+  margin: 0; }
+  .modal .modal-header .close span {
+    font-size: 45px; }
+
+.modal .modal-body {
+  border: none; }
+
+.modal .modal-footer {
+  border: none; }

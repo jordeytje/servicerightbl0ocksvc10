@@ -1,0 +1,162 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+.three-columns {
+  .arrow-after {
+    top: 1rem;
+    right: -3rem;
+    transform: rotate(-75deg);
+  }
+
+  .container {
+    .middle-picture {
+      margin-bottom: 6rem;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0;
+      }
+    }
+
+
+    .row {
+      .card {
+        border: none;
+
+        .card-img-top {
+          height: 150px;
+        }
+
+        .img {
+          width: 50%;
+          margin: 0 auto;
+        }
+
+        .card-body {
+          position: relative;
+
+          .img {
+            width: 100%;
+          }
+
+          .worker {
+            position: absolute;
+            top: -110px;
+            left: 0;
+            right: 0;
+          }
+
+          .card-title {
+            span {
+              display: block;
+              font-weight: normal;
+            }
+          }
+
+          .read-more {
+            a {
+              color: $lightblue;
+            }
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          height: auto !important;
+        }
+      }
+
+      .middle-card {
+
+        .title {
+          color: $green;
+        }
+
+        .card-body {
+          padding: 1.25em 0;
+
+          .price {
+            color: $green;
+
+            span {
+              text-decoration: line-through;
+            }
+
+            h2 {
+              &:last-of-type {
+                color: $title-gray;
+                font-size: 3rem;
+
+                @include media-breakpoint-down(sm) {
+                  font-size: 2.4rem;
+                }
+              }
+            }
+          }
+
+          .list {
+            padding-top: 12px;
+
+            .list-item {
+              display: none;
+
+              .fa-check {
+                font-size: 1rem;
+                color: $green;
+              }
+
+              &:nth-of-type(even) {
+                background: #e4e4e4;
+              }
+            }
+          }
+        }
+
+        &.blue-card {
+          p {
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.version2 {
+    .middle-card {
+      background: $darkblue !important;
+
+      .list {
+        .list-item {
+          &:nth-of-type(even) {
+            background: $blue !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.version3 {
+    .middle-card {
+      @include media-breakpoint-down(md) {
+        margin-top: 8rem;
+      }
+    }
+  }
+
+  &.version4 {
+    .middle-card {
+      .price {
+        h2 {
+          color: white !important;
+        }
+      }
+
+      .read-more {
+        a {
+          color: white !important;
+        }
+      }
+    }
+  }
+}

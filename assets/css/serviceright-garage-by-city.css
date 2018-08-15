@@ -1,0 +1,14 @@
+.serviceright-garage-by-city .container .inner h5 span {
+  text-transform: uppercase;
+  transition: color 200ms; }
+  .serviceright-garage-by-city .container .inner h5 span:hover {
+    color: #adc941;
+    cursor: pointer; }
+  .serviceright-garage-by-city .container .inner h5 span.active {
+    color: #adc941; }
+
+.serviceright-garage-by-city .container .filter {
+  margin: 0 auto; }
+
+.serviceright-garage-by-city .container .filter-items-list p a {
+  color: #adc941; }

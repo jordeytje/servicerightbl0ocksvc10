@@ -1,0 +1,23 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+.car-maintenance {
+  .container {
+    .cards {
+      .row {
+        .card {
+          border: none;
+
+          .card-title, .card-text {
+            @include media-breakpoint-down(md) {
+              height: auto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

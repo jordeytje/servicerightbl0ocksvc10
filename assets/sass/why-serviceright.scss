@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.why-serviceright {
+  svg {
+    width: 100px;
+    height: 100px;
+
+    * {
+      transition: 200ms;
+    }
+
+    &:hover {
+      * {
+        fill: rgba(68,153,210,0.7) !important;
+        stroke: rgba(68,153,210,0.7) !important;
+      }
+    }
+  }
+
+  .popup-on-hover {
+    display: none;
+  }
+
+  .item {
+    &:hover {
+      .popup-on-hover {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.all-services .service .row {
+  position: relative; }
+  .all-services .service .row .absolute {
+    z-index: 1; }
+  .all-services .service .row p {
+    color: #53554c; }
+    @media (max-width: 767.98px) {
+      .all-services .service .row p {
+        margin-top: 0 !important; } }
+  .all-services .service .row svg {
+    height: 100px;
+    width: 100px; }
+    .all-services .service .row svg * {
+      transition: 200ms; }
+    @media (max-width: 991.98px) {
+      .all-services .service .row svg {
+        height: 75px;
+        width: 75px; } }
+    @media (max-width: 767.98px) {
+      .all-services .service .row svg {
+        height: 50px;
+        width: 50px; } }
+  .all-services .service .row:hover svg * {
+    fill: rgba(68, 153, 210, 0.7) !important;
+    stroke: rgba(68, 153, 210, 0.7) !important; }

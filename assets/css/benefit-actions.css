@@ -1,0 +1,43 @@
+.benefit-actions .container .outer-card {
+  margin-bottom: 30px; }
+
+.benefit-actions .container .row .arrow-after {
+  display: block;
+  transform: rotate(-75deg);
+  right: 2rem;
+  top: 1rem; }
+  @media (max-width: 1199.98px) {
+    .benefit-actions .container .row .arrow-after {
+      display: block;
+      right: 2rem; } }
+  @media (max-width: 991.98px) {
+    .benefit-actions .container .row .arrow-after {
+      display: block;
+      right: -2rem; } }
+  @media (max-width: 767.98px) {
+    .benefit-actions .container .row .arrow-after {
+      display: none; } }
+
+.benefit-actions .container .actions .action {
+  border: none; }
+  .benefit-actions .container .actions .action .card-topside .discount {
+    top: -1rem;
+    right: -0.8rem;
+    background: #309dd5;
+    border-radius: 100%;
+    height: 6rem;
+    width: 6rem; }
+    @media (max-width: 767.98px) {
+      .benefit-actions .container .actions .action .card-topside .discount {
+        top: -0.8rem; } }
+  .benefit-actions .container .actions .action .card-topside .icon {
+    bottom: 0.5rem;
+    right: 0.5rem; }
+    .benefit-actions .container .actions .action .card-topside .icon img {
+      background: yellow;
+      height: 50px;
+      width: 50px; }
+  .benefit-actions .container .actions .action img {
+    height: 150px; }
+  .benefit-actions .container .actions .action .card-body {
+    border-radius: 0 0 15px 15px; }

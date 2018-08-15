@@ -1,0 +1,262 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.popover {
+  z-index: 1061 !important;
+}
+
+.modal {
+
+  &#aggregate-rating-modal {
+    border-radius: 15px;
+
+    .modal-content {
+      border-radius: 15px;
+      border: none;
+
+      .modal-header {
+        padding: 0 15px;
+        background: #484848;
+        border-radius: 15px 15px 0 0;
+
+        .row {
+          width: 100%;
+
+          .score {
+            background: #449ad2;
+            border-top-left-radius: 15px;
+
+            h2 {
+              font-size: 40px;
+              font-style: italic;
+
+              @include media-breakpoint-down(sm) {
+                font-size: 30px;
+              }
+            }
+
+            @include media-breakpoint-down(sm) {
+              display: flex;
+              align-items: center;
+            }
+          }
+
+
+          .title-text {
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .modal-body {
+        background: #f6f6f6;
+        border-radius: 0 0 15px 15px;
+
+        .review-list {
+          height: 100%;
+
+          .review {
+            .star-ratings-sprite {
+              transform: scale(0.5);
+              margin-left: -30px;
+            }
+          }
+
+          @include media-breakpoint-down(sm) {
+            overflow-y: scroll;
+          }
+        }
+
+        .view-all {
+          p {
+            a {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .modal-footer {
+        border-top: none;
+        background: #f6f6f6;
+        border-radius: 0 0 15px 15px;
+      }
+    }
+  }
+
+  &#no-licenseplate-modal {
+    .modal-header {
+      border: none;
+
+      .row {
+        width: 100%;
+
+        .title-text {
+          h3 {
+            font-size: 18px;
+          }
+
+          &:after {
+            transform: scale(0.5);
+            right: -1rem;
+            top: 1rem;
+
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
+        }
+
+        .close {
+          padding: 0;
+          margin: 0;
+
+          span {
+            font-size: 45px;
+          }
+        }
+      }
+    }
+
+    .brand-select,
+    .model-select,
+    .buildyear-select,
+    .fuel-select {
+      opacity: 0.2;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &#full-reference-modal {
+    .modal-body {
+      border: none;
+
+      .review {
+        border-radius: 15px;
+
+        .inner {
+          .star-ratings-sprite {
+            margin: 0 auto !important;
+
+            transform: scale(0.5);
+
+            @include media-breakpoint-down(md) {
+              margin-left: -30px;
+            }
+
+            @include media-breakpoint-down(sm) {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      border: none;
+    }
+  }
+
+  &#licenseplate-mobile {
+    .licenseplate-box {
+      position: relative;
+
+      .hover {
+        transition: 400ms all ease-in-out;
+
+        .licenseplate {
+          text-transform: uppercase;
+          border: 2px solid #ffffff;
+          background-color: #FEC62E;
+          color: #7b7b7b;
+          border-radius: 6px 0 0 6px;
+          padding: 10px 0 10px 20px;
+          font-size: 22px;
+          text-align: center;
+          width: 100%;
+          max-width: 35rem;
+          height: unset;
+          background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/EU-section-with-NL.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-top: 15px;
+
+          @include media-breakpoint-down(sm) {
+            margin-top: 0;
+            font-size: 16px;
+          }
+        }
+      }
+
+      &:before {
+        top: -5rem;
+        left: -3rem;
+        filter: invert(0%);
+        -moz-transform: scaleX(-1) rotate(-30deg);
+        -o-transform: scaleX(-1) rotate(-30deg);
+        -webkit-transform: scaleX(-1) rotate(-30deg);
+        transform: scaleX(-1) rotate(-30deg);
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+
+    .submit-licenseplate {
+      padding: 10px;
+      opacity: 0.3;
+      transition: opacity 200ms;
+      border-radius: 0 6px 6px 0;
+      border: 2px solid white;
+      border-left: 0;
+      height: auto;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+      }
+    }
+
+    .select-service {
+      opacity: 0.3;
+    }
+
+    .no-licenseplate {
+      p {
+        font-size: 13px;
+        text-decoration: underline;
+      }
+    }
+
+    .title {
+      font-size: 21px;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+
+  .modal-header {
+    .close {
+      padding: 0;
+      margin: 0;
+
+      span {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .modal-body {
+    border: none;
+  }
+
+  .modal-footer {
+    border: none;
+  }
+}

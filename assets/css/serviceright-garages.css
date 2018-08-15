@@ -1,0 +1,50 @@
+.serviceright-garages .container .list .card {
+  border: none;
+  height: 100%; }
+  .serviceright-garages .container .list .card .card-body {
+    padding: 0;
+    height: 100%;
+    position: relative; }
+    .serviceright-garages .container .list .card .card-body .absolute {
+      z-index: 1; }
+    .serviceright-garages .container .list .card .card-body .row {
+      height: 100%; }
+      .serviceright-garages .container .list .card .card-body .row .inner {
+        height: 100%; }
+        .serviceright-garages .container .list .card .card-body .row .inner .image {
+          padding: 0; }
+          .serviceright-garages .container .list .card .card-body .row .inner .image .img {
+            width: 100%;
+            height: 150px;
+            background: no-repeat center #b1b1b1;
+            background-size: cover;
+            border-radius: 15px 0 0 15px; }
+            @media (min-width: 992px) {
+              .serviceright-garages .container .list .card .card-body .row .inner .image .img {
+                height: 100%; } }
+            @media (max-width: 991.98px) {
+              .serviceright-garages .container .list .card .card-body .row .inner .image .img {
+                border-radius: 15px 15px 0 0; } }
+        .serviceright-garages .container .list .card .card-body .row .inner .content {
+          padding: 0.5rem 1rem;
+          position: relative; }
+          .serviceright-garages .container .list .card .card-body .row .inner .content .top-side .star-ratings-sprite {
+            transform: scale(0.5);
+            margin-left: -45px; }
+          .serviceright-garages .container .list .card .card-body .row .inner .content .top-side img {
+            width: 100%;
+            max-width: 55px;
+            max-height: 30px; }
+          .serviceright-garages .container .list .card .card-body .row .inner .content .brands {
+            border-top: 1px solid white;
+            bottom: 1.25rem;
+            left: 1.25rem;
+            right: 1.25rem;
+            padding-top: 1rem; }
+            .serviceright-garages .container .list .card .card-body .row .inner .content .brands img {
+              width: 100%; }
+      @media (max-width: 991.98px) {
+        .serviceright-garages .container .list .card .card-body .row {
+          height: unset; } }
+    .serviceright-garages .container .list .card .card-body:hover {
+      cursor: pointer; }

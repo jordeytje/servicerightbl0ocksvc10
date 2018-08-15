@@ -1,0 +1,307 @@
+@import "popup";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.original {
+  .arrow-after {
+    left: -2.5rem;
+    top: -4.5rem;
+
+    -moz-transform: scaleX(-1) rotate(-25deg);
+    -o-transform: scaleX(-1) rotate(-25deg);
+    -webkit-transform: scaleX(-1) rotate(-25deg);
+    transform: scaleX(-1) rotate(-25deg);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+.alternative-1 {
+  .arrow-after {
+    left: -2.5rem;
+    top: -2.5rem;
+
+    -moz-transform: scaleX(-1) rotate(-25deg);
+    -o-transform: scaleX(-1) rotate(-25deg);
+    -webkit-transform: scaleX(-1) rotate(-25deg);
+    transform: scaleX(-1) rotate(-25deg);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .ups-list {
+    .inner-ups-list {
+      height: auto !important;
+
+      .outer-ups {
+        &:first-of-type {
+          .ups {
+            padding-top: 20px !important;
+          }
+        }
+      }
+
+      .ups {
+        padding-top: 35px !important;
+      }
+    }
+  }
+}
+
+.alternative-2 {
+  .arrow-after {
+    left: -2.5rem;
+    top: -4.5rem;
+
+    -moz-transform: scaleX(-1) rotate(-25deg);
+    -o-transform: scaleX(-1) rotate(-25deg);
+    -webkit-transform: scaleX(-1) rotate(-25deg);
+    transform: scaleX(-1) rotate(-25deg);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .ups-list {
+    .inner-ups-list {
+      height: auto !important;
+
+      .ups {
+        padding-top: 35px !important;
+      }
+    }
+  }
+}
+
+.alternative-3 {
+  .arrow-after {
+    left: -2.5rem;
+    top: -4.5rem;
+
+    -moz-transform: scaleX(-1) rotate(-25deg);
+    -o-transform: scaleX(-1) rotate(-25deg);
+    -webkit-transform: scaleX(-1) rotate(-25deg);
+    transform: scaleX(-1) rotate(-25deg);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .ups-list {
+    .inner-ups-list {
+      height: auto !important;
+
+      .outer-ups {
+        &:first-of-type {
+          .ups {
+            padding: 0 !important;
+          }
+        }
+      }
+
+      .ups {
+        padding-top: 35px !important;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+  .header {
+    background: white;
+
+    .container {
+      background: white;
+      z-index: 2;
+    }
+  }
+
+  .header-banner {
+    background: no-repeat center #309dd5;
+    background-size: cover;
+    background-image: none !important;
+
+    .sr-text {
+      color: white;
+    }
+
+    .container {
+      background: url(http://developerserver.nl/wp-content/uploads/2018/05/peter-monteur.png) no-repeat right bottom;
+
+      .row {
+        .title {
+          color: white;
+          h2 {
+            font-size: 40px;
+
+            @include media-breakpoint-down(lg) {
+              font-size: 30px;
+            }
+          }
+        }
+
+        .subtitle {
+          color: white;
+        }
+
+        .ups-list {
+          .inner-ups-list {
+            height: 240px;
+
+            .outer-ups {
+              padding-left: 15px;
+              padding-right: 15px;
+
+              .ups {
+                i {
+                  color: #adc845;
+                  font-size: 24px;
+                }
+
+                p {
+                  //font-size: 20px;
+                  color: #6e7278;
+                  font-size: 16px;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            @include media-breakpoint-down(sm) {
+              height: auto;
+            }
+          }
+        }
+
+        .details {
+          .small-price {
+            font-size: 28px;
+            position: relative;
+            margin-right: 15px;
+
+            &:before {
+              position: absolute;
+              display: block;
+              content: '';
+              left: -6px;
+              top: 20px;
+              right: 0;
+              width: 110%;
+              border-top: 3px solid red;
+              -webkit-transform: skewY(-10deg);
+              -moz-transform: skewY(-10deg);
+              transform: skewY(-10deg);
+            }
+          }
+
+          .big-price {
+            p {
+              font-size: 80px;
+
+              @include media-breakpoint-down(sm) {
+                font-size: 60px;
+              }
+            }
+          }
+        }
+
+        .no-licenseplate {
+          p {
+            //color: #4a7184;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .licenseplate-box {
+          position: relative;
+
+          .hover {
+            transition: 400ms all ease-in-out;
+
+            .licenseplate {
+              background-color: #FEC62E;
+              color: black;
+              border: none;
+              border-radius: 8px 0 0 8px;
+              padding: 10px 0 10px 20px;
+              text-align: center;
+              width: 100%;
+              max-width: 35rem;
+              height: unset;
+              background-image: url(../img/EU-section-with-NL_spoochy.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              text-transform: uppercase;
+
+              @include media-breakpoint-down(sm) {
+                margin-top: 0;
+              }
+            }
+
+            &:hover {
+              -webkit-transform: scale(1.1);
+              -moz-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              -o-transform: scale(1.1);
+              transform: scale(1.1);
+              -webkit-box-shadow: 0 20px 38px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 20px 38px rgba(0, 0, 0, 0.175);
+            }
+          }
+
+          &:before {
+            top: -5rem;
+            left: -3rem;
+            filter: invert(0%);
+            -moz-transform: scaleX(-1) rotate(-30deg);
+            -o-transform: scaleX(-1) rotate(-30deg);
+            -webkit-transform: scaleX(-1) rotate(-30deg);
+            transform: scaleX(-1) rotate(-30deg);
+
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
+        }
+
+        .submit-licenseplate {
+          padding: 10px;
+          opacity: 0.3;
+          transition: opacity 200ms;
+          border-radius: 0 8px 8px 0;
+          border: none;
+          height: auto;
+          margin-top: 0.5rem;
+          margin-left: -1px;
+        }
+
+        .select-service {
+          opacity: 0.3;
+
+          select {
+            background-color: #ffffff;
+            border: none;
+
+            option {
+              background: white;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        background: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: auto;
+      }
+    }
+  }
+}

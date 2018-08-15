@@ -1,0 +1,27 @@
+.all-brands .container .title h2 {
+  font-size: 24px; }
+
+.all-brands .container .row .img-container {
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 200ms;
+  opacity: 0.5; }
+  .all-brands .container .row .img-container img {
+    height: 80px; }
+    @media (max-width: 767.98px) {
+      .all-brands .container .row .img-container img {
+        height: 60px; } }
+    @media (max-width: 575.98px) {
+      .all-brands .container .row .img-container img {
+        height: 50px; } }
+  .all-brands .container .row .img-container:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1; }
+
+.all-brands .container .show-all-brands {
+  color: #53554c; }
+  .all-brands .container .show-all-brands:hover {
+    cursor: pointer;
+    text-decoration: underline; }

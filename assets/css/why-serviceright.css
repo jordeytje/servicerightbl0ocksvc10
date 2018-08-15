@@ -1,0 +1,14 @@
+.why-serviceright svg {
+  width: 100px;
+  height: 100px; }
+  .why-serviceright svg * {
+    transition: 200ms; }
+  .why-serviceright svg:hover * {
+    fill: rgba(68, 153, 210, 0.7) !important;
+    stroke: rgba(68, 153, 210, 0.7) !important; }
+
+.why-serviceright .popup-on-hover {
+  display: none; }
+
+.why-serviceright .item:hover .popup-on-hover {
+  display: block; }

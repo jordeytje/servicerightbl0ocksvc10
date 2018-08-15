@@ -1,0 +1,90 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.serviceright-garages {
+  .container {
+    .list {
+      .card {
+        border: none;
+        height: 100%;
+
+        .card-body {
+          padding: 0;
+          height: 100%;
+          position: relative;
+
+          .absolute {
+            z-index: 1;
+          }
+
+          .row {
+            height: 100%;
+
+            .inner {
+              height: 100%;
+
+              .image {
+                padding: 0;
+
+                .img {
+                  width: 100%;
+                  height: 150px;
+                  background: no-repeat center #b1b1b1;
+                  background-size: cover;
+                  border-radius: 15px 0 0 15px;
+
+                  @include media-breakpoint-up(lg) {
+                    height: 100%;
+                  }
+
+                  @include  media-breakpoint-down(md) {
+                    border-radius: 15px 15px 0 0;
+                  }
+                }
+              }
+
+              .content {
+                padding: 0.5rem 1rem;
+                position: relative;
+
+                .top-side {
+                  .star-ratings-sprite {
+                    transform: scale(0.5);
+                    margin-left: -45px;
+                  }
+
+                  img {
+                    width: 100%;
+                    max-width: 55px;
+                    max-height: 30px;
+                  }
+                }
+
+                .brands {
+                  border-top: 1px solid white;
+                  bottom: 1.25rem;
+                  left: 1.25rem;
+                  right: 1.25rem;
+                  padding-top: 1rem;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+              height: unset;
+            }
+          }
+          
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

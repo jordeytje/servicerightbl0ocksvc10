@@ -1,0 +1,71 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+  footer {
+    .second-title {
+      color: white;
+    }
+
+    .sr-text {
+      color: white;
+    }
+
+    .sr-text-link {
+      color: white;
+    }
+
+    .img-list {
+      .img {
+        height: 100px;
+        margin: 0 auto;
+
+        &:last-of-type {
+          width: 70px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .lists {
+      background: $blue;
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        height: 75px;
+      }
+    }
+
+    .details {
+      background: $darkblue;
+
+      .logo {
+        .img {
+          height: 60px;
+          margin: 0 auto;
+          width: 80%;
+        }
+
+        img {
+          height: 100px;
+          width: 100%;
+        }
+      }
+
+      .social {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

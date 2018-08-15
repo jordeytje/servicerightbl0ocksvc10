@@ -1,0 +1,474 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+@font-face {
+  font-family: "kenteken";
+  src: url('../fonts/Kenteken.ttf');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $title-gray;
+}
+
+i.fas {
+  font-size: 24px;
+}
+
+.spacer {
+  background: purple;
+  height: 800px;
+}
+
+.container-fluid {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  background: white;
+}
+
+.popover {
+  z-index: 4 !important;
+}
+
+.highlighted {
+  opacity: 1 !important;
+  transition: opacity 200ms;
+}
+
+//CLASSES
+.container-fluid {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; /* make full width */
+    right: 0; /* make full width */
+    margin-left: auto; /* set to center */
+    margin-right: auto; /* set to center */
+    width: 4.5rem; /* Width makes the tip of the triangle flat. 0 for just a pointy tip */
+    z-index: 1; /* Used to keep the triangle visible on top of the next div below the current div */
+    border-top: 1.5rem solid white; /* Determines the height and the color of the triangle */
+    border-left: 2rem solid transparent; /* Determines the width of the triangle together with the border-right */
+    border-right: 2rem solid transparent; /* Determines the width of the triangle together with the border-left */
+    bottom: -1.5rem; /* Positions the triangle below the div by setting this value to the same value as the border-top */
+  }
+
+  &:nth-child(even) {
+    background-color: #f6f6f6; /* Alternate background-color */
+
+    .sr-card {
+      background: white;
+    }
+
+    &:after {
+      border-top: 1.5rem solid #f6f6f6; /* Alternate triangle color */
+    }
+
+    .serviceright-garages {
+      .brands {
+        border-top: 1px solid #f6f6f6 !important;
+      }
+    }
+  }
+}
+
+.without {
+  &:after {
+    border: unset !important; /* Unset the border to make the triangle disappear */
+  }
+}
+
+.arrow-cube::after {
+  background-color: #f6f6f6;
+  box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  content: "\00a0";
+  display: block;
+  height: 25px;
+  left: 0;
+  right: 0;
+  bottom: -12.5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  transform:         rotate( -45deg );
+  -moz-transform:    rotate( -45deg );
+  -ms-transform:     rotate( -45deg );
+  -o-transform:      rotate( -45deg );
+  -webkit-transform: rotate( -45deg );
+  width:  25px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  background: no-repeat center $img-bg;
+  background-size: contain;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.card {
+  .inner {
+    border-radius: 15px;
+    //box-shadow: 0 0 20px 0 rgba(70, 70, 70, 0.3);
+
+    .img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
+}
+
+.submenu-open {
+  background: #e7e7e7;
+}
+
+.primary-blue {
+  color: $blue;
+}
+
+.dropdown-target {
+  display: none;
+}
+
+.link-unstyled {
+  color: #4e4e4e;
+
+  &:hover {
+    color: #4e4e4e;
+  }
+}
+
+.btn {
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      cursor: default;
+    }
+  }
+}
+
+.btn-cta {
+  position: relative;
+  color: #353535;
+  background-color: #ffc800;
+  border: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin-top: 15px;
+  min-height: 42px;
+  height: 42px;
+  width: 100%;
+  font-size: 22px;
+  padding: 4px 0;
+  text-decoration: none;
+
+  &:hover{
+    color: #353535;
+    background-color: #ffce1a;
+  }
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+.white-arrow {
+  path {
+    stroke: white !important;
+  }
+}
+
+svg {
+  stroke: $title-gray !important;
+
+  * {
+    stroke: $title-gray !important;
+  }
+}
+
+.selectize-input {
+  background: url("../img/dropdown-arrow.svg") no-repeat right 0.5rem center;
+  background-size: 12px;
+}
+
+.optgroup-header {
+  color: $blue !important;
+}
+
+.arrow-before {
+  position: absolute;
+  top: -7rem;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+
+  -moz-transform: scaleX(-1) rotate(-20deg);
+  -o-transform: scaleX(-1) rotate(-20deg);
+  -webkit-transform: scaleX(-1) rotate(-20deg);
+  transform: scaleX(-1) rotate(-20deg);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+
+  svg {
+    stroke: $title-gray;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.arrow-after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+
+  svg {
+    stroke: $title-gray;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.arrow-animate {
+  opacity: 1 !important;
+
+  path {
+    fill-opacity: 0;
+    stroke: $title-gray;
+    //stroke-width: 1;
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+    animation: draw 3s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+.flipped {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.star-ratings-sprite {
+  background: url("../img/star_sprite_xxs_correct_svg.svg") repeat-x;
+  background-size: 2.2rem;
+  height: 2.5rem;
+  overflow: hidden;
+  width: 11rem;
+
+  @include media-breakpoint-down(md) {
+    transform: scale(0.5);
+    margin-left: -45px;
+  }
+}
+
+.star-ratings-sprite-rating {
+  background: url("../img/star_sprite_xxs_correct_svg.svg") repeat-x;
+  background-size: 2.2rem;
+  background-position: 0 100%;
+  float: left;
+  height: 2.1rem;
+  display: block;
+}
+
+.white {
+  color: white !important;
+}
+
+.font-small {
+  font-size: 17px !important;
+
+  @include media-breakpoint-down(md){
+    font-size: 13px !important;
+  }
+}
+
+.title {
+  font-weight: bold;
+  color: $title-gray;
+  font-size: 35px;
+  //background: green !important;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.close-inverse {
+  color: white;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+
+  &:hover {
+    color: white;
+  }
+
+  &:active,
+  &:focus,
+  &:visited {
+    outline: none !important;
+    color: white !important;
+  }
+}
+
+.title-inverse {
+  color: white;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: $title-gray;
+  //background: yellow !important;
+
+  @include media-breakpoint-down(md) {
+    font-size: 17px;
+  }
+}
+
+.subtitle-inverse {
+  color: white;
+}
+
+.second-title {
+  font-size: 24px;
+  color: $title-gray;
+  font-weight: bold;
+  //background: darkblue !important;
+}
+
+.sr-text {
+  color: $title-gray;
+  //background: red !important;
+}
+
+.sr-text-link {
+  //background: brown !important;
+}
+
+
+
+.sr-card {
+  border-radius: 15px;
+  transition: box-shadow 200ms;
+  background: #f6f6f6;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(70, 70, 70, 0.3);
+  }
+
+  &.card {
+    .img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
+}
+
+.no-background {
+  background-color: transparent;
+}
+
+.popup-on-hover {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 15px;
+  transition: box-shadow 200ms;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px 0 rgba(70, 70, 70, 0.3);
+  margin-bottom: 25px;
+
+  p {
+    font-size: 15px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .arrow-cube {
+    &:after {
+      border-top-color: #f6f6f6;
+    }
+  }
+}
+
+.modal.fade .modal-dialog {
+  transform: none !important;
+  transition: all 1s !important;
+}
+
+.popover {
+  border-radius: 15px;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px 0 rgba(70, 70, 70, 0.3);
+  transition: 1s opacity;
+}
+
+.licenseplate-input {
+  font-family: "kenteken", sans-serif !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}

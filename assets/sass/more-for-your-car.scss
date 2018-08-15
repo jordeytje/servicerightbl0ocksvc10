@@ -1,0 +1,28 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "variable";
+
+.more-for-your-car {
+  .container {
+    .cards {
+      .row {
+        .card {
+          border: none;
+
+          .img {
+            background-color: $blue;
+            background-size: 80%;
+          }
+
+          .card-title, .card-text {
+            @include media-breakpoint-down(md) {
+              height: auto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

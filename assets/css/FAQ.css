@@ -1,0 +1,45 @@
+.faq {
+  overflow: hidden; }
+  .faq .container .faq-item a {
+    color: #53554c;
+    text-decoration: none; }
+  .faq .container .faq-item .title-text:hover {
+    cursor: pointer; }
+  .faq .container .faq-item .more-button {
+    color: #64b4de;
+    border: 2px solid #64b4de;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px; }
+  .faq .container .faq-item .plus-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /* Vertical line */
+    /* horizontal line */ }
+    .faq .container .faq-item .plus-icon:before, .faq .container .faq-item .plus-icon:after {
+      content: "";
+      position: absolute;
+      background-color: #309dd5;
+      transition: transform 0.25s ease-out; }
+    .faq .container .faq-item .plus-icon:before {
+      top: 2px;
+      left: 50%;
+      width: 4px;
+      height: 80%;
+      margin-left: -2px; }
+    .faq .container .faq-item .plus-icon:after {
+      top: 50%;
+      left: 3px;
+      width: 80%;
+      height: 4px;
+      margin-top: -2px; }
+    .faq .container .faq-item .plus-icon.minus-icon {
+      cursor: pointer; }
+      .faq .container .faq-item .plus-icon.minus-icon:before {
+        transform: rotate(90deg); }
+      .faq .container .faq-item .plus-icon.minus-icon:after {
+        transform: rotate(180deg); }
+  .faq .container .faq-item .card-body {
+    padding: 0; }

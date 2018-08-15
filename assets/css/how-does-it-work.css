@@ -1,0 +1,96 @@
+.how-does-it-work .arrow-before {
+  top: -4rem;
+  left: -4.4rem;
+  -moz-transform: scaleX(-1) rotate(30deg);
+  -o-transform: scaleX(-1) rotate(30deg);
+  -webkit-transform: scaleX(-1) rotate(30deg);
+  transform: scaleX(-1) rotate(30deg); }
+
+.how-does-it-work .video {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background: url("../img/videoBg.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .how-does-it-work .video .overlay {
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 200ms; }
+    .how-does-it-work .video .overlay .video-content h2 {
+      color: white;
+      font-weight: bold; }
+      @media (max-width: 767.98px) {
+        .how-does-it-work .video .overlay .video-content h2 {
+          font-size: 24px; } }
+    .how-does-it-work .video .overlay .video-content .play-button {
+      height: 100px;
+      width: 100px;
+      border: 5px solid white;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      transition: 200ms transform; }
+      .how-does-it-work .video .overlay .video-content .play-button i {
+        font-size: 27px;
+        color: white; }
+      .how-does-it-work .video .overlay .video-content .play-button:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+    .how-does-it-work .video .overlay:hover {
+      background: rgba(68, 153, 210, 0.5); }
+
+.how-does-it-work .steps {
+  color: #5e6057; }
+  .how-does-it-work .steps .row .step {
+    position: relative; }
+    .how-does-it-work .steps .row .step .img {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto; }
+      .how-does-it-work .steps .row .step .img svg * {
+        transition: all 100ms; }
+      .how-does-it-work .steps .row .step .img:hover svg path, .how-does-it-work .steps .row .step .img:hover svg rect {
+        fill: rgba(68, 153, 210, 0.7);
+        stroke: rgba(68, 153, 210, 0.7); }
+    .how-does-it-work .steps .row .step .step-1-img svg .st1 {
+      stroke: #7F817A; }
+    .how-does-it-work .steps .row .step .step-1-img:hover svg .st1 {
+      fill: rgba(68, 153, 210, 0.7);
+      stroke: rgba(68, 153, 210, 0.7); }
+    .how-does-it-work .steps .row .step .step-2-img:hover svg #Layer_2 rect {
+      fill: #fff;
+      stroke: #fff; }
+    .how-does-it-work .steps .row .step .popup-on-hover {
+      display: none; }
+    .how-does-it-work .steps .row .step:hover .popup-on-hover {
+      display: block;
+      left: 2rem;
+      right: 2rem; }
+  @media (max-width: 767.98px) {
+    .how-does-it-work .steps {
+      padding-bottom: 0; } }
+
+.how-does-it-work .btn:before {
+  left: -70px;
+  bottom: 10px; }
+  @media (max-width: 767.98px) {
+    .how-does-it-work .btn:before {
+      display: none; } }
+
+.how-does-it-work.alternative-1 .video-container {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .how-does-it-work.alternative-1 .video-container #video-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    background-size: cover; }
+    .how-does-it-work.alternative-1 .video-container #video-bg .video {
+      background: none; }
+
+@media (max-width: 767.98px) {
+  .how-does-it-work.alternative-1 #video-bg {
+    display: none; } }
