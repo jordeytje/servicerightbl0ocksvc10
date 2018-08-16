@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9faf837a-dbf0-4d6d-8192-b8743cc852a3" name="Default" comment="" />
+    <list default="true" id="9faf837a-dbf0-4d6d-8192-b8743cc852a3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +27,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5703658">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="all.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="all.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/all.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
+                <state relative-caret-position="17">
                   <caret line="4676" column="53" lean-forward="false" selection-start-line="4676" selection-start-column="32" selection-end-line="4676" selection-end-column="53" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -62,6 +64,16 @@
                     <element signature="n#div#32;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#37;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="811">
+                  <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -130,7 +142,7 @@
               <file leaf-file-name="global.scss" pinned="true" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/sass/global.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="387">
+                    <state relative-caret-position="7344">
                       <caret line="467" column="11" lean-forward="false" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="11" />
                       <folding>
                         <element signature="e#3170#3833#0" expanded="false" />
@@ -162,7 +174,7 @@
               <file leaf-file-name="fixed-nav.scss" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/sass/fixed-nav.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="65">
+                    <state relative-caret-position="6630">
                       <caret line="390" column="26" lean-forward="false" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
                       <folding />
                     </state>
@@ -172,7 +184,7 @@
               <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/sass/header.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="95">
+                    <state relative-caret-position="4454">
                       <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
                       <folding />
                     </state>
@@ -182,7 +194,7 @@
               <file leaf-file-name="popup.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/sass/popup.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="405">
+                    <state relative-caret-position="55">
                       <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
                       <folding>
                         <element signature="e#4522#4608#0" expanded="false" />
@@ -228,11 +240,11 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+              <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1271">
-                      <caret line="418" column="0" lean-forward="true" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+                    <state relative-caret-position="673">
+                      <caret line="418" column="0" lean-forward="false" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
                       <folding>
                         <element signature="e#2512#3237#0" expanded="false" />
                         <element signature="e#3320#4312#0" expanded="false" />
@@ -255,7 +267,7 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="customSelectize.js" pinned="false" current-in-tab="true">
+              <file leaf-file-name="customSelectize.js" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/assets/js/customSelectize.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="659">
@@ -322,6 +334,9 @@
       <replace>&quot;assets/img/star_sprite_xxs_correct_svg.svg&quot;</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -335,7 +350,6 @@
         <option value="$PROJECT_DIR$/assets/sass/all-services.scss" />
         <option value="$PROJECT_DIR$/assets/sass/why-serviceright.scss" />
         <option value="$PROJECT_DIR$/why-serviceright.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/all-services.html" />
         <option value="$PROJECT_DIR$/assets/sass/all-brands.scss" />
         <option value="$PROJECT_DIR$/assets/js/customScrollMagic.js" />
@@ -376,6 +390,7 @@
         <option value="$PROJECT_DIR$/assets/sass/popup.scss" />
         <option value="$PROJECT_DIR$/all.html" />
         <option value="$PROJECT_DIR$/assets/js/customSelectize.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -391,9 +406,6 @@
       </GulpfileState>
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -417,48 +429,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="servicerightbl0ocksvc10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servicerightbl0ocksvc10" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3. stappen/website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="SearchEverywhereHistoryKey" value="global&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;var&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/_variable.scss&#10;fixed&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/fixed-nav.html&#10;fixe&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/fixed-nav.html&#10;header&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/header.html&#10;faq&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/faq.scss&#10;how&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/how-does-it-work.html&#10;footer&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/footer.html&#10;serv&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garage-by-city.html&#10;more&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/more-for-your-car.html&#10;car&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/car-maintenance.html&#10;service&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garages.html&#10;all-s&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-services.html&#10;thre&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/three-columns.html&#10;distribu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;benefi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;why&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/why-serviceright.html&#10;refer&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/references.html&#10;all&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-brands.html&#10;hea&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/header.html&#10;pop&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;refere&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/references.scss&#10;foo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/footer.html&#10;th&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/three-columns.html&#10;three&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/three-columns.scss&#10;distri&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;bene&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;glo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;fix&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/fixed-nav.scss&#10;ser&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/servicepoints.html&#10;icon&#9;FILE&#9;jar://C:/Program Files/JetBrains/PhpStorm 2017.3.2/plugins/php/lib/php.jar!/stubs/iconv/iconv.php&#10;popu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;js&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/js/custom.js&#10;servi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/servicepoints.html&#10;servicepoin&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/servicepoints.scss&#10;GARA&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/serviceright-garages.html&#10;refe&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/references.scss&#10;benef&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;fa&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/faq.html&#10;po&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/popup.scss&#10;distr&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/distributieriem.html&#10;ben&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/benefit-actions.html&#10;be&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/benefit-actions.scss&#10;fi&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/fixed-nav.scss&#10;globa&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/sass/global.scss&#10;cu&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/assets/js/custom.js&#10;more-fo&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/more-for-your-car.html&#10;all-serv&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/all-services.html&#10;service-for&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/service-for-every-model.html&#10;ref&#9;FILE&#9;file://F:/Work related stuff/Fiverr/didarrashid/1. serviceright/website/references.html" />
@@ -553,11 +542,12 @@
       <workItem from="1533209670622" duration="264000" />
       <workItem from="1533417104234" duration="2915000" />
       <workItem from="1533477809926" duration="3816000" />
+      <workItem from="1534414599172" duration="142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364516000" />
+    <option name="totallyTimeSpent" value="364658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -565,17 +555,17 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14134616" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -622,13 +612,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/all.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
@@ -926,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
+        <state relative-caret-position="7344">
           <caret line="467" column="11" lean-forward="false" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="11" />
           <folding>
             <element signature="e#3170#3833#0" expanded="false" />
@@ -936,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/fixed-nav.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="6630">
           <caret line="390" column="26" lean-forward="false" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
           <folding />
         </state>
@@ -944,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="4454">
           <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
           <folding />
         </state>
@@ -960,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/popup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="55">
           <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
             <element signature="e#4522#4608#0" expanded="false" />
@@ -973,8 +956,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1271">
-          <caret line="418" column="0" lean-forward="true" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+        <state relative-caret-position="673">
+          <caret line="418" column="0" lean-forward="false" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
           <folding>
             <element signature="e#2512#3237#0" expanded="false" />
             <element signature="e#3320#4312#0" expanded="false" />
@@ -998,7 +981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/all.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="17">
           <caret line="4676" column="53" lean-forward="false" selection-start-line="4676" selection-start-column="32" selection-end-line="4676" selection-end-column="53" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1039,6 +1022,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
           <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
           <folding />
         </state>
       </provider>
