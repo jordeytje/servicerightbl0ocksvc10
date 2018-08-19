@@ -1,0 +1,2571 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>template09</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--bootstrap for sass mixins for some reason it doesn't work through the cdn-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="assets/css/selectize.default.css">-->
+
+    <link rel="stylesheet" href="assets/css/all.css">
+
+</head>
+<body>
+
+<!--fixed-nav-->
+<div class="container-fluid without">
+    <div class="header fixed-nav fixed-top">
+        <div class="container pt-2 pb-2">
+            <div class="navbar-parent pt-1 pb-1 pt-lg-0 pb-lg-0">
+
+                <div class="row">
+                    <div class="col-4 logo d-flex align-items-center">
+                        <div class="img"></div>
+                    </div>
+
+                    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" data-toggle="modal" data-target="#aggregate-rating-modal" class="clickable col-4 open-popup review d-flex justify-content-center align-items-center flex-column flex-md-row open-aggregate-modal">
+                        <div class="score">
+                            <p class="sr-text mb-0 font-weight-bold">9.5 <span>/ 10</span> </p>
+                        </div>
+                        <div class="ratings ml-md-3">
+                            <p class="sr-text mb-0">3535 beoordelingen</p>
+                            <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 licenseplate-box">
+                        <div class="inner-licenseplate-box">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-4 discount text-center d-flex justify-content-center flex-row flex-lg-column">
+                                    <p class="font-weight-bold mr-2 mr-lg-0">20%</p>
+                                    <p class="font-weight-bold">Korting</p>
+                                    <div class="arrow">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+                                    </div>
+                                </div>
+
+                                <div class="col-8 licenseplate d-flex align-items-center">
+                                    <input type="text" name="licenseplate" maxlength="8" placeholder="Vul uw kenteken in" autocomplete="off">
+                                    <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta">
+                                        <a href=""><i class="fas fa-caret-right white"></i></a>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" data-toggle="modal" data-target="#licenseplate-mobile" class="clickable fixed-nav-btn btn mt-0 btn-cta btn-block link_unstyled">Boek nu</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 contact d-flex flex-row justify-content-end">
+                        <div class="icon flipped d-flex align-items-center mr-3">
+                            <a href="tel:088-2220-000" class="absolute"></a>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details flex-column justify-content-center align-items-center">
+                            <p class="mb-0">
+                                <a href="tel:088-2220-000" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                        <button type="button" class="nav-button navbar-toggle collapsed ml-sm-3" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="toggle-contact-details flex-column justify-content-center align-items-center">
+                            <p>
+                                <a href="tel:088-2220-000" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-menu-items">
+                    <div class="row flex-column flex-lg-row">
+                        <div class="col-12 col-lg-9 d-flex flex-wrap flex-column flex-md-row">
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Auto onderhoud</p>
+                            </div>
+                            <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                                <p class="sr-text">Onderhoud</p>
+                                <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                                <div class="submenu">
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                                <p class="sr-text">Reparaties</p>
+                                <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                                <div class="submenu">
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Schadeherstel</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Cleaning</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Acties</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Hoe werkt het</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Veelgestelde vragen</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 pt-2 search">
+                            <div class="search-bar">
+                                <i class="fas fa-search"></i>
+                                <input type="text" name="search" id="search" class="sr-text" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--header-->
+<div class="container-fluid without">
+    <div class="header header-banner white alternative-1" style="background-image: url('https://www.serviceright-autos.nl/images/autos/layout/header/apk_keuring.jpg');">
+        <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 pb-0 pb-md-3">
+                    <h2 class="title text-center font-weight-bold">APK keuring in Almere</h2>
+                    <h3 class="subtitle text-center">Subtitle voor de header, vul iets moois in</h3>
+                    <!--<div class="row">-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 1</h5>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 2</h5>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 3</h5>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 col-lg-4 ups-list mt-4 mt-md-0">
+                    <div class="mt-3 mt-md-0 inner-ups-list d-flex flex-column justify-content-between">
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row justify-content-md-start pt-1">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Gratis haal- en brengservice</p>
+                            </div>
+                        </div>
+
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row pt-md-4 justify-content-md-start pt-1">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Bovag garantie</p>
+                            </div>
+                        </div>
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row pt-md-4 justify-content-md-start pt-1 ">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Vaste voordeelprijs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 details">
+                    <div class="row">
+                        <div class="col-10 col-md-10 d-flex align-items-center justify-content-end">
+                            <p class="mb-0 small-price">€ 49,50</p>
+                            <p class="mb-0">NU Tijdelijk voor:</p>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-12 col-md-10 big-price text-center text-md-right">
+                            <p class="mb-0 font-weight-bold">€ 29,50</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 licenseplate-box">
+                            <div class="arrow-after arrow-animate white-arrow">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C36.8,25.5,23.9,44.9,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+
+                            </div>
+
+                            <div class="col-12 col-md-10 mt-2 mb-0 no-licenseplate pr-0 pl-0">
+                                <p data-toggle="modal" data-target="#no-licenseplate-modal" class="sr-text clickable text-left open-popup white mb-0 pl-0 pr-0">Kenteken niet bij de hand?</p>
+                            </div>
+
+                            <div class="row no-gutters hover">
+                                <div class="col-10 mt-2">
+                                    <input autocomplete="off" type="text" name="licenseplate" maxlength="8" class="licenseplate" placeholder="Vul uw kenteken in">
+                                </div>
+                                <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta position-relative">
+                                    <a href="http://servicerightstappen.bitballoon.com/step1.html" class="absolute"></a>
+                                    <i class="fas fa-caret-right white"></i>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="select-service col-12 mt-2 mt-md-3">
+                                    <select name="service" id="service" class="custom-select">
+                                        <option value="0" selected disabled>Selecteer dienst</option>
+                                        <option value="1">Onderhoud</option>
+                                        <option value="2">Reperatie</option>
+                                        <option value="3">Car cleaning</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--three columns-->
+<div class="container-fluid pl-0 pr-0">
+    <div class="block-parent version2 version3 version4 three-columns pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3 pb-lg-5 middle-picture">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-6 offset-md-3 order-2">
+                        <h2 class="title text-center font-weight-bold">Dienst 3 kolommen</h2>
+                        <h5 class="subtitle text-center mb-0">Deze subtitel is aangepaast naar het design maar die is er niet </h5>
+                        <div class="arrow-after" id="arrow9">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C36.8,25.5,23.9,44.9,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 offset-sm-0 offset-lg-0 offset-sm-1 col-md-8 offset-md-2 col-lg-4 mb-3 order-2 order-lg-1">
+                    <div class="card sr-card">
+                        <div class="img no-background" style="background-image: url('assets/img/car.png')"></div>
+                        <div class="card-body">
+                            <p class="sr-text card-title font-weight-bold">De gemiddelde duur van deze dienst: <span>1.5 uur</span> </p>
+                            <p class="sr-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="sr-text card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus commodi dicta doloremque doloribus ea excepturi facere maiores molestias necessitatibus neque odit perspiciatis quo repellendus sed, tempora voluptas. Accusantium, iste? Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="sr-text mb-0 read-more">
+                                <a href="" class="link-unstyled">Lees meer...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-4 offset-lg-0 mb-5 order-1 order-lg-2">
+                    <div class="card middle-card blue-card sr-card ">
+                        <div class="card-body">
+                            <div class="worker img no-background" style="background-image: url('assets/img/monteur.png');"></div>
+                            <div class="price col-10 col-sm-8 offset-sm-2 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 ">
+                                <h2 class="title mb-0">Kleine beurt</h2>
+                                <h5 class="mb-0"><span>&#8364; 131,14</span> nu voor:</h5>
+                                <h2 class="font-weight-bold">&#8364; 109,28</h2>
+                            </div>
+                            <div class="list">
+                                <div class="list-item pt-2 pb-2">
+                                    <div class="col-12 col-sm-10 offset-sm-1 offset-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1 d-flex flex-row align-items-center">
+                                        <i class="fas fa-check mr-3"></i>
+                                        <p class="mb-0 sr-text">verversen van de olie</p>
+                                    </div>
+                                </div>
+                                <div class="list-item pt-2 pb-2">
+                                    <div class="col-12 col-sm-10 offset-sm-1 offset-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1 d-flex flex-row align-items-center">
+                                        <i class="fas fa-check mr-3"></i>
+                                        <p class="mb-0 sr-text">vervangen van het oliefilter</p>
+                                    </div>
+                                </div>
+                                <div class="list-item pt-2 pb-2">
+                                    <div class="col-12 col-sm-10 offset-sm-1 offset-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1 d-flex flex-row align-items-center">
+                                        <i class="fas fa-check mr-3"></i>
+                                        <p class="mb-0 sr-text">bijvullen van diverse vloeistoffen</p>
+                                    </div>
+                                </div>
+                                <div class="list-item pt-2 pb-2">
+                                    <div class="col-12 col-sm-10 offset-sm-1 offset-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1 d-flex flex-row align-items-center">
+                                        <i class="fas fa-check mr-3"></i>
+                                        <p class="mb-0 sr-text">banden op spanning brengen</p>
+                                    </div>
+                                </div>
+                                <div class="list-item pt-2 pb-2">
+                                    <div class="col-12 col-sm-10 offset-sm-1 offset-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1 d-flex flex-row align-items-center">
+                                        <i class="fas fa-check mr-3"></i>
+                                        <p class="mb-0 sr-text">controle van 33 punten</p>
+                                    </div>
+                                </div>
+                                <div class="list-item-link pt-2 pb-2">
+                                    <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1">
+                                        <p class="mb-0 read-more">
+                                            <a href="" class="sr-text-link link-unstyled">Bekijk alle punten...</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 col-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1">
+                                    <a href="" class="btn mt-0 btn-cta btn-block link_unstyled">Profiteer van deze actie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-1 offset-sm-0 offset-lg-0 offset-sm-1 col-md-8 offset-md-2 col-lg-4 mb-3 order-3">
+                    <div class="card sr-card">
+                        <div class="img no-background" style="background-image: url('assets/img/lancia.png')"></div>
+                        <div class="card-body">
+                            <p class="sr-text card-title font-weight-bold">De gemiddelde duur van deze dienst: <span>1.5 uur</span> </p>
+                            <p class="sr-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="sr-text card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam animi, consequatur, cupiditate doloremque, est expedita facilis hic laboriosam magnam molestiae nam neque nesciunt obcaecati quaerat rem ullam unde vel. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="sr-text mb-0 read-more">
+                                <a href="" class="link-unstyled">Lees meer...</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--servicepoints-->
+<div class="container-fluid">
+    <div class="servicepoints pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-10 offset-md-1">
+                        <h2 class="title text-center font-weight-bold">Bekijk alle ServiceRight Servicepunten in Nederland</h2>
+                        <h5 class="subtitle mb-0 text-center">subtitle Lorem ipsum dolor.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content pt-3 pt-lg-5">
+                <div class="row">
+                    <div class="location-content col-10 offset-1 col-lg-6 offset-lg-0 order-12 order-lg-0">
+                        <div class="locations">
+                            <div class="content">
+                                <div class="text-center">
+                                    <h3 class="second-title">Vind een ServiceRight punt bij u in de provincie</h3>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 col-sm-6 text-center text-lg-left">
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold dropdown link-unstyled">
+                                                    ServiceRight in Provincie
+                                                </p>
+                                            </div>
+                                            <div class="more-locations pb-2">
+                                                <div class="row">
+                                                    <p class="sr-text col-6 font-weight-bold">
+                                                        <a href="#" class="link-unstyled">Plaats 1</a>
+                                                    </p>
+                                                    <p class="sr-text col-6 font-weight-bold">
+                                                        <a href="#" class="link-unstyled">Plaats 2</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 text-center text-lg-left">
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="province">
+                                            <div class="location">
+                                                <p class="sr-text mb-1 pb-2 font-weight-bold">
+                                                    <a href="#" class="link-unstyled">ServiceRight in Provincie</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-10 offset-1 col-md-8 offset-md-2 mt-0 mt-md-3">
+                                    <a href="#" class="btn mt-0 btn-cta btn-block link_unstyled">Boek uw onderhoud</a>
+                                    <div class="arrow-after" id="arrow1">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-content col-10 offset-1 col-lg-6 offset-lg-0 maps-details pt-lg-0 order-0 order-lg-12 mb-3 mb-lg-0">
+                        <div class="maps sr-card">
+                            <div class="img map-img" style="background-image: url('assets/img/mapsPlaceholder.jpg');"></div>
+                            <div class="brands p-3">
+                                <div class="row">
+                                    <div class="brand col-4 popover-trigger" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        <img src="assets/img/bovag-logo.png" class="card-img" alt="bovag">
+                                    </div>
+                                    <div class="brand col-4 popover-trigger" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        <img src="assets/img/focwa-logo.png" class="card-img" alt="focwa">
+                                    </div>
+                                    <div class="brand col-4 popover-trigger" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                        <img src="assets/img/rdw-logo.png" class="card-img" alt="rdw">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--all-brands-->
+<div class="container-fluid">
+    <div class="all-brands pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-8 offset-md-2">
+                        <h2 class="title text-center font-weight-bold">Onderhoud voor alle merken</h2>
+                        <h5 class="subtitle mb-0 text-center">subtitle Lorem ipsum dolor.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 offset-1 col-md-12 offset-md-0">
+                    <div class="row">
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/fiatLogo.svg" alt="fiat-logo">
+                        </div>
+
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/toyotaLogo.svg" alt="toyota-logo">
+                        </div>
+
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/hyundaiLogo.svg" alt="hyundai-logo">
+                        </div>
+
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/bmwLogo.svg" alt="bmw-logo">
+                        </div>
+
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/audiLogo.svg" alt="audi-logo">
+                        </div>
+
+                        <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                            <a href="#" class="absolute"></a>
+                            <img src="assets/img/volkswagenLogo.svg" alt="volkswagen-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-all-brands collapse" id="collapse-all-brands">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-12 offset-md-0">
+                        <div class="row">
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/fiatLogo.svg" alt="fiat-logo">
+                            </div>
+
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/toyotaLogo.svg" alt="toyota-logo">
+                            </div>
+
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/hyundaiLogo.svg" alt="hyundai-logo">
+                            </div>
+
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/bmwLogo.svg" alt="bmw-logo">
+                            </div>
+
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/audiLogo.svg" alt="audi-logo">
+                            </div>
+
+                            <div class="col-4 col-lg-2 pt-4 pb-4 img-container d-flex justify-content-center align-items-center">
+                                <a href="#" class="absolute"></a>
+                                <img src="assets/img/volkswagenLogo.svg" alt="volkswagen-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="d-flex justify-content-center">
+                <a href="#" class="sr-text-link link-unstyled">Bekijk alle merken</a>
+            </p>
+
+            <a class="d-flex justify-content-center show-all-brands sr-text-link" data-toggle="collapse" href="#collapse-all-brands" aria-expanded="false" aria-controls="collapse-all-brands">bekijk alle merken (dropdown)</a>
+        </div>
+    </div>
+</div>
+
+<!--how does it work-->
+<div class="container-fluid">
+    <div class="how-does-it-work alternative-1 pb-5">
+        <div class="video d-flex justify-content-center align-items-center">
+            <div class="video-container">
+                <video id="video-bg" muted loop>
+                    <source src="assets/video/placeholderVideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="overlay absolute d-flex flex-column justify-content-center align-items-center">
+                <div class="col-10 video-content d-flex justify-content-center flex-column align-items-center">
+                    <div class="pb-4">
+                        <h2 class="text-center title title-inverse">Bekijk hoe ServiceRight Auto's werkt</h2>
+                        <h5 class="subtitle subtitle-inverse mb-0 pb-0 pb-sm-5 text-center">subtitle Lorem ipsum dolor.</h5>
+                    </div>
+                    <div class="play-button d-flex justify-content-center align-items-center">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="steps pb-md-5">
+                <h2 class="title text-center pt-5 pb-3 pb-md-5">Zo werkt het:</h2>
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 text-center mb-3 step popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <h2 class="mb-0 font-weight-bold second-title">Stap 1</h2>
+                        <div class="img step-1-img mt-3 mb-3 no-background">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 101 99" style="enable-background:new 0 0 101 99;" xml:space="preserve">
+    <style type="text/css">
+    .st0{fill:#7F817A;}
+    .st1{fill:none;stroke:#7F817A;stroke-miterlimit:10;}
+    </style>
+    <path class="st0" d="M23,64.9c-0.6,2.4-1,25.3-0.8,25.7c0.2,0.5-9.6,0.4-10.8,0.2c-0.7-1.1,2.5-10,4.1-13.8S23.5,62.8,23,64.9z"/>
+    <path class="st0" d="M66,57.4c1.9-0.7,3.3,0.5,3.5,1.2s0.3,21,0,32.5h-2.4L67,83.8c0,0-14,0.1-14.1-0.1s5.3-4.1,6.5-4.5
+    c1.9-0.7,2-10.7,0.4-11c-0.5,1.3-2.5,5.3-3.6,5.5s-4.4-0.8-4.3-2.2c0.1-1.4,1.1-3.2,2.8-5.2c-3.3,0-8.7,3.8-8.3,5.5
+    c0.2,1,0,3.7-0.6,5.9c-0.5,1.9-1.5,3.4-1.7,3.6c-0.3,0.4-1,2.2-1.8,2.3c-2.6,0.5-8.6,0-8.6,0v7.6h-2.7c-0.2-11.2,0-30.7,0.6-31.7
+    c0.5-1.1,1.3-2.4,2.8-2c0.3,0.1,8.2,6.3,16,6.4C58.6,63.9,64.2,58.1,66,57.4z"/>
+    <path class="st1" d="M50,57.4c7.6,0.2,15-7.9,18.3-17c0.4-1.1,1.5-1.5,1.7-2.9c0.1-0.7,0.2-2.1,0.2-3.4s0.2-2.6,0-3.4
+    c-0.2-0.7-2.2-0.9-2.4-1.7c-1.1-4.2-1.8-8.3-2.2-12.1c-10-8.3-20.4-8.4-31.4,0c-0.5,4.3-0.7,8.4-1.5,11.8c-0.2,0.9-1.8,1.9-2.1,2.7
+    c-0.6,1.6,0.1,3,0,4.6c0.1,3.1,1.5,3.5,2.3,5.2C37,50,42.7,57.2,50,57.4z"/>
+    <path class="st0" d="M77.9,65.4c0.6,2.1,0.8,25.1,0.8,25.7c0.1,0.9,9.2,0.3,10.7,0.2c1.5-0.1-2.5-10-4.1-13.8
+    C83.8,73.6,77.3,63.3,77.9,65.4z"/>
+    <path class="st0" d="M32.3,30.1c1.5,0.6,14.5-3.8,16.6-3.6s1.8,3.4,1,3.4c-3.4,0.1-13.4,1.8-13.8,2.3c-0.4,0.6,2.6,2.7,3.3,2.8
+    s7.7-1.8,12.7-2.3c0.7-0.7,9.7,3.1,9.7,2.7c-0.1-0.8,5.9-5.3,7.1-4.5c-2.3-4.1-3.2-8.9-3.4-13.9c0,0-10.4-8.4-15.6-6.3
+    c-0.1,0-3.7,0.4-7.2,1.7c-4,1.5-7.9,4-8,4.1c-1.3,1-2.4,13.8-2.4,13.8"/>
+    </svg>
+
+                        </div>
+                        <p class="sr-text">Selecteer op onze website uw onderhoud, u ziet direct onze ServiceRight voordeelprijs.</p>
+                    </div>
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 text-center mb-3 step popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <h2 class="mb-0 font-weight-bold second-title">Stap 2</h2>
+                        <div class="img step-2-img mt-3 mb-3 no-background">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 116 117" style="enable-background:new 0 0 116 117;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#7F817A;stroke:#7F817A;stroke-miterlimit:10;}
+                                .st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+                                .st2{fill:#9A9B98;stroke:#9A9B98;stroke-miterlimit:10;}
+                            </style>
+                            <g id="Layer_1">
+                                <path class="st0" d="M77.3,14L77.3,14C77.2,14,77.2,14,77.3,14C77.2,14,77.2,14,77.3,14L77.3,14c-1.7,0-2.9,1.2-3.8,3.1
+                                    c-1.1,2.3-1.2,5.4-1.2,8.6c0,3.2,0.1,6.5,1.2,8.7c0.9,1.8,2.1,3,3.7,3v0c0,0,0,0,0,0c0,0,0,0,0,0v0c1.5,0,2.7-1.1,3.6-2.9
+                                    c1.1-2.2,1.3-5.2,1.3-8.4c0-3.3-0.1-6.8-1.2-9.1C80.1,15.3,78.8,14.1,77.3,14z"/>
+                                <path class="st0" d="M57,24.2h11.5c0,0,0,8.8,1,11.8c0.9,2.7,3.9,6.4,7.8,6.6c3.8,0.2,7.9-3.5,8.2-8c0.2-3.3,0.3-10.4,0.3-10.4
+                                    h14.8v75.1H14V24.2h13.5c0,0,0.4,8.7,1.2,11.6s2.5,7,7.7,7s7.5-5,8-7.5c0.8-3.6,0.7-11.1,0.7-11.1H57z"/>
+                                <path class="st0" d="M36.7,13.5L36.7,13.5C36.7,13.5,36.6,13.5,36.7,13.5C36.6,13.5,36.6,13.5,36.7,13.5L36.7,13.5
+                                    c-1.7,0-2.9,1.2-3.8,3.1c-1.1,2.3-1.2,5.4-1.2,8.6c0,3.2,0.1,6.5,1.2,8.7c0.9,1.8,2.1,3,3.7,3v0c0,0,0,0,0,0c0,0,0,0,0,0v0
+                                    c1.5,0,2.7-1.1,3.6-2.9c1.1-2.2,1.3-5.2,1.3-8.4c0-3.3-0.1-6.8-1.2-9.1C39.5,14.8,38.3,13.6,36.7,13.5z"/>
+                            </g>
+                            <g id="Layer_2">
+                                <rect x="19.4" y="49.7" class="st1" width="74.6" height="45.6"/>
+                            </g>
+                            <g id="Layer_3">
+                                <rect x="70.4" y="53.6" class="st0" width="19.7" height="9.7"/>
+                                <rect x="46.9" y="53.6" class="st0" width="19.7" height="9.7"/>
+                                <rect x="23.2" y="53.7" class="st0" width="19.7" height="9.7"/>
+                                <rect x="70.6" y="82" class="st0" width="19.7" height="9.7"/>
+                                <rect x="47" y="82" class="st0" width="19.7" height="9.7"/>
+                                <rect x="23.3" y="82.1" class="st0" width="19.7" height="9.7"/>
+                                <rect x="70.5" y="67.6" class="st0" width="19.7" height="9.7"/>
+                                <rect x="47" y="67.6" class="st2" width="19.7" height="9.7"/>
+                                <rect x="23.3" y="67.7" class="st0" width="19.7" height="9.7"/>
+                            </g>
+                            </svg>
+
+                        </div>
+                        <p class="sr-text">Selecteer op onze website uw onderhoud, u ziet direct onze ServiceRight voordeelprijs.</p>
+                    </div>
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 text-center mb-3 step popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <h2 class="mb-0 font-weight-bold second-title">Stap 3</h2>
+                        <div class="img step-3-img mt-3 mb-3 no-background">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+    <style type="text/css">
+    .st0{fill:#7F817A;}
+    </style>
+    <path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+    c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+    C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+    <path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+    c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+    <path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+    s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+    s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+    c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+    <path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+    c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+    <path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+    c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+    <path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+    </svg>
+
+                        </div>
+                        <p class="sr-text">Selecteer op onze website uw onderhoud, u ziet direct onze ServiceRight voordeelprijs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 offset-1 col-md-4 offset-md-4">
+                <a href="#" class="btn mt-0 btn-cta btn-block link_unstyled">Bekijk en boek</a>
+                <div class="arrow-before" id="arrow10">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--FAQ-->
+<div class="container-fluid">
+    <div class="faq pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3 pb-md-5">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h2 class="title text-center">Veelgestelde vragen kleine beurt Flevoland</h2>
+                        <h5 class="subtitle text-center mb-0">Voor de beeldvorming heb ik hier een mooie subtitel gezet.. denk ik</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="float-left col-12 col-md-6">
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="row d-flex title-text" id="headingOne">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                            <div class="col-12 card-body sr-text">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseTwo">
+                            <div class="row d-flex title-text" id="headingTwo">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                            <div class="card-body sr-text">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="true" aria-controls="collapseThree">
+                            <div class="row d-flex title-text" id="headingThree">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                            <div class="col-12 card-body">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="float-left col-12 col-md-6">
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="true" aria-controls="collapseFour">
+                            <div class="row d-flex title-text" id="headingFour">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour">
+                            <div class="col-12 card-body">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">
+                            <div class="row d-flex title-text" id="headingFive">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive">
+                            <div class="col-12 card-body">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item mb-3 col-12">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="true" aria-controls="collapseSix">
+                            <div class="row d-flex title-text" id="headingSix">
+
+                                <div class="col-1 mr-2">
+                                    <div class="more-button plus-icon minus-icon"></div>
+                                </div>
+                                <div class="col-10 align-items-center">
+                                    <p class="sr-text mb-0 font-weight-bold">
+                                        Wanneer raden jullie aan een kleine beurt te doen?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="collapseSix" class="collapse show" aria-labelledby="headingSix">
+                            <div class="col-12 card-body">
+                                <p class="sr-text mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--references-->
+<div class="container-fluid">
+    <div class="references pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <h2 class="title text-center font-weight-bold">Referenties</h2>
+                        <h5 class="subtitle mb-0 text-center">Klanten beoodelen ServiceRight gemiddeld met een 9.5 uit 3500 beoordelingen.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide pt-3 pt-sm-5" data-ride="carousel" data-interval="4500">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+
+                <!--desktop-->
+                <div class="desktop-carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item first-item">
+                            <div class="reviews d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-4 review pt-3 pb-3 mb-5 mb-md-0">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_1.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 review pt-3 pb-3 mb-5 mb-md-0">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_2.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 review pt-3 pb-3">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_3.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="reviews d-flex flex-column flex-md-row">
+                                <div class="col-12 col-md-4 review pt-3 pb-3 mb-5 mb-md-0">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_1.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 review pt-3 pb-3 mb-5 mb-md-0">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_2.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 review pt-3 pb-3">
+                                    <div class="inner p-5 sr-card">
+                                        <div class="profile d-flex justify-content-center">
+                                            <img src="assets/img/reference_3.png" alt="reference-1">
+                                        </div>
+                                        <div class="star-ratings-sprite">
+                                            <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                        </div>
+                                        <div class="details text-center">
+                                            <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                            <p class="sr-text">Type rijder</p>
+                                            <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                            <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--mobile-->
+                <div class="mobile-carousel">
+                    <div class="reviews carousel-inner d-flex flex-column flex-md-row">
+                        <div class="col-12 col-md-4 review pt-3 pb-3 carousel-item first-item">
+                            <div class="inner p-5 sr-card">
+                                <div class="profile d-flex justify-content-center">
+                                    <img src="assets/img/reference_1.png" alt="reference-1">
+                                </div>
+                                <div class="star-ratings-sprite">
+                                    <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                </div>
+                                <div class="details text-center">
+                                    <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                    <p class="sr-text">Type rijder</p>
+                                    <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                    <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 review pt-3 pb-3 carousel-item">
+                            <div class="inner p-5 sr-card">
+                                <div class="profile d-flex justify-content-center">
+                                    <img src="assets/img/reference_2.png" alt="reference-1">
+                                </div>
+                                <div class="star-ratings-sprite">
+                                    <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                </div>
+                                <div class="details text-center">
+                                    <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                    <p class="sr-text">Type rijder</p>
+                                    <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                    <a class="sr-text-link" href="#" data-toggle="modal" data-target="#full-reference-modal">Lees de volledige recensie...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev d-flex align-items-center" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next d-flex align-items-center" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="view-all col-12 col-md-4 offset-md-4 text-center mt-4 mt-md-5 mb-3 mb-md-5">
+                <a href="" class="link-unstyled font-weight-bold sr-text-link">Bekijk al onze 3500+ referenties</a>
+                <div style="" class="text-animation arrow-text" id="text-animation1">
+
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 185 107" style="enable-background:new 0 0 185 107;" xml:space="preserve">
+<style type="text/css">
+	.st0{enable-background:new    ;}
+</style>
+<g class="st0">
+	<path d="M24,37.8l-0.1,0.3c0,0.1-0.1,0.2-0.2,0.3l-0.3,0.3v0.1c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0.1-0.2,0.2-0.2,0.2
+		c-0.1,0.2-0.4,0.4-0.9,0.5c-0.2,0.2-0.4,0.4-0.7,0.4h-0.1v0.1h-0.4l-0.2,0.2l-0.2,0c0,0.1,0,0.2-0.1,0.2l-0.2,0.2h-0.5L19.1,41
+		l-0.9,0.2l-0.1,0.1l-0.5,0c0,0-0.1,0.2-0.2,0.4c-0.1,0-0.3-0.1-0.6-0.1l-0.2,0.1l-0.3,0.1c-0.1,0.1-0.3,0.2-0.5,0.2l-0.1,0.4
+		l0.2,0.4l-0.1,0.5l0.2,0.6l-0.1,0.1l0.2,0.2v0.4l0.1,0.2v0.4l0.5,0c0.1,0.1,0.1,0.1,0.1,0.2c0,0.2-0.1,0.3-0.4,0.3h-0.1l-0.3,0.1
+		l-0.3-0.5l-0.4-0.8v-0.9l-0.2-0.4l0.2-0.2L15,42.5l0-0.3L14.9,42L14,41.9l-0.2-0.3l1-0.1l-0.1-0.1c0,0,0.1,0,0.1,0
+		c0.1,0,0.1,0,0.1,0v-0.5l0.1-0.2l0.1-1.3l0.1-0.2l0-1l0.1-0.5l0-1.2l0.1-0.3l0.2-0.1l0-0.3c0-0.1,0.1-0.2,0.2-0.2
+		c0.5,0,0.7,0.2,0.7,0.5c0,0.1-0.1,0.2-0.2,0.5c-0.1,0.2-0.2,0.4-0.2,0.5c0,0.1,0.1,0.3,0.2,0.6l-0.2,0.2l0,0.6L16,38.7l0.1,0.4
+		l-0.2,0.5l0.1,0.5l-0.1,0.4l0,0.3l-0.2,0.2c0,0.2,0.1,0.4,0.3,0.4l0.5-0.3h0.4c0.2-0.2,0.4-0.3,0.7-0.3l0.1-0.1c0.1,0,0.2,0,0.3,0
+		c0.3,0,0.6-0.1,0.8-0.3l0.3,0l0.3-0.2H20l0.1-0.1l1.1-0.3c0.2,0,0.3-0.1,0.3-0.1c0.1-0.1,0.1-0.1,0.1-0.2c0.1,0,0.1,0,0.2,0
+		c0.2,0,0.3-0.1,0.4-0.4c0.2,0,0.3-0.1,0.4-0.1c0-0.1,0.1-0.1,0.2-0.1l0.1,0.1l0.1-0.3l0.2-0.1l0.1-0.5c-0.1-0.3-0.3-0.6-0.5-0.8
+		l-0.2,0l-0.4-0.3l-0.8-0.3c-0.5-0.4-1-0.6-1.6-0.6v0.1l-0.4-0.2l-0.5,0l-0.3-0.2h-0.3l-0.3-0.2h-0.3c-0.1,0-0.3-0.1-0.3-0.2
+		l-0.8-0.1c-0.2,0-0.4,0.1-0.6,0.2l-0.5-0.3L15.1,35l-0.2-0.2L14.4,35v0.1h-0.2l-0.4,0.2l-0.3,0c-0.1,0-0.2,0.1-0.4,0.2
+		c-0.2-0.2-0.3-0.5-0.3-0.8l0.2-0.3v-0.1c0-0.1,0.2-0.1,0.4-0.1c0.2,0,0.4-0.1,0.6-0.2c0.2,0,0.3,0.1,0.3,0.1c0.1,0,0.1,0,0.2-0.1
+		l0.2,0.1c0.1,0,0.2-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1h1l0.6,0l0.7,0.1c0,0,0.1,0.1,0.2,0.1c0.1,0,0.1,0.1,0.1,0.1l0.2-0.2h0.1
+		c0.2,0,0.2,0,0.2,0.1c0,0,0,0.1,0,0.1h0.3c0.4,0.1,0.7,0.2,0.9,0.2l0.1,0.1h0.6l0.4,0.3c0,0,0.2,0.1,0.4,0.1l0.1,0.2h0.1
+		c0.4,0,0.6,0.1,0.8,0.4l0.3-0.1v0.3c0.1,0,0.3,0.1,0.5,0.3h0.2l0.2,0.3l0.7,0.4v0.2L24,37.8z"/>
+	<path d="M32.4,37l-0.1,0.3l-0.6,0.1l-0.4,0.3l-0.3,0l-0.3,0.2l-0.3,0.2c-0.2,0.1-0.3,0.2-0.4,0.3v0.1l-0.3,0.2l-0.2,0.3h-0.2
+		l-0.1,0.3l-0.2,0.2c-0.1,0.1-0.2,0.1-0.2,0.2L28.5,40c-0.2,0.1-0.2,0.3-0.3,0.6l-0.1,0l0,0.1l-0.2,0.1l-0.1,0.4
+		c-0.2,0.2-0.2,0.4-0.2,0.5l-0.2,0.1v0.4c0,0-0.1,0.1-0.1,0.2l0,0.1l-0.2,0.1l0.1,0.2c0,0.1-0.1,0.4-0.3,0.8l0.1,0.3l-0.2,0.3
+		c0,0.1,0,0.2,0,0.3l0,0.3l0.1,0.4c0,0,0,0.1,0.1,0.1l0.2,0.2c-0.1,0.2-0.2,0.3-0.3,0.4l-0.3-0.1l0,0.2l-0.5-0.1v-0.3L26,45.3
+		l0.1-0.3L26,44.8l0-0.7l0-0.5c-0.1,0-0.1-0.1-0.1-0.1c0-0.1,0-0.1,0.1-0.3v-0.3c0-0.2,0-0.3,0-0.4l0.1-0.1L26,42l0.1-0.3L26,41.5
+		l0.1-0.6L26,40.8l0.1-0.2l-0.1-0.4l0-0.3c0-0.1,0-0.2,0-0.4l0.1-0.1l-0.1-0.7l-0.2-0.1l0.2-0.4c-0.1-0.2-0.2-0.4-0.2-0.7v-0.3
+		c-0.1-0.1-0.1-0.1-0.1-0.2c0.1-0.1,0.3-0.2,0.5-0.3l0.2,0c0,0.2,0.1,0.3,0.2,0.5l0,0.5l0.2,1.6c0,0.1,0,0.2-0.1,0.3l0.1,0.4
+		l-0.1,0.3l0.1,0.3l0,0.3l0.2,0.3l-0.1,0.1l0.1,0.5l0.2,0l0.1-0.4c0,0,0.1-0.2,0.2-0.4c0.2-0.2,0.3-0.3,0.3-0.5v-0.1l0.1-0.1
+		c0,0,0,0,0.1-0.1c0-0.1,0-0.1,0.1-0.1h0.1l0.1-0.4l0.3-0.2l0-0.1h0.1l-0.1-0.2l0.3-0.1l0-0.3l0.3,0c0.2-0.1,0.3-0.3,0.3-0.4l0.2,0
+		c0-0.1,0.2-0.2,0.4-0.4c0,0,0.1,0,0.1-0.1l0.3-0.2l0.1-0.2l0.2-0.1c0.4-0.3,0.6-0.4,0.7-0.4h0.1c0.1,0,0.2,0,0.3-0.1l0.2,0.1
+		c0.1-0.1,0.2-0.1,0.2-0.1C32.3,37,32.4,37,32.4,37z"/>
+	<path d="M39.6,40.3l-0.1,0.4l0.1,0.2l-0.1,0.5c0,0.1-0.1,0.2-0.2,0.3v0.2l-0.2,0.4l-0.1,0.2c0,0-0.1,0.2-0.2,0.5l-0.2,0.1l-0.1,0.3
+		l-0.2,0.1l-0.2,0.4l-0.3,0.1l0,0.3l-0.3,0.1c-0.1,0.2-0.2,0.3-0.3,0.3s-0.1,0.1-0.3,0.1c-0.1,0-0.2,0.1-0.3,0.1
+		c0,0.2-0.2,0.3-0.6,0.4c-0.1,0.1-0.2,0.2-0.3,0.2c0,0-0.1,0-0.2,0c-0.2,0.2-0.4,0.3-0.5,0.3l-0.2,0.3l-0.3-0.2l-0.1,0.1l-0.3-0.1
+		l-0.7-0.1c-0.1-0.2-0.3-0.5-0.5-0.7l0.1-0.3l-0.3-0.8l0.1-0.2l-0.1-0.6l0.1-0.3c0,0,0-0.1,0-0.3c0-0.1,0-0.2,0-0.3
+		c0-0.1,0.1-0.3,0.2-0.3v-0.1c0-0.2,0-0.3,0.1-0.5h0.1c0.1-0.1,0.2-0.3,0.2-0.4l-0.1-0.1l0.1-0.3v-0.2c0.1-0.2,0.2-0.3,0.2-0.5
+		l-0.1-0.3c0-0.1,0-0.2,0.1-0.2c0.2-0.1,0.3-0.2,0.3-0.3c0-0.1,0-0.1-0.1-0.2l0.2-0.4c0-0.1,0.1-0.1,0.1-0.1c0.1,0,0.1-0.1,0.1-0.1
+		l0-0.2c0.2,0,0.3-0.1,0.3-0.3c0-0.1,0-0.2-0.1-0.4c0.5,0,0.8-0.2,0.9-0.7h0.1c0.1-0.1,0.2-0.1,0.2-0.1c0,0,0.1,0,0.2,0.1
+		c0.1,0,0.3,0.1,0.5,0.1l0.3-0.1v0.1c0.1,0,0.3,0.1,0.5,0.2h0.3c0.1,0.1,0.1,0.2,0.2,0.2l0,0c0.2,0.2,0.3,0.4,0.5,0.5l0.1,0.3
+		l0.2,0.1l0.3,0.5l0.3,1v0.2L39.6,40.3z M39,40.8c0.1-0.1,0.1-0.2,0.1-0.3c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.1h0.1
+		c0-0.1-0.1-0.2-0.1-0.2l0-0.1l-0.1-0.3l0-0.5l-0.2-0.3c-0.2-0.1-0.2-0.2-0.2-0.2v-0.1c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0-0.1-0.1v0
+		c0,0,0-0.1,0.1-0.3l-0.1-0.1l-0.2,0L38,37.9l0.1-0.1l-0.3-0.1l-0.2-0.2L37,37.2l-0.2-0.1c-0.4,0-0.6,0.1-0.6,0.3l0,0.7l-0.4,0
+		l-0.7,0.4L35,38.8L34.8,39l-0.1,0.6l-0.2,0.1c0,0-0.1,0.1-0.1,0.3c0,0.2,0,0.3,0,0.4l-0.3,0.1c-0.1,0-0.1,0.2-0.1,0.4
+		c0,0.1-0.1,0.2-0.2,0.3v0.2l-0.2,0.3v0.2l-0.1,0.1l0,0.3L33.5,43l0.1,0.2v0.5l-0.1,0.3l0,0.5l0.3,0.4c0,0.1,0.2,0.1,0.4,0.2
+		l0.1,0.1l0.1,0l0.1,0l0.2-0.1l0.5,0l0.2-0.1l0.1-0.1l0.2,0c0.2,0,0.3-0.1,0.3-0.2l0.3,0.1l0.1-0.2l0.2,0l0.1-0.2
+		c0.2-0.1,0.2-0.2,0.2-0.3h0.3l0.1-0.2l0.4-0.3l0.1-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.3-0.2c0-0.2,0.1-0.4,0.2-0.6l0-0.2l0.3-0.1l0-0.1
+		c0.1-0.1,0.2-0.2,0.2-0.3h-0.1c0.1-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.2c0-0.1,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3
+		c0-0.1,0.1-0.2,0.1-0.2C39.1,40.9,39,40.9,39,40.8z"/>
+	<path d="M50.3,32.4c0,0.1,0,0.2-0.1,0.3l-0.1-0.1l-0.2,0.1l-0.2-0.4c-0.1-0.4-0.2-0.6-0.3-0.7c-0.1-0.1-0.2-0.2-0.2-0.2L49,31.5
+		c-0.2-0.1-0.4-0.2-0.6-0.2l-0.2,0.2c-0.1-0.1-0.2-0.1-0.3-0.1l-0.5,0.1c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.1-0.1,0.1-0.1,0.1
+		c0,0,0,0-0.1,0c0,0,0,0-0.1,0c-0.1,0-0.4,0.4-0.8,1.3c-0.1,0.4-0.1,0.6-0.2,0.7l-0.1,0c-0.1,0.3-0.2,0.5-0.3,0.8l0.2,0.4l-0.3,0.1
+		c0,0.4-0.1,0.6-0.2,0.7l0,0.3l-0.3,0.8l0,0.4c0,0.1,0,0.2-0.1,0.4c-0.1,0.1-0.1,0.2-0.1,0.4c0,0.2,0.1,0.4,0.3,0.4h0.1
+		c0.1-0.1,0.2-0.1,0.3-0.1h0.1c0.1,0,0.2,0,0.3,0c0,0,0.1,0,0.2,0c0.1,0,0.3,0,0.4,0h0.2c0.1-0.1,0.2-0.1,0.3-0.1
+		c0.1,0,0.2,0,0.4,0.1l0.5-0.1c0,0,0,0,0.1,0c0.1,0,0.1,0,0.2,0c0.1,0,0.2,0,0.3,0c0.1,0.1,0.1,0.2,0.2,0.2c0.1-0.1,0.2-0.1,0.3-0.1
+		c0,0,0.1,0,0.1,0.1c0,0,0,0.1,0,0.2l-0.6,0.2l-0.6-0.1c-0.1,0.1-0.3,0.2-0.5,0.2c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.2,0.1-0.4,0.3
+		c-0.1,0-0.2,0-0.4-0.1l-0.1,0.1l-0.3,0.1l-0.2-0.1l-0.2,0h-0.2c0,0-0.1,0.1-0.2,0.2c-0.1,0.1-0.2,0.1-0.3,0.1l-0.2,0.3l0.1,0.3
+		l-0.1,0.3l0.1,0.3l-0.2,0.5l0.1,0.9l-0.1,0.3l0.1,0.3l-0.2,0.5l0.1,0.5v0c0,0,0,0.1-0.1,0.3c-0.1,0.2-0.1,0.3-0.1,0.6l0,0.6
+		c0,0.2,0.1,0.3,0.2,0.4l-0.1,0.3l0.1,0.5l-0.1,0.3l0.2,1.1l0.1,1.3l0.3,0.5l-0.1,0.1l-0.1,0.3c0.2,0.2,0.3,0.4,0.3,0.6v0.1
+		c0,0.2,0.1,0.3,0.1,0.4c0,0.2-0.1,0.3-0.2,0.3L44.6,51l-0.2-0.1l0-0.2L44,49.5v-0.3L43.9,49l0.1-0.2l-0.1-0.5l0.1-0.4
+		c0,0,0-0.1,0-0.2c0-0.1,0-0.2-0.1-0.4c0-0.1,0-0.2,0-0.2l-0.2-1.1l0.1,0l-0.1-0.5l0-0.4L43.7,45l0.1-0.1l0-1.1l0.1-0.1v-0.9
+		l0.1-0.2l-0.1-0.7l0.1-0.2l0.2-1.4c0-0.1,0-0.1,0.1-0.3c0-0.1,0-0.2,0-0.3c0,0-0.1-0.1-0.2-0.4l-0.3,0.2l-0.3-0.1l-0.2,0.1
+		l-0.2-0.2l-0.1,0.1l-0.3,0.1l-0.3-0.1l-0.6,0.1l-0.3-0.1l-0.1,0.1c-0.2-0.1-0.4-0.2-0.5-0.2c-0.1-0.1-0.2-0.2-0.2-0.4l0.1-0.3
+		c0-0.1,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.4,0.1l0.1,0.1l0.7-0.1l0.8,0.1l0.6-0.1l0.4,0c0.2,0,0.3,0,0.4,0.1c0,0,0.1-0.1,0.3-0.2
+		l-0.1-0.2l0.1-0.4l0-0.4c0-0.1,0.1-0.3,0.1-0.5l-0.1-0.5c0,0,0-0.1,0.1-0.1s0.1-0.2,0.1-0.2V36l0.2-0.2l0.1-0.7l0.1-0.2L45,34.6
+		c0.1-0.2,0.2-0.4,0.2-0.5c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.1-0.3,0.1-0.3c0-0.1,0.1-0.2,0.1-0.3
+		c0.1-0.1,0.1-0.2,0.1-0.3l0-0.1v-0.1c0-0.1,0.1-0.2,0.2-0.2l-0.1-0.1c0-0.1,0.1-0.1,0.2-0.2c0.2-0.2,0.3-0.5,0.4-0.7
+		c0.1,0,0.2-0.2,0.3-0.5l0.3-0.1h0.3l0.1-0.2l0.4,0.1c0.2-0.1,0.4-0.2,0.6-0.2l0.4,0.1c0.2,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1
+		c0.1,0,0.1,0.1,0.2,0.3l0.3,0.2c0.1,0.3,0.3,0.5,0.4,0.7L50.3,32.4L50.3,32.4z"/>
+	<path d="M52.9,31.9c0,0.1-0.2,0.2-0.4,0.3v0.1l-0.2,0.2c-0.1,0.1-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0l-0.6,0.7l-0.1,0.2l-0.5,0.2
+		l-0.3,0.4l-0.2,0.1c-0.1,0-0.2,0.2-0.5,0.4l-0.1-0.1l0-0.3l0.5-0.2c0.1-0.3,0.2-0.5,0.3-0.6c0.1,0,0.2-0.1,0.2-0.1v-0.1l0.1-0.1
+		l0,0l0.1-0.2h0.1l-0.1-0.2h0.3v-0.3l0.2,0l0.1-0.2l0.2-0.1l0.2-0.3c0.1,0,0.1,0,0.1-0.1H52l0-0.2c0.1-0.1,0.2-0.3,0.3-0.4
+		C52.6,31.5,52.8,31.6,52.9,31.9z M54.9,42.5l0,0.2l-0.2,0.1l-0.1,0.3l-0.3,0.1c-0.1,0.3-0.2,0.4-0.3,0.5l-0.3,0.1L53.6,44
+		c-0.1,0-0.2,0.2-0.4,0.4h-0.1c-0.1,0.1-0.2,0.2-0.5,0.2c-0.2,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.2,0.1-0.4,0.1c-0.2,0-0.3,0.1-0.3,0.1
+		l-0.1,0.1h-0.3L51,45.5l-0.5-0.4l-0.3-0.7l0-1.1l-0.1-0.2l0.2-1.7l0.1-0.1l-0.1-1.1c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.1-0.5
+		l0.1-0.1c0-0.2,0-0.4-0.1-0.6l0.1-0.3v-0.4l0.1-0.1c0-0.1,0-0.2-0.1-0.3c0-0.1-0.1-0.2-0.1-0.2c0-0.1,0-0.2,0.1-0.2c0,0,0,0,0,0
+		c-0.1-0.2-0.1-0.4-0.1-0.4c0-0.1,0-0.2,0.1-0.2c0,0,0.1,0,0.1,0.1c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0-0.1,0-0.2,0.1-0.2
+		c0.1,0,0.1,0,0.1,0c0,0,0,0.2,0.1,0.4l0.2,0.1l-0.2,0.2l-0.2,1.3l0.2,0.3c0,0.2-0.1,0.3-0.2,0.4l-0.1,0.3l0.1,0.2L51,40.8l0,0.1
+		l-0.1,0.7v0.5l-0.2,0.3l0,0.3l0,0.5c0,0.4,0.1,0.7,0.2,0.9l0,0.1l0.2,0.1l0.2-0.1l0.2,0.1l0.3-0.1c0.1-0.1,0.2-0.1,0.4-0.2l0.1-0.1
+		l0,0.1l0.1-0.2l0.2-0.1c0.2-0.1,0.3-0.2,0.5-0.3c0-0.1,0.1-0.1,0.3-0.2l0.1-0.2l0.2,0l-0.1-0.2h0.1l0-0.1l0.4-0.2l0-0.3l0.4,0
+		C54.9,42.4,54.9,42.4,54.9,42.5z"/>
+	<path d="M58.2,37.4l1.4,0.1l1.4-0.1l0.3,0l0.1,0h0.8c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.3,0.3c0,0-0.1,0-0.2,0
+		c-0.1,0-0.2,0-0.3,0.1l-0.3-0.1l-0.6,0c-0.3,0.1-0.5,0.2-0.8,0.2L59.6,38l-0.2,0.2h-0.2v-0.1l-0.4,0.2h-0.2l-0.1,0.2
+		c-0.1,0-0.3-0.1-0.6-0.1c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.1-0.1l-0.3,0l-0.2,0.2l-0.1,1l0,0.6l-0.1,0.8l0,0.9l0.1,0.4v0.4
+		l0.2,0.5v0.1c0,0.2,0.1,0.5,0.4,0.7l0.1,0.2l0.4,0.1l0.3,0.3l0.8,0.1l1-0.2l0.3,0.1l0.7-0.3l0.3,0c0.1,0.1,0.1,0.2,0.1,0.3
+		c0,0.1-0.1,0.2-0.3,0.3l-0.2-0.1l-0.3,0.3l-0.7,0.1l-0.2,0.1L60,45.2c-0.2,0.1-0.5,0.2-0.7,0.2l-0.4-0.1h-0.2l-0.8-0.4l-0.4-0.5
+		l-0.2-0.3l-0.4-1l-0.2-0.9l0.1-0.4l-0.2-0.2l0.1-0.2l-0.1-0.4l0.2-0.2l-0.1-0.2l0.1-0.2l-0.1-0.3l0-0.4l0-0.2l0.1-0.1v-0.8
+		c0-0.2-0.1-0.3-0.2-0.3c0,0-0.1,0-0.1,0.1l-0.2-0.1l-0.3,0.1l-0.3-0.2h-0.2c-0.2,0-0.2-0.1-0.2-0.3l0-0.3l-0.1-0.1l0.1-0.2l0.3,0
+		l0.2,0l0.3,0.1h0.9l0-0.5v-0.5l-0.1-0.4l0.2-0.1c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.2-0.2-0.2l0-0.8l-0.2-0.3l0-0.2
+		c-0.1,0-0.2-0.1-0.2-0.2l0.1-0.6c0.1-0.2,0.2-0.2,0.2-0.3c0.4,0.2,0.6,0.3,0.6,0.4v0l-0.1,0.2c0.1,0.2,0.1,0.4,0.1,0.5v0.1
+		c0,0.1-0.1,0.2-0.1,0.3c0,0.1,0,0.1,0.1,0.2l0,0.2l0,0.2l-0.2,0.3l0.1,0.5l-0.1,0.6l0.1,0.1L57.4,37l0.2,0.5h0.4L58.2,37.4z"/>
+	<path d="M69.3,43.4c0.1,0.2,0.2,0.3,0.2,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.2,0.4-0.3,0.6l-0.2,0l-0.2,0.4l-0.3,0l-0.6,0.4
+		l-0.1,0.2l-0.2,0l-0.2,0.2H67L66.9,46l-0.1,0c-0.2,0-0.3,0.1-0.4,0.2l-0.1-0.1c-0.1,0.1-0.3,0.1-0.3,0.1c-0.2,0-0.3,0-0.4-0.1
+		c-0.1,0-0.2,0-0.3,0L65.1,46c-0.4,0-0.6-0.1-0.8-0.3v-0.3L64,45.3l-0.1-0.2c0-0.1-0.1-0.2-0.2-0.3v-0.2l-0.2-1l0-0.7l0.1-0.4v-0.4
+		l0.1-0.4l0-0.3c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.3-0.1-0.5l0.2-0.2L63.9,40c0.1-0.2,0.1-0.3,0.1-0.3
+		l-0.1-0.6c0-0.2,0-0.3,0.1-0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.2,0,0.4-0.1c0,0,0-0.1,0-0.1c0-0.1,0.1-0.2,0.2-0.3
+		c0.1-0.3,0.3-0.7,0.5-1c0.1-0.1,0.2-0.2,0.2-0.4h0.1l0.1-0.2l0.1-0.1c0-0.1,0.1-0.2,0.2-0.3c0.2,0,0.3-0.2,0.6-0.5c0,0,0.1,0,0.2,0
+		c0,0,0.1-0.1,0.2-0.2c0.2-0.1,0.4-0.1,0.4-0.1c0.1,0,0.1,0,0.2,0.1l0.2,0l0.1,0.1h0.1c0.1,0.2,0.2,0.3,0.4,0.3h0.1
+		c0,0.1,0.1,0.2,0.1,0.2l-0.1,0c0.2,0.1,0.4,0.4,0.4,0.8l-0.1,0.2l0.1,0.6l-0.1,0.1l-0.2,0.6L68,39.2l0,0.3
+		c-0.5,0.4-0.9,0.7-1.2,0.8c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0L66,40.7h-0.3l-0.4,0.2l-0.2-0.1c0,0-0.2-0.1-0.4-0.1
+		c-0.2,0.2-0.3,0.5-0.3,0.8l-0.1,0.2c0,0.3-0.1,0.4-0.1,0.5L64,42.3l0.1,0.8L64,43.1l0,0.2l0,0.3c0,0,0,0.2,0.1,0.4s0.1,0.3,0.2,0.4
+		c0,0.1,0,0.2,0.2,0.3c0.2,0.1,0.3,0.2,0.5,0.3v0.1l0.5,0.1l0.8,0l0.5-0.1c0.2-0.2,0.4-0.2,0.5-0.3l0.2-0.2h0.2l0-0.1
+		c0.3-0.1,0.5-0.2,0.5-0.2c0,0,0-0.1,0-0.1c0-0.1,0.1-0.1,0.2-0.1l0.1-0.1c0.3,0,0.5-0.3,0.6-0.6C69.1,43.4,69.2,43.4,69.3,43.4z
+		 M67.5,38.6c0.1,0,0.1-0.1,0.3-0.3l0.1-0.2c0.2-0.3,0.3-0.5,0.3-0.5c0-0.1,0-0.2,0-0.3s0-0.3-0.1-0.6l-0.4-0.1c-0.1,0-0.2,0-0.2,0
+		l-0.1,0c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.3,0.1-0.6,0.2L66.5,37c0,0-0.1,0-0.1,0c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0
+		c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.2l-0.2,0.2l-0.3,0.6l-0.2,0.1c0,0-0.1,0.1-0.1,0.3
+		s-0.2,0.5-0.6,1l0.1,0.1l0.1,0.2l0.3,0.1c0.2-0.1,0.4-0.2,0.6-0.3l0.1-0.1c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2-0.1l0.2,0l0.2-0.3
+		h0.1l0.1-0.2c0.2,0,0.4-0.1,0.5-0.3V38.6z"/>
+	<path d="M76.8,43.4c0.1,0.2,0.2,0.3,0.2,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.2,0.4-0.3,0.6l-0.2,0l-0.2,0.4l-0.3,0l-0.6,0.4
+		l-0.1,0.2l-0.2,0l-0.2,0.2h-0.3L74.5,46l-0.1,0c-0.2,0-0.3,0.1-0.4,0.2l-0.1-0.1c-0.1,0.1-0.3,0.1-0.3,0.1c-0.2,0-0.3,0-0.4-0.1
+		c-0.1,0-0.2,0-0.3,0L72.7,46c-0.4,0-0.6-0.1-0.8-0.3v-0.3l-0.3-0.2l-0.1-0.2c0-0.1-0.1-0.2-0.2-0.3v-0.2l-0.2-1l0-0.7l0.1-0.4v-0.4
+		l0.1-0.4l0-0.3c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.3-0.1-0.5l0.2-0.2L71.4,40c0.1-0.2,0.1-0.3,0.1-0.3
+		l-0.1-0.6c0-0.2,0-0.3,0.1-0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.2,0,0.4-0.1c0,0,0-0.1,0-0.1c0-0.1,0.1-0.2,0.2-0.3
+		c0.1-0.3,0.3-0.7,0.5-1c0.1-0.1,0.2-0.2,0.2-0.4h0.1l0.1-0.2l0.1-0.1c0-0.1,0.1-0.2,0.2-0.3c0.2,0,0.3-0.2,0.6-0.5c0,0,0.1,0,0.2,0
+		c0,0,0.1-0.1,0.2-0.2c0.2-0.1,0.4-0.1,0.4-0.1c0.1,0,0.1,0,0.2,0.1l0.2,0l0.1,0.1h0.1c0.1,0.2,0.2,0.3,0.4,0.3h0.1
+		c0,0.1,0.1,0.2,0.1,0.2l-0.1,0c0.2,0.1,0.4,0.4,0.4,0.8l-0.1,0.2l0.1,0.6l-0.1,0.1l-0.2,0.6l-0.4,0.5l0,0.3
+		c-0.5,0.4-0.9,0.7-1.2,0.8c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0l-0.5,0.3h-0.3l-0.4,0.2l-0.2-0.1c0,0-0.2-0.1-0.4-0.1
+		c-0.2,0.2-0.3,0.5-0.3,0.8l-0.1,0.2c0,0.3-0.1,0.4-0.1,0.5l-0.1,0.1l0.1,0.8l-0.1,0.1l0,0.2l0,0.3c0,0,0,0.2,0.1,0.4
+		s0.1,0.3,0.2,0.4c0,0.1,0,0.2,0.2,0.3c0.2,0.1,0.3,0.2,0.5,0.3v0.1l0.5,0.1l0.8,0l0.5-0.1c0.2-0.2,0.4-0.2,0.5-0.3l0.2-0.2h0.2
+		l0-0.1c0.3-0.1,0.5-0.2,0.5-0.2c0,0,0-0.1,0-0.1c0-0.1,0.1-0.1,0.2-0.1l0.1-0.1c0.3,0,0.5-0.3,0.6-0.6
+		C76.6,43.4,76.7,43.4,76.8,43.4z M75.1,38.6c0.1,0,0.1-0.1,0.3-0.3l0.1-0.2c0.2-0.3,0.3-0.5,0.3-0.5c0-0.1,0-0.2,0-0.3
+		s0-0.3-0.1-0.6l-0.4-0.1c-0.1,0-0.2,0-0.2,0l-0.1,0c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.3,0.1-0.6,0.2L74,37c0,0-0.1,0-0.1,0
+		c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.2l-0.2,0.2l-0.3,0.6
+		L73,38.3c0,0-0.1,0.1-0.1,0.3s-0.2,0.5-0.6,1l0.1,0.1l0.1,0.2l0.3,0.1c0.2-0.1,0.4-0.2,0.6-0.3l0.1-0.1c0.1,0,0.1,0,0.2,0
+		c0.1,0,0.1,0,0.2-0.1l0.2,0l0.2-0.3h0.1l0.1-0.2c0.2,0,0.4-0.1,0.5-0.3V38.6z"/>
+	<path d="M85.9,37l-0.1,0.3l-0.6,0.1l-0.4,0.3l-0.3,0l-0.3,0.2l-0.3,0.2c-0.2,0.1-0.3,0.2-0.4,0.3v0.1l-0.3,0.2l-0.2,0.3h-0.2
+		l-0.1,0.3l-0.2,0.2c-0.1,0.1-0.2,0.1-0.2,0.2L81.9,40c-0.2,0.1-0.2,0.3-0.3,0.6l-0.1,0l0,0.1l-0.2,0.1l-0.1,0.4
+		C81,41.4,81,41.5,81,41.6l-0.2,0.1v0.4c0,0-0.1,0.1-0.1,0.2l0,0.1l-0.2,0.1l0.1,0.2c0,0.1-0.1,0.4-0.3,0.8l0.1,0.3l-0.2,0.3
+		c0,0.1,0,0.2,0,0.3l0,0.3l0.1,0.4c0,0,0,0.1,0.1,0.1l0.2,0.2c-0.1,0.2-0.2,0.3-0.3,0.4L80,45.6l0,0.2l-0.5-0.1v-0.3l-0.1-0.2
+		l0.1-0.3l-0.1-0.1l0-0.7l0-0.5c-0.1,0-0.1-0.1-0.1-0.1c0-0.1,0-0.1,0.1-0.3v-0.3c0-0.2,0-0.3,0-0.4l0.1-0.1L79.4,42l0.1-0.3
+		l-0.1-0.2l0.1-0.6l-0.1-0.2l0.1-0.2l-0.1-0.4l0-0.3c0-0.1,0-0.2,0-0.4l0.1-0.1l-0.1-0.7l-0.2-0.1l0.2-0.4c-0.1-0.2-0.2-0.4-0.2-0.7
+		v-0.3C79,37.1,79,37.1,78.9,37c0.1-0.1,0.3-0.2,0.5-0.3l0.2,0c0,0.2,0.1,0.3,0.2,0.5l0,0.5l0.2,1.6c0,0.1,0,0.2-0.1,0.3L80,40
+		l-0.1,0.3l0.1,0.3l0,0.3l0.2,0.3L80,41.3l0.1,0.5l0.2,0l0.1-0.4c0,0,0.1-0.2,0.2-0.4c0.2-0.2,0.3-0.3,0.3-0.5v-0.1l0.1-0.1
+		c0,0,0,0,0.1-0.1c0-0.1,0-0.1,0.1-0.1h0.1l0.1-0.4l0.3-0.2l0-0.1h0.1l-0.1-0.2l0.3-0.1l0-0.3l0.3,0c0.2-0.1,0.3-0.3,0.3-0.4l0.2,0
+		c0-0.1,0.2-0.2,0.4-0.4c0,0,0.1,0,0.1-0.1l0.3-0.2l0.1-0.2l0.2-0.1c0.4-0.3,0.6-0.4,0.7-0.4h0.1c0.1,0,0.2,0,0.3-0.1l0.2,0.1
+		c0.1-0.1,0.2-0.1,0.2-0.1C85.7,37,85.8,37,85.9,37z"/>
+	<path d="M98.4,40.3l-0.1,0.4l0.1,0.2l-0.1,0.5c0,0.1-0.1,0.2-0.2,0.3v0.2L98,42.4l-0.1,0.2c0,0-0.1,0.2-0.2,0.5l-0.2,0.1l-0.1,0.3
+		l-0.2,0.1L97,43.9l-0.3,0.1l0,0.3l-0.3,0.1c-0.1,0.2-0.2,0.3-0.3,0.3c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.2,0.1-0.3,0.1
+		c0,0.2-0.2,0.3-0.6,0.4c-0.1,0.1-0.2,0.2-0.3,0.2c0,0-0.1,0-0.2,0c-0.2,0.2-0.4,0.3-0.5,0.3l-0.2,0.3l-0.3-0.2l-0.1,0.1l-0.3-0.1
+		l-0.7-0.1c-0.1-0.2-0.3-0.5-0.5-0.7l0.1-0.3l-0.3-0.8l0.1-0.2l-0.1-0.6l0.1-0.3c0,0,0-0.1,0-0.3c0-0.1,0-0.2,0-0.3
+		c0-0.1,0.1-0.3,0.2-0.3v-0.1c0-0.2,0-0.3,0.1-0.5h0.1c0.1-0.1,0.2-0.3,0.2-0.4l-0.1-0.1l0.1-0.3v-0.2c0.1-0.2,0.2-0.3,0.2-0.5
+		l-0.1-0.3c0-0.1,0-0.2,0.1-0.2c0.2-0.1,0.3-0.2,0.3-0.3c0-0.1,0-0.1-0.1-0.2l0.2-0.4c0-0.1,0.1-0.1,0.1-0.1c0.1,0,0.1-0.1,0.1-0.1
+		l0-0.2c0.2,0,0.3-0.1,0.3-0.3c0-0.1,0-0.2-0.1-0.4c0.5,0,0.8-0.2,0.9-0.7h0.1c0.1-0.1,0.2-0.1,0.2-0.1c0,0,0.1,0,0.2,0.1
+		c0.1,0,0.3,0.1,0.5,0.1l0.3-0.1v0.1c0.1,0,0.3,0.1,0.5,0.2h0.3c0.1,0.1,0.1,0.2,0.2,0.2l0,0c0.2,0.2,0.3,0.4,0.5,0.5l0.1,0.3
+		l0.2,0.1l0.3,0.5l0.3,1v0.2L98.4,40.3z M97.8,40.8c0.1-0.1,0.1-0.2,0.1-0.3c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.1h0.1
+		c0-0.1-0.1-0.2-0.1-0.2l0-0.1l-0.1-0.3l0-0.5l-0.2-0.3c-0.2-0.1-0.2-0.2-0.2-0.2v-0.1c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0-0.1-0.1v0
+		c0,0,0-0.1,0.1-0.3l-0.1-0.1l-0.2,0l-0.1-0.2l0.1-0.1l-0.3-0.1l-0.2-0.2l-0.6-0.2l-0.2-0.1c-0.4,0-0.6,0.1-0.6,0.3l0,0.7l-0.4,0
+		l-0.7,0.4l-0.1,0.2L93.6,39l-0.1,0.6l-0.2,0.1c0,0-0.1,0.1-0.1,0.3c0,0.2,0,0.3,0,0.4L93,40.5c-0.1,0-0.1,0.2-0.1,0.4
+		c0,0.1-0.1,0.2-0.2,0.3v0.2l-0.2,0.3v0.2l-0.1,0.1l0,0.3L92.3,43l0.1,0.2v0.5l-0.1,0.3l0,0.5l0.3,0.4c0,0.1,0.2,0.1,0.4,0.2
+		l0.1,0.1l0.1,0l0.1,0l0.2-0.1l0.5,0l0.2-0.1l0.1-0.1l0.2,0c0.2,0,0.3-0.1,0.3-0.2l0.3,0.1l0.1-0.2l0.2,0l0.1-0.2
+		c0.2-0.1,0.2-0.2,0.2-0.3h0.3l0.1-0.2l0.4-0.3l0.1-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.3-0.2c0-0.2,0.1-0.4,0.2-0.6l0-0.2l0.3-0.1l0-0.1
+		c0.1-0.1,0.2-0.2,0.2-0.3h-0.1c0.1-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.2c0-0.1,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3
+		c0-0.1,0.1-0.2,0.1-0.2C97.9,40.9,97.8,40.9,97.8,40.8z"/>
+	<path d="M107,40.3l-0.1,0.4l0.1,0.2l-0.1,0.5c0,0.1-0.1,0.2-0.2,0.3v0.2l-0.2,0.4l-0.1,0.2c0,0-0.1,0.2-0.2,0.5l-0.2,0.1l-0.1,0.3
+		l-0.2,0.1l-0.2,0.4l-0.3,0.1l0,0.3l-0.3,0.1c-0.1,0.2-0.2,0.3-0.3,0.3c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.2,0.1-0.3,0.1
+		c0,0.2-0.2,0.3-0.6,0.4c-0.1,0.1-0.2,0.2-0.3,0.2c0,0-0.1,0-0.2,0c-0.2,0.2-0.4,0.3-0.5,0.3l-0.2,0.3l-0.3-0.2l-0.1,0.1l-0.3-0.1
+		l-0.7-0.1c-0.1-0.2-0.3-0.5-0.5-0.7l0.1-0.3l-0.3-0.8l0.1-0.2l-0.1-0.6l0.1-0.3c0,0,0-0.1,0-0.3c0-0.1,0-0.2,0-0.3
+		c0-0.1,0.1-0.3,0.2-0.3v-0.1c0-0.2,0-0.3,0.1-0.5h0.1c0.1-0.1,0.2-0.3,0.2-0.4l-0.1-0.1l0.1-0.3v-0.2c0.1-0.2,0.2-0.3,0.2-0.5
+		l-0.1-0.3c0-0.1,0-0.2,0.1-0.2c0.2-0.1,0.3-0.2,0.3-0.3c0-0.1,0-0.1-0.1-0.2l0.2-0.4c0-0.1,0.1-0.1,0.1-0.1c0.1,0,0.1-0.1,0.1-0.1
+		l0-0.2c0.2,0,0.3-0.1,0.3-0.3c0-0.1,0-0.2-0.1-0.4c0.5,0,0.8-0.2,0.9-0.7h0.1c0.1-0.1,0.2-0.1,0.2-0.1c0,0,0.1,0,0.2,0.1
+		c0.1,0,0.3,0.1,0.5,0.1l0.3-0.1v0.1c0.1,0,0.3,0.1,0.5,0.2h0.3c0.1,0.1,0.1,0.2,0.2,0.2l0,0c0.2,0.2,0.3,0.4,0.5,0.5l0.1,0.3
+		l0.2,0.1l0.3,0.5l0.3,1v0.2L107,40.3z M106.4,40.8c0.1-0.1,0.1-0.2,0.1-0.3c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.1h0.1
+		c0-0.1-0.1-0.2-0.1-0.2l0-0.1l-0.1-0.3l0-0.5l-0.2-0.3c-0.2-0.1-0.2-0.2-0.2-0.2v-0.1c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0-0.1-0.1v0
+		c0,0,0-0.1,0.1-0.3l-0.1-0.1l-0.2,0l-0.1-0.2l0.1-0.1l-0.3-0.1l-0.2-0.2l-0.6-0.2l-0.2-0.1c-0.4,0-0.6,0.1-0.6,0.3l0,0.7l-0.4,0
+		l-0.7,0.4l-0.1,0.2l-0.2,0.2l-0.1,0.6l-0.2,0.1c0,0-0.1,0.1-0.1,0.3c0,0.2,0,0.3,0,0.4l-0.3,0.1c-0.1,0-0.1,0.2-0.1,0.4
+		c0,0.1-0.1,0.2-0.2,0.3v0.2l-0.2,0.3v0.2l-0.1,0.1l0,0.3l-0.3,0.7l0.1,0.2v0.5l-0.1,0.3l0,0.5l0.3,0.4c0,0.1,0.2,0.1,0.4,0.2
+		l0.1,0.1l0.1,0l0.1,0l0.2-0.1l0.5,0l0.2-0.1l0.1-0.1l0.2,0c0.2,0,0.3-0.1,0.3-0.2l0.3,0.1l0.1-0.2l0.2,0l0.1-0.2
+		c0.2-0.1,0.2-0.2,0.2-0.3h0.3l0.1-0.2l0.4-0.3l0.1-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.3-0.2c0-0.2,0.1-0.4,0.2-0.6l0-0.2l0.3-0.1l0-0.1
+		c0.1-0.1,0.2-0.2,0.2-0.3h-0.1c0.1-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.2c0-0.1,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3
+		c0-0.1,0.1-0.2,0.1-0.2C106.4,40.9,106.4,40.9,106.4,40.8z"/>
+	<path d="M120.5,43.9l-0.1,0.2c0,0.3-0.1,0.5-0.2,0.7c-0.2,0.1-0.3,0.3-0.3,0.3c0,0.1-0.1,0.2-0.2,0.4l-0.2,0.2
+		c-0.1,0-0.1,0.1-0.2,0.3l-0.7,0.4c-0.2,0.1-0.5,0.1-0.7,0.1l-0.3-0.2h-0.2l-0.2-0.2l-0.2,0l-0.8-0.4l-1.7-1.5l-0.4-0.7l-0.3-0.3
+		c0-0.1-0.2-0.3-0.3-0.5c-0.1-0.1-0.2-0.3-0.4-0.5c-0.2-0.2-0.3-0.4-0.6-0.5l-0.4-0.8c0-0.1,0.1-0.3,0.2-0.6l0.4,0.3l0.2,0.2
+		c0.1,0.1,0.3,0.2,0.6,0.4h0.3l0.1,0.1c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.2-0.1,0.3-0.2,0.6-0.3c0.2-0.1,0.4-0.1,0.6-0.2
+		l0.1-0.2h0.5c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.1,0.1-0.1h0.1c0.2,0,0.4-0.2,0.4-0.5c0.2-0.1,0.3-0.2,0.4-0.2l0.1-0.1
+		c0.1,0,0.2-0.2,0.3-0.5h0c0.1,0,0.3-0.3,0.4-0.8h0.1l0-0.2l0-0.3l0-0.4c0-0.2-0.2-0.3-0.6-0.5c-0.1-0.1-0.2-0.2-0.3-0.2h-0.1
+		l-0.1-0.1c-0.3,0-0.6-0.1-0.9-0.1c-0.3,0-0.5-0.1-0.6-0.1c-0.2,0-0.5,0.1-0.8,0.3c-0.2,0-0.4,0-0.6,0.1l0,0c-0.1,0-0.2,0-0.2,0.1
+		s-0.1,0.1-0.2,0.1c-0.1,0-0.2,0.1-0.2,0.1c-0.1,0.1-0.2,0.1-0.3,0.1l-0.3,0.1l-0.7,0.6l-0.7,0.8v0.1l-0.3,0.7l-0.2,0.5
+		c-0.2,0.4-0.3,0.7-0.3,0.9c0,0.1,0,0.2,0.1,0.3c0,0.1,0,0.2-0.1,0.2c-0.1,0.1-0.1,0.3-0.1,0.4l0,0.2c0,0.1,0,0.2-0.1,0.3
+		c-0.1,0.2-0.2,0.3-0.2,0.4l0.1,0.4l-0.1,0.4l0.1,0.3c-0.1,0.2-0.2,0.4-0.2,0.6V45c0,0.1,0,0.1,0,0.2c0,0.2-0.1,0.3-0.4,0.3
+		c-0.1,0-0.2-0.2-0.3-0.4l-0.1-0.3l0.1-0.4l-0.1-0.8l0.1-0.2v-0.8l0-0.3v-0.2c0-0.4,0-0.7,0-1s0-0.4,0-0.4v-0.3l0-0.2v-0.6l0.1-0.2
+		l-0.1-0.3l0.1-0.7v-0.9l-0.1-0.3l0.1-0.2l0-0.2l-0.1-1.2l-0.1-0.7v-0.2l0.1-0.8l-0.1-0.3l0-0.5c0-0.2,0-0.3,0-0.4
+		c0-0.3,0.2-0.4,0.5-0.4l0.1,0.2l0.1-0.1l0,0.3l0.1,0.6l-0.1,0.6l0,0.8l0.1,0.3l-0.1,0.3l0,0.6l-0.1,0.4l0.1,0.4l-0.1,0.1l0.1,0.3
+		l-0.1,0.5l-0.1,1.5c0,0.2,0,0.3,0,0.3l0,0.3l0,0.4c0,0.2,0,0.3-0.1,0.4c0.1,0.1,0.2,0.2,0.3,0.2l0.2-0.5l0-0.1c0-0.1,0.1-0.4,0.4-1
+		c0.3-0.6,0.6-1.1,0.9-1.5c0.1,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0-0.1c0.3-0.2,0.5-0.3,0.6-0.4c0.1-0.1,0.1-0.1,0.2-0.1
+		c0,0,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1-0.1c0,0,0.1-0.1,0.2-0.1c0.1-0.1,0.2-0.1,0.4-0.2
+		c0.1-0.2,0.4-0.3,0.9-0.3l0.8-0.1l1.5,0.1l0.2,0.1c0.1,0,0.2,0.1,0.4,0.1c0.5,0.5,0.8,0.7,0.8,0.7c0,0,0-0.1-0.1-0.1l0.3,0.7
+		l-0.1,0.2c0.1,0.1,0.2,0.2,0.2,0.3s-0.1,0.3-0.2,0.5v0.2l-0.2,0.7L118,40l-0.1,0c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.2-0.2,0.3
+		c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0-0.2,0.1-0.2,0.2c-0.2,0-0.4,0.1-0.5,0.3c0,0,0,0,0.1,0h0c0,0.1-0.7,0.3-2,0.7
+		c-0.1-0.1-0.2-0.1-0.3-0.1c-0.1,0-0.2,0.1-0.2,0.2v0l0,0.1l0.2,0.2l0.1,0.3c0,0.1,0.1,0.3,0.3,0.4l0.4,0.7l0.5,0.3l0,0.1l0.2,0.1
+		l0.1,0.2l0.1,0l0.6,0.6l0.8,0.3l0.5,0.1l0.4,0l0.2-0.1c0.2,0,0.4-0.1,0.6-0.3s0.3-0.2,0.3-0.2l0.4-0.7l0.2-0.2
+		c0.1-0.1,0.1-0.2,0.2-0.4c0.1,0,0.1,0,0.2,0C120.4,43.7,120.4,43.8,120.5,43.9z"/>
+	<path d="M136,44.3c-0.2,0.5-0.3,0.9-0.6,1.1c-0.2-0.1-0.3-0.1-0.3-0.2l-0.4-0.6l-0.1-0.3l-0.3-1v-0.9l-0.1-0.8l0.1-0.5l-0.1-0.4V40
+		l-0.2-0.3l-0.1,0.2l-0.2,0l-0.3,0.7l-0.4,0.5h-0.2l-0.1,0.2c0,0.1-0.1,0.2-0.1,0.3c-0.1,0.1-0.1,0.2-0.2,0.4l-0.6,0.6l-0.4,0.7
+		l-0.5,0.5c-0.1,0.2-0.2,0.4-0.4,0.5l-0.3,0.2c-0.1,0.1-0.2,0.2-0.3,0.4l-0.4,0.1c0,0-0.1,0.1-0.2,0.2l-0.2,0.1
+		c-0.1,0-0.2,0.1-0.4,0.2l-0.2,0l-0.1,0.1l-0.2,0l-0.7-0.5c-0.1-0.2-0.2-0.4-0.2-0.6c-0.1-0.3-0.1-0.4-0.2-0.4l-0.1,0l0.2-0.3
+		l-0.1-0.3l0.1-0.3l0-0.4l0.1-0.6v-0.6l0.1-0.2v-0.5c0.1-0.2,0.2-0.4,0.2-0.5l0.1-0.1V40l0.2-0.3l0-0.3c0.1-0.1,0.2-0.3,0.2-0.4
+		l0.1-0.6c0-0.1,0.1-0.3,0.2-0.4l0-0.2c0-0.1,0.1-0.2,0.1-0.3c0.1-0.1,0.1-0.2,0.1-0.3c0.2-0.2,0.4-0.4,0.5-0.4l0-0.1
+		c0.1,0,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.1,0l-0.1,0l0.9-0.3c0.1,0,0.2,0,0.4,0s0.2,0,0.2-0.1v0l0.3,0l0.2,0.1l0.1,0
+		c0,0.1,0.1,0.1,0.2,0.1c0,0,0.1,0,0.1,0l0.3,0v0.1l0.1,0l0.3,0.3l0.3-0.1l0.2,0.3l0.3,0.3c0,0,0.1,0.1,0.2,0.3l0.3,0.2
+		c0.1,0.1,0.2,0.2,0.3,0.2c0,0,0.1,0,0.1-0.1l0.1-0.7l0.2-0.4l-0.1-0.5l0.1-1l-0.1-0.3c0.1-0.1,0.2-0.3,0.2-0.4l-0.1-0.2l0.1-0.6
+		l-0.1-0.6l0.1-0.1l-0.1-0.1c0.1-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.1c0-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2-0.1-0.3h0.1
+		c0-0.1,0-0.1,0-0.2c0-0.1,0.1-0.2,0.2-0.2l-0.1-0.1l0.1,0c0.1,0,0.1,0.1,0.2,0.2c0.1,0,0.2,0.1,0.2,0.3h-0.1l0,0.3l0,0.2H135
+		l0.2,0.2l-0.1,0.3l0.1,0.3l-0.1,0.1c0.1,0.2,0.1,0.3,0.1,0.4c0,0.1,0,0.2-0.1,0.2l0.2,0.1c-0.1,0-0.1,0.1-0.1,0.1
+		c0,0.1,0.1,0.1,0.2,0.2v0.1c0,0.1-0.1,0.2-0.2,0.2v0.2c0,0.3-0.1,0.9-0.2,1.8c0,0,0,0.1,0,0.2c0,0.1,0,0.2-0.1,0.4l0.1,0.2
+		l-0.1,0.5l-0.1,0.5c0,0.1-0.1,0.2-0.1,0.3l0.1,0.2l-0.1,0.4l0.1,0.3l-0.2,0.7l0.1,0.5l-0.1,0.3l0,0.3l-0.1,0.1
+		c0.1,0.2,0.2,0.3,0.2,0.4c0,0.1,0,0.1-0.1,0.1l0,0.1l0,0.1l0.1,0.1l-0.1,0.3l0.1,0.5l-0.1,0.1l0.1,0.2l-0.1,0.4l0.1,0.1h0.2
+		l0.1,0.2l0.3-0.1l0.1,0.2L136,44.3z M134,38.5l-0.1,0l-0.2-0.2l-0.2-0.1c0,0-0.1-0.1-0.2-0.3c-0.1-0.2-0.2-0.3-0.3-0.4
+		c-0.1,0-0.1-0.1-0.2-0.1v-0.1l-0.3-0.1l-0.3-0.2c-0.1,0-0.1-0.1-0.3-0.1c-0.1,0-0.2-0.1-0.4-0.1l-0.6,0.1l-0.2,0.1l-0.2-0.1
+		l-0.3,0.1h-0.4l-0.1,0.2l-0.1,0.1c0,0.1,0,0.2,0.1,0.2c-0.1,0.1-0.3,0.3-0.5,0.5l-0.1,0.4l-0.2,0.1l-0.2,0.6l-0.1,0.6l-0.2,0.2v0.4
+		c-0.2,0.1-0.2,0.3-0.2,0.3l0,0.5l-0.3,0.7l-0.1,0.5l0,0.7l0.1,0.2l-0.1,0.3l0.1,0.2l-0.2,0.3c0.1,0.2,0.2,0.5,0.3,0.8l0.2,0.1
+		l0,0.1h0.2c0.1,0.1,0.2,0.1,0.3,0.1c0,0,0,0,0.1-0.1c0.1-0.1,0.2-0.1,0.3-0.1v0.1c0.1-0.1,0.1-0.1,0.2-0.2c0.1,0,0.2,0,0.2-0.1
+		l0.2-0.1l0.1,0.1l0.1-0.2L130,44l0-0.2l0.3-0.2v-0.1l0.2-0.2l0.1,0c0.1,0,0.1-0.1,0.1-0.2h0.1V43l0.3-0.1l-0.1-0.3l0.2-0.1
+		l-0.1-0.2c0,0,0.1,0,0.1,0c0.1,0,0.2,0,0.3-0.1l0-0.1l0.2,0l0.2-0.6l0.2-0.2l0.1-0.4l0.3-0.1c0.2-0.3,0.3-0.5,0.5-0.6v-0.3l0.2-0.1
+		l0.5-1.1L134,38.5z"/>
+	<path d="M141.5,31.9c0,0.1-0.2,0.2-0.4,0.3v0.1l-0.2,0.2c-0.1,0.1-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0l-0.6,0.7l-0.1,0.2l-0.5,0.2
+		l-0.3,0.4l-0.2,0.1c-0.1,0-0.2,0.2-0.5,0.4l-0.1-0.1l0-0.3l0.5-0.2c0.1-0.3,0.2-0.5,0.3-0.6c0.1,0,0.2-0.1,0.2-0.1v-0.1l0.1-0.1
+		l0,0l0.1-0.2h0.1l-0.1-0.2h0.3v-0.3l0.2,0l0.1-0.2l0.2-0.1l0.2-0.3c0.1,0,0.1,0,0.1-0.1h0.1l0-0.2c0.1-0.1,0.2-0.3,0.3-0.4
+		C141.2,31.5,141.4,31.6,141.5,31.9z M143.6,42.5l0,0.2l-0.2,0.1l-0.1,0.3l-0.3,0.1c-0.1,0.3-0.2,0.4-0.3,0.5l-0.3,0.1l-0.2,0.2
+		c-0.1,0-0.2,0.2-0.4,0.4h-0.1c-0.1,0.1-0.3,0.2-0.5,0.2c-0.2,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.2,0.1-0.4,0.1c-0.2,0-0.3,0.1-0.3,0.1
+		l-0.1,0.1h-0.3l-0.2,0.1l-0.5-0.4l-0.3-0.7l0-1.1l-0.1-0.2l0.2-1.7l0.1-0.1l-0.1-1.1c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.1-0.5
+		l0.1-0.1c0-0.2,0-0.4-0.1-0.6l0.1-0.3v-0.4l0.1-0.1c0-0.1,0-0.2-0.1-0.3c0-0.1-0.1-0.2-0.1-0.2c0-0.1,0-0.2,0.1-0.2c0,0,0,0,0,0
+		c-0.1-0.2-0.1-0.4-0.1-0.4c0-0.1,0-0.2,0.1-0.2c0,0,0.1,0,0.1,0.1c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0-0.1,0-0.2,0.1-0.2
+		c0.1,0,0.1,0,0.1,0c0,0,0,0.2,0.1,0.4l0.2,0.1l-0.2,0.2l-0.2,1.3l0.2,0.3c0,0.2-0.1,0.3-0.2,0.4l-0.1,0.3l0.1,0.2l-0.2,0.9l0,0.1
+		l-0.1,0.7v0.5l-0.2,0.3l0,0.3l0,0.5c0,0.4,0.1,0.7,0.2,0.9l0,0.1l0.2,0.1l0.2-0.1l0.2,0.1l0.3-0.1c0.1-0.1,0.2-0.1,0.4-0.2L141,44
+		l0,0.1l0.1-0.2l0.2-0.1c0.2-0.1,0.3-0.2,0.5-0.3c0-0.1,0.1-0.1,0.3-0.2l0.1-0.2l0.2,0l-0.1-0.2h0.1l0-0.1l0.4-0.2l0-0.3l0.4,0
+		C143.5,42.4,143.6,42.4,143.6,42.5z"/>
+	<path d="M152.1,37l-0.1,0.3l-0.6,0.1l-0.4,0.3l-0.3,0l-0.3,0.2l-0.3,0.2c-0.2,0.1-0.3,0.2-0.4,0.3v0.1l-0.3,0.2l-0.2,0.3h-0.2
+		l-0.1,0.3l-0.2,0.2c-0.1,0.1-0.2,0.1-0.2,0.2l-0.2,0.4c-0.2,0.1-0.3,0.3-0.3,0.6l-0.1,0l0,0.1l-0.2,0.1l-0.1,0.4
+		c-0.2,0.2-0.2,0.4-0.2,0.5l-0.2,0.1v0.4c0,0-0.1,0.1-0.1,0.2l0,0.1l-0.2,0.1l0.1,0.2c0,0.1-0.1,0.4-0.3,0.8l0.1,0.3l-0.2,0.3
+		c0,0.1,0,0.2,0,0.3l0,0.3l0.1,0.4c0,0,0,0.1,0.1,0.1l0.2,0.2c-0.1,0.2-0.2,0.3-0.3,0.4l-0.3-0.1l0,0.2l-0.5-0.1v-0.3l-0.1-0.2
+		l0.1-0.3l-0.1-0.1l0-0.7l0-0.5c-0.1,0-0.1-0.1-0.1-0.1c0-0.1,0-0.1,0.1-0.3v-0.3c0-0.2,0-0.3,0-0.4l0.1-0.1l-0.1-0.4l0.1-0.3
+		l-0.1-0.2l0.1-0.6l-0.1-0.2l0.1-0.2l-0.1-0.4l0-0.3c0-0.1,0-0.2,0-0.4l0.1-0.1l-0.1-0.7l-0.2-0.1l0.2-0.4c-0.1-0.2-0.2-0.4-0.2-0.7
+		v-0.3c-0.1-0.1-0.1-0.1-0.1-0.2c0.1-0.1,0.3-0.2,0.5-0.3l0.2,0c0,0.2,0.1,0.3,0.2,0.5l0,0.5l0.2,1.6c0,0.1,0,0.2-0.1,0.3l0.1,0.4
+		l-0.1,0.3l0.1,0.3l0,0.3l0.2,0.3l-0.1,0.1l0.1,0.5l0.2,0l0.1-0.4c0,0,0.1-0.2,0.2-0.4c0.2-0.2,0.3-0.3,0.3-0.5v-0.1l0.1-0.1
+		c0,0,0,0,0.1-0.1c0-0.1,0-0.1,0.1-0.1h0.1l0.1-0.4l0.3-0.2l0-0.1h0.1l-0.1-0.2l0.3-0.1l0-0.3l0.3,0c0.1-0.1,0.3-0.3,0.3-0.4l0.2,0
+		c0-0.1,0.2-0.2,0.4-0.4c0,0,0.1,0,0.1-0.1l0.3-0.2l0.1-0.2l0.2-0.1c0.4-0.3,0.6-0.4,0.7-0.4h0.1c0.1,0,0.2,0,0.3-0.1l0.2,0.1
+		c0.1-0.1,0.2-0.1,0.2-0.1C152,37,152.1,37,152.1,37z"/>
+	<path d="M158.4,43.4c0.1,0.2,0.2,0.3,0.2,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.2,0.4-0.3,0.6l-0.2,0l-0.2,0.4l-0.3,0l-0.6,0.4
+		l-0.1,0.2l-0.2,0l-0.2,0.2h-0.3l-0.1,0.1l-0.1,0c-0.2,0-0.3,0.1-0.4,0.2l-0.1-0.1c-0.1,0.1-0.3,0.1-0.3,0.1c-0.2,0-0.3,0-0.4-0.1
+		c-0.1,0-0.2,0-0.3,0l-0.1-0.1c-0.4,0-0.6-0.1-0.8-0.3v-0.3l-0.3-0.2l-0.1-0.2c0-0.1-0.1-0.2-0.2-0.3v-0.2l-0.2-1l0-0.7l0.1-0.4
+		v-0.4l0.1-0.4l0-0.3c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.3-0.1-0.5l0.2-0.2L153,40c0.1-0.2,0.1-0.3,0.1-0.3
+		l-0.1-0.6c0-0.2,0-0.3,0.1-0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.2,0,0.4-0.1c0,0,0-0.1,0-0.1c0-0.1,0.1-0.2,0.2-0.3
+		c0.1-0.3,0.3-0.7,0.5-1c0.1-0.1,0.2-0.2,0.2-0.4h0.1l0.1-0.2l0.1-0.1c0-0.1,0.1-0.2,0.2-0.3c0.2,0,0.3-0.2,0.6-0.5c0,0,0.1,0,0.2,0
+		c0,0,0.1-0.1,0.2-0.2c0.2-0.1,0.4-0.1,0.4-0.1c0.1,0,0.1,0,0.2,0.1l0.2,0l0.1,0.1h0.1c0.1,0.2,0.2,0.3,0.4,0.3h0.1
+		c0,0.1,0.1,0.2,0.1,0.2l-0.1,0c0.2,0.1,0.4,0.4,0.4,0.8l-0.1,0.2l0.1,0.6l-0.1,0.1l-0.2,0.6l-0.4,0.5l0,0.3
+		c-0.5,0.4-0.9,0.7-1.2,0.8c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0l-0.5,0.3h-0.3l-0.4,0.2l-0.2-0.1c0,0-0.2-0.1-0.4-0.1
+		c-0.2,0.2-0.3,0.5-0.3,0.8l-0.1,0.2c0,0.3-0.1,0.4-0.1,0.5l-0.1,0.1l0.1,0.8l-0.1,0.1l0,0.2l0,0.3c0,0,0,0.2,0.1,0.4
+		s0.1,0.3,0.2,0.4c0,0.1,0,0.2,0.2,0.3c0.2,0.1,0.3,0.2,0.5,0.3v0.1l0.5,0.1l0.8,0l0.5-0.1c0.2-0.2,0.4-0.2,0.5-0.3l0.2-0.2h0.2
+		l0-0.1c0.3-0.1,0.5-0.2,0.5-0.2c0,0,0-0.1,0-0.1c0-0.1,0.1-0.1,0.2-0.1l0.1-0.1c0.3,0,0.5-0.3,0.6-0.6
+		C158.3,43.4,158.3,43.4,158.4,43.4z M156.7,38.6c0.1,0,0.1-0.1,0.3-0.3l0.1-0.2c0.2-0.3,0.3-0.5,0.3-0.5c0-0.1,0-0.2,0-0.3
+		s0-0.3-0.1-0.6l-0.4-0.1c-0.1,0-0.2,0-0.2,0l-0.1,0c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.3,0.1-0.6,0.2l-0.1,0.1c0,0-0.1,0-0.1,0
+		c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.2l-0.2,0.2l-0.3,0.6
+		l-0.2,0.1c0,0-0.1,0.1-0.1,0.3s-0.2,0.5-0.6,1l0.1,0.1l0.1,0.2l0.3,0.1c0.2-0.1,0.4-0.2,0.6-0.3l0.1-0.1c0.1,0,0.1,0,0.2,0
+		c0.1,0,0.1,0,0.2-0.1l0.2,0l0.2-0.3h0.1l0.1-0.2c0.2,0,0.4-0.1,0.5-0.3V38.6z"/>
+	<path d="M167.3,41.9l-0.3,0.4c0,0.1,0,0.2,0,0.3c0,0.1,0,0.2-0.1,0.2c0,0.1-0.1,0.1-0.2,0.2c0,0-0.1,0.2-0.2,0.4
+		c-0.1,0.1-0.2,0.3-0.2,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.4,0.2-0.5,0.4l-0.2,0
+		c0,0-0.2,0.1-0.4,0.3l-0.2,0l-0.5,0.4l-0.2-0.1l-0.4,0.2l-0.4-0.1l-0.1,0.2l-0.3-0.1l-0.2,0.1l-0.1-0.1l-0.3-0.1
+		c-0.1,0-0.2-0.1-0.3-0.1l-0.3-0.3l-0.3-0.5c-0.1-0.2-0.2-0.3-0.2-0.6v-0.1l-0.2-0.4v-0.3l-0.1-0.1l0-0.4l-0.1-0.3l0.1-0.3l-0.1-0.2
+		l0.2-0.3l-0.1-0.4l0.1-0.2c0-0.2,0.1-0.3,0.2-0.4l0-0.5l0.2-0.1l-0.1-0.1l0.1-0.2c0-0.3,0.2-0.7,0.4-1.3l0.4-0.4l0.1-0.3l0.2-0.3
+		c0-0.2,0.1-0.3,0.2-0.5c0.1,0,0.3-0.1,0.4-0.2c0-0.2,0.2-0.3,0.6-0.3c0.1,0,0.2,0,0.4,0.1s0.3,0.2,0.4,0.3c0.2,0,0.3,0.1,0.3,0.2
+		l0.6,0l0,0.2l0.1,0.1l0,0.2l0.2,0.2l0,0.3l0,0.2l0,0.4l0.1,0.1V39l0.1,0.4l-0.4,0.2l-0.4-0.5l0-0.7l-0.1-0.2v-0.3l-0.2-0.3
+		c-0.1-0.1-0.2-0.2-0.5-0.4l-0.3,0.1h-0.3c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0.1-0.3,0.3-0.5,0.6c-0.2,0.3-0.3,0.5-0.4,0.6l0,0.3
+		l-0.2,0.1v0.4l-0.2,0.3l-0.1,0.3c-0.1,0.2-0.1,0.3-0.2,0.5c0,0.2-0.1,0.3-0.1,0.3l0,0.3l-0.2,0.4l0,0.3l-0.1,0l0,0.8l0,0l0,0.2
+		l-0.1,0.1l0.3,0.4c0,0,0.1,0.2,0.1,0.3l-0.1,0.1l0.2,0.3l0.2,0.1l0,0.2l1.1,0.3c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0.1,0,0.2,0.1
+		c0.1-0.1,0.2-0.1,0.3-0.1l0.2,0c0,0,0.1,0,0.1-0.1c0.1-0.1,0.2-0.1,0.4-0.1c0.1-0.2,0.3-0.4,0.4-0.4c0.1,0,0.1,0,0.2,0
+		c0.4-0.1,0.5-0.3,0.5-0.4c0.1-0.2,0.2-0.2,0.4-0.2h0.1c0.6-0.6,0.8-1,0.8-1c0.2-0.1,0.3-0.3,0.4-0.6l0.2-0.1l0-0.3
+		C167.2,41.4,167.3,41.6,167.3,41.9z"/>
+	<path d="M170.9,37.4l1.4,0.1l1.4-0.1l0.3,0l0.1,0h0.8c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.3,0.3c0,0-0.1,0-0.2,0
+		c-0.1,0-0.2,0-0.3,0.1l-0.3-0.1l-0.6,0c-0.3,0.1-0.5,0.2-0.8,0.2l-0.4-0.1l-0.2,0.2h-0.2v-0.1l-0.4,0.2h-0.2l-0.1,0.2
+		c-0.1,0-0.3-0.1-0.6-0.1c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.1-0.1l-0.3,0l-0.2,0.2l-0.1,1l0,0.6l-0.1,0.8l0,0.9l0.1,0.4v0.4
+		l0.2,0.5v0.1c0,0.2,0.1,0.5,0.4,0.7l0.1,0.2l0.4,0.1l0.3,0.3l0.8,0.1l1-0.2l0.3,0.1l0.7-0.3l0.3,0c0.1,0.1,0.1,0.2,0.1,0.3
+		c0,0.1-0.1,0.2-0.3,0.3l-0.2-0.1l-0.3,0.3l-0.7,0.1l-0.2,0.1l-0.2-0.1c-0.2,0.1-0.5,0.2-0.7,0.2l-0.4-0.1h-0.2l-0.8-0.4l-0.4-0.5
+		l-0.2-0.3l-0.4-1l-0.2-0.9l0.1-0.4l-0.2-0.2l0.1-0.2l-0.1-0.4l0.2-0.2l-0.1-0.2l0.1-0.2l-0.1-0.3l0-0.4l0-0.2l0.1-0.1v-0.8
+		c0-0.2-0.1-0.3-0.2-0.3c0,0-0.1,0-0.1,0.1l-0.2-0.1l-0.3,0.1l-0.3-0.2h-0.2c-0.2,0-0.2-0.1-0.2-0.3l0-0.3l-0.1-0.1l0.1-0.2l0.3,0
+		l0.2,0l0.3,0.1h0.9l0-0.5v-0.5l-0.1-0.4l0.2-0.1c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.2-0.2-0.2l0-0.8l-0.2-0.3l0-0.2
+		c-0.1,0-0.2-0.1-0.2-0.2l0.1-0.6c0.1-0.2,0.2-0.2,0.2-0.3c0.4,0.2,0.6,0.3,0.6,0.4v0l-0.1,0.2c0.1,0.2,0.1,0.4,0.1,0.5v0.1
+		c0,0.1-0.1,0.2-0.1,0.3c0,0.1,0,0.1,0.1,0.2l0,0.2l0,0.2l-0.2,0.3l0.1,0.5l-0.1,0.6l0.1,0.1l-0.1,0.2l0.2,0.5h0.4L170.9,37.4z"/>
+</g>
+<g class="st0">
+	<path d="M37.6,58l-0.1,0.2l0,0.3l-0.2,0.1l-0.1,0.4c0,0.1-0.1,0.2-0.2,0.3l0,0.3h-0.2c0.1,0.2,0.1,0.3,0.1,0.4
+		c0,0.1-0.1,0.2-0.3,0.2v0.2l-0.2,0.7l-0.2,0.3H36c0.1,0.1,0.1,0.2,0.1,0.3L35.9,62l-0.5,1.3L35,64v0.3c0,0,0,0.1-0.1,0.2
+		s-0.1,0.2-0.1,0.2c0,0,0,0.1,0.1,0.2c-0.1,0.1-0.3,0.1-0.5,0.1l0.1,0.2c-0.1,0.2-0.2,0.4-0.2,0.4C34,65.9,33.9,66,33.9,66
+		c0,0.1,0,0.1,0,0.1h-0.2v0.2l-0.3,0.2l-0.1,0.3L33,67.3l-0.5,0.8c-0.1,0.2-0.3,0.2-0.5,0.2c-0.3,0-0.5-0.1-0.6-0.3L30.7,67l0-0.4
+		l-0.1-0.1l0-0.5l-0.2-0.3v-0.5l-0.5-1.3l0-0.3l-0.1-0.2c0-0.1-0.1-0.2-0.1-0.4L29.4,63l-0.1-0.3c0-0.1-0.1-0.2-0.2-0.2l-0.2-0.2
+		l-0.2-0.7l-0.2-0.2c-0.1-0.1-0.1-0.2-0.2-0.2l-0.2-0.3c-0.1,0-0.1,0-0.1,0c-0.1,0-0.2-0.2-0.2-0.5c0-0.2,0.1-0.4,0.4-0.5
+		c0.2,0.2,0.4,0.4,0.5,0.5c0.1,0.1,0.2,0.3,0.4,0.6c0.2,0.3,0.3,0.5,0.4,0.5c-0.1,0-0.1,0-0.1,0.1c0,0,0,0.1,0.1,0.1v0.2l0.3,0.2
+		l-0.1,0.2l0.1,0.4l0.2,0.7l0.1,0.1l0,0.3l0.1,0.1v0.2l0.3,0.9l0.1,0.4l0.3,0.8l0.3,1l0.2,0.2v0c0,0.2,0.1,0.3,0.4,0.3h0.1v-0.1
+		c0,0,0,0,0.1-0.1c0.1,0,0.2-0.1,0.3-0.3c0.1,0,0.1,0,0.1,0c0,0,0.1,0,0.1-0.1c0,0,0-0.1,0-0.2l0.5-0.3c0-0.1,0-0.2,0.1-0.2
+		s0.1-0.1,0.1-0.2l0.2-0.2l0.4-0.5l0.1-0.4l0.2-0.2l0.1-0.2c0-0.1,0.1-0.2,0.2-0.3l0-0.2l0.1,0l0.1-0.2l0.1,0.1c0-0.1,0-0.1,0-0.2
+		c0-0.1,0-0.2,0.1-0.2c0-0.1,0.1-0.2,0.2-0.2c0.1-0.2,0.2-0.4,0.2-0.6h0.2l0-0.3c0.1-0.2,0.2-0.4,0.2-0.6l0.1,0l0.3-0.9l0.1-0.1
+		l0,0.1c0.1-0.1,0.2-0.2,0.2-0.4c0-0.1,0.1-0.2,0.1-0.2s0.1,0,0.1,0l0.3-1l0.2-0.3v-0.1l0.1,0l0-0.3c0.2-0.2,0.3-0.4,0.4-0.6
+		c0.1-0.2,0.2-0.3,0.2-0.3c0,0,0.1,0,0.1,0l0-0.1L37.6,58z"/>
+	<path d="M46.2,67.9L45.9,68l-0.1,0.2c-0.1,0-0.2,0.1-0.3,0.1l-0.1-0.1l-0.2,0.1l-0.3-0.4v-0.5l-0.2-0.1l0-0.6l-0.1-1.3l0.1-0.4
+		l-0.1-0.2l0.2-0.1l-0.1-0.2l0-0.2l0.1-0.1l0-0.3h0.1v-0.4l0-0.2c-0.1,0-0.1-0.1-0.2-0.2l-0.3,0.2c-0.1,0.2-0.2,0.3-0.3,0.3l0,0.2
+		l-0.2,0.1l0,0.3l-0.1,0.1v0.2c-0.1,0.1-0.2,0.2-0.3,0.4l-0.1,0.1l-0.3,0.6l-0.5,0.5l-0.2,0.3l-0.4,0.5l-0.1,0.2l-0.6,0.4l-0.7,0.8
+		l-0.2,0.1c-0.1,0-0.2,0.1-0.3,0.2h-0.1c-0.1,0-0.2-0.1-0.3-0.3c-0.5-0.2-0.8-0.5-0.8-0.9l0.2-0.1c-0.1-0.3-0.2-0.5-0.2-0.8
+		l-0.1-0.1l0.1-0.1c0,0,0-0.1,0.1-0.2c0-0.1,0-0.2,0.1-0.4l0.1-0.8c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.2c0-0.1,0-0.2,0-0.2
+		c0-0.1,0-0.1,0-0.2l0.1,0c0.1-0.2,0.2-0.3,0.2-0.4c0-0.1,0-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0,0-0.1,0.1-0.1
+		c-0.1,0-0.2-0.1-0.2-0.1s0.1-0.1,0.2-0.1v0c0-0.2,0-0.3,0.1-0.4c0.1-0.1,0.1-0.2,0.1-0.3l-0.1,0l0.3-0.4v-0.1
+		c0-0.3,0.1-0.5,0.3-0.8l0-0.4l0.1-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1,0.1-0.1v-0.3c0.1,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0-0.1
+		c0-0.1,0.1-0.2,0.3-0.3s0.2-0.3,0.3-0.4h0.1c0.2,0,0.2,0,0.2-0.1c0,0,0-0.1-0.1-0.1c0.3,0,0.4-0.1,0.4-0.2l0.4-0.2l1.1,0.1v0.1
+		l0.9,0.2h0.1c0.1,0,0.2,0.1,0.2,0.2l0.1,0c0,0.1,0.1,0.2,0.2,0.2l0.1,0l0.2,0.2l0.4,0.1v0.2c0.2-0.1,0.5-0.2,0.8-0.3v0.3h-0.1
+		l0.2,0.1l0,0l0.2,0.5l-0.2,0.2l-0.1,0.3c0,0.1-0.1,0.3-0.2,0.4l0.1,0.3c0,0-0.1,0.1-0.1,0.2c-0.1,0.1-0.1,0.2-0.1,0.5
+		c0,0,0.1,0.1,0.1,0.1l0,0.2l0,0.1l-0.1,0.2l0,0.2l-0.1,0.1l0,0.5l-0.1,0.1l0.1,0.1l-0.1,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1-0.1,0.2
+		l0.1,0.1l-0.1,0.2c-0.1,0-0.1,0.1-0.1,0.3l0.1,0.3l-0.2,0.3c0.1,0.1,0.1,0.2,0.2,0.3c-0.1,0.1-0.2,0.4-0.3,0.8l0.2,0l0,0.1
+		c0,0,0,0.1,0,0.1c0,0.1-0.1,0.3-0.2,0.4h0.1l0.1,0.3l0.4,0l0.1,0.3c0,0-0.1,0.1-0.1,0.1c0,0.1,0.1,0.1,0.2,0.2h0c0,0,0,0,0,0
+		C46,67.7,46,67.8,46.2,67.9z M45.1,60.3L45,59.9l-0.3-0.1L44,59.3c-0.1-0.1-0.2-0.1-0.2-0.1c0,0-0.1,0-0.2,0l-0.1-0.1h-0.3L43.1,59
+		l-0.2,0.1L42.8,59l-0.2,0.1L42.3,59c-0.2,0-0.4,0.1-0.7,0.2l0,0.1l-0.2,0.1l0,0.1l-0.2,0v0.1c-0.1,0.1-0.3,0.3-0.5,0.7
+		c-0.1,0.4-0.2,0.8-0.4,1.1l0.2,0.1l-0.3,0.2l0.1,0.2c-0.1,0.2-0.2,0.4-0.2,0.6v0.1l-0.2,0.2v0.4c-0.1,0.1-0.2,0.3-0.2,0.4l-0.1,0.1
+		v0.4l-0.1,0.1c0,0.1,0,0.3-0.1,0.6l0.1,0.3c-0.1,0-0.2,0.1-0.3,0.3l0.1,0.2l-0.1,0.2l0.2,0.4l-0.2,0.3l0,0.5L39.2,67l0.1,0.1l0,0.1
+		c0.1,0,0.2,0.1,0.3,0.2l0.5-0.1c0.1-0.2,0.2-0.3,0.5-0.3l0-0.2c0.2-0.1,0.3-0.1,0.3-0.1c0,0,0,0,0-0.1c0-0.1,0.1-0.1,0.2-0.2h0
+		c0,0,0.1,0,0.1-0.1l0.4-0.4h-0.1l0.2-0.2c0.1-0.1,0.2-0.1,0.3-0.2l0.2-0.4c0.3-0.1,0.4-0.3,0.4-0.4h0.1l0.2-0.3l0-0.2l0.2,0
+		c0,0,0-0.1,0-0.1c0,0,0-0.1,0.1-0.2c0.1-0.1,0.2-0.2,0.2-0.3l0.1,0c0-0.2,0.1-0.3,0.2-0.4c0-0.1,0.1-0.2,0.2-0.3
+		c0.1-0.1,0.1-0.1,0.2-0.1h0.1l0-0.3c0,0,0-0.1,0-0.1c0,0,0-0.1-0.1-0.1c0.1-0.2,0.2-0.3,0.3-0.4l0-0.2l0.1-0.1l0-0.2
+		c0.1-0.1,0.1-0.3,0.2-0.4l0.2-0.2L45.1,60.3z"/>
+	<path d="M61.1,64.9c0,0.1-0.1,0.2-0.3,0.3l0,0.1c0,0.1-0.1,0.2-0.3,0.4c-0.2,0.2-0.3,0.4-0.3,0.5l-0.2,0.1c0,0.3-0.1,0.5-0.4,0.5
+		c0,0.1-0.1,0.1-0.1,0.1h0c0,0.1-0.1,0.2-0.2,0.2l-0.1,0.2L59,67.4l-0.2,0.2c0,0-0.1,0-0.1,0.1l-0.5,0.1l-0.2,0l-0.2,0l-0.1-0.1
+		l-0.2,0l-0.2-0.3h-0.1c-0.1-0.1-0.1-0.1-0.1-0.2c-0.2-0.2-0.3-0.4-0.3-0.6v-0.2L56.7,66v-0.1l0.1-0.1l-0.1-0.3l-0.2-0.4l0-0.6
+		l-0.2-0.3v-0.5c-0.2-1-0.3-1.6-0.3-1.9v-0.1c0-0.1,0-0.2,0-0.2c0-0.1,0-0.1,0-0.1c-0.2-0.2-0.2-0.4-0.2-0.6l-0.1-0.1l-0.4,0.5
+		L55,61.5l-0.7,0.9L54,62.9c-0.1,0.2-0.2,0.4-0.2,0.5c-0.1,0.1-0.2,0.3-0.4,0.5l0.1,0.2l-0.1,0.4l-0.2,0v0.2H53l-0.4,0.5
+		c0,0.2-0.1,0.4-0.3,0.4c-0.1,0.1-0.1,0.2-0.2,0.4s-0.1,0.3-0.2,0.3l-0.1,0.1c-0.1,0.2-0.3,0.4-0.4,0.5c-0.1,0.1-0.3,0.3-0.5,0.4
+		c0,0.2-0.1,0.4-0.3,0.4l0,0.1c0,0.1,0,0.2-0.1,0.3c-0.1,0.1-0.2,0.2-0.5,0.2c-0.1,0-0.2-0.1-0.2-0.3s-0.1-0.4-0.2-0.4l-0.1-0.1
+		l0.2-0.3l0-0.3l0.1-0.1l-0.1-0.2l0-0.3l-0.2-0.5l0.1-0.3l-0.1-0.3c0.1-0.2,0.1-0.5,0.1-0.9v-0.1c0,0,0-0.1-0.1-0.2
+		c0.1-0.1,0.2-0.2,0.2-0.3l0-0.3l0.1-0.8l-0.1-0.2l0-0.3L49.7,62l0.1-0.7l0-0.2l0.1-0.4l-0.1-0.5l0.1-0.3c0.3,0.1,0.4,0.1,0.4,0.2
+		s0,0.1,0.1,0.2c0,0.1,0,0.3,0,0.5l0.2,0.3l-0.1,0.4l0.1,0.9l-0.1,0.5l0.1,0.5v0.3l-0.2,0.3l0.1,0.4c0,0.1-0.1,0.3-0.2,0.6l0.1,0.2
+		c-0.1,0.4-0.2,0.6-0.2,0.8l0,0.8l0.1,0.1l0.3-0.1h0.2l0.1-0.5c0.2,0,0.3-0.1,0.3-0.2c0-0.2,0.1-0.2,0.3-0.2c0-0.2,0.1-0.3,0.1-0.3
+		c0.1,0,0.1-0.1,0.2-0.3c0.1-0.1,0.3-0.3,0.3-0.4v-0.3h0c0.1,0,0.1,0,0.2-0.1c0.1-0.1,0.2-0.1,0.3-0.1c0-0.2,0.1-0.3,0.2-0.4
+		l0.3-0.4l0.3-0.6c0-0.1,0-0.2,0-0.2c0,0,0-0.1,0.1-0.1c0.3-0.2,0.4-0.4,0.4-0.5v-0.3c0.2-0.1,0.3-0.2,0.3-0.2c0,0,0-0.1,0-0.1
+		c0-0.1,0-0.1,0-0.1c0-0.1,0-0.1,0.1-0.1c0,0,0.1,0,0.2,0.1c0.1-0.4,0.3-0.6,0.5-0.6c0,0,0.1,0,0.2,0c0-0.2,0.1-0.4,0.2-0.5
+		c0-0.1,0.2-0.2,0.5-0.3l0.1-0.2h0.1c0.1,0.2,0.2,0.3,0.3,0.3l0,0.1l0.1,0l0,0.4l0.3,0.2l-0.1,0.4l0.2,0.7v0.6l0.1,0.7l0.1,0.7
+		l0.2,0.7l0,0.7c0,0,0,0.1,0.1,0.2c0.1,0.1,0.1,0.3,0.1,0.5l0.1,0.1v0.3l0.2,0.2l0,0.2l0.1,0.1v0.1c0.1,0.1,0.2,0.1,0.3,0.1
+		c0.1,0,0.2,0,0.3-0.1c0,0,0.1,0,0.1,0c0.1,0,0.1-0.1,0.2-0.2c0.2,0,0.3-0.1,0.3-0.2v-0.1c0,0,0.2-0.1,0.4-0.2
+		c0.1-0.1,0.1-0.2,0.2-0.2l0-0.1c0,0,0-0.1,0.1-0.1c0,0,0.1-0.1,0.2-0.2c0.1-0.1,0.2-0.2,0.2-0.2l0.1-0.2c0.1-0.1,0.2-0.3,0.4-0.6
+		l0.3-0.1h0.2L61.1,64.9z"/>
+	<path d="M75.6,67.9c0,0.1,0,0.2,0,0.3c0,0.3-0.2,0.5-0.5,0.5c-0.2,0-0.3-0.2-0.4-0.5l-0.1-0.6v-0.2c0-0.1,0-0.2,0-0.3
+		c0-0.2-0.1-0.3-0.2-0.6l0.1-0.3l-0.1-0.5l0.1-0.2V65l0.1-0.3l-0.1-0.3l0.1-0.2v-0.8l0-1l-0.2-0.7l0.1-0.3l-0.2-0.8v-0.3L74,60.2
+		l-0.4,0.3c-0.1,0-0.1,0.1-0.2,0.1L73,60.9l-0.6,0.8l-0.2,0.1l-0.5,0.9v0.1h-0.1l-0.1,0.2l-0.2,0.2c-0.1,0.1-0.1,0.2-0.2,0.4
+		l-0.2,0.7l-0.3,0.4c0,0-0.1,0.2-0.1,0.3l-0.2,0.2l-0.1,0.5l-0.4,0.4l0,0.6h-0.1l-0.1,0.4L69,67.8c-0.3,0.3-0.4,0.5-0.5,0.6l-0.1,0
+		h-0.1l-0.1-0.1l-0.2-0.7l0-1.2L68,66l0.1-0.4l0-0.7l0.1,0l0.1-1.8l0.1-0.3l0-0.3l0.1-0.1l-0.1-0.1l0.1-0.7l0.1-0.3l-0.1-0.3
+		l0.1-0.2l-0.1-0.1l0.1-0.7l-0.1-0.1l0.1-0.1l0-0.8l-0.1-0.4h0.1v-0.2l-0.2-0.9v-0.4l-0.1-0.2l-0.1-0.7c-0.1-0.3-0.2-0.6-0.3-0.9
+		L68,55l0-0.1c0.2,0,0.2,0.1,0.2,0.3l0.3,0.3l0.1,0.2c0,0.1,0.1,0.2,0.3,0.3l-0.1,0.2l0.1,0.4l-0.1,0.2L69,57l0,0.5l0,1l0.1,0.5
+		L69,59.3l0,0.4L69,60.1l0.1,0.5l-0.1,0.5l0.1,0.1l0,1.3l0,0.2l-0.1,0.1l-0.1,0.8l-0.1,0.2l0.1,0.3l0,0.1l0,0.7l-0.2,0.6
+		c0.2,0.2,0.2,0.3,0.2,0.4l-0.2,0.3c0.1,0.1,0.1,0.3,0.1,0.5l0.2-0.2l0.1-0.3l0.3-0.7l0.2-0.5c0.2-0.1,0.3-0.2,0.3-0.4
+		c0,0,0.1-0.2,0.3-0.5l0.1-0.3c0-0.1,0.1-0.2,0.2-0.3l0-0.3l-0.1-0.1l0.1-0.1l0,0.1l0.3-0.4c0.1-0.1,0.2-0.1,0.2-0.3v-0.1
+		c0.2,0,0.3-0.2,0.3-0.4l0.1,0v-0.1l0.2,0l0-0.3h0.1l0-0.2h0.1v-0.1c0.1-0.1,0.2-0.1,0.2-0.1c0,0,0,0,0,0v0l0-0.2h0.1
+		c0.2,0,0.2-0.1,0.2-0.4l0.3-0.2l0,0.1c0.1-0.1,0.2-0.3,0.2-0.4L73,60l0.1-0.2l0.2,0c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2,0
+		l0-0.1c0.3-0.2,0.5-0.2,0.5-0.2c0.1,0,0.2,0.1,0.3,0.3c0.1,0,0.2,0.1,0.2,0.2l0.2,0.2c0,0.1,0.1,0.3,0.3,0.7v1.6l0,0.9l0.1,0.2v1.5
+		l0,0.3v0.5l0,0.4L75,66.7c0.1,0.1,0.1,0.3,0.1,0.6l0.2,0.3v0.3L75.6,67.9z"/>
+	<path d="M83.9,66.2c0.1,0.2,0.2,0.3,0.2,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.2,0.4-0.3,0.6l-0.2,0l-0.2,0.4l-0.3,0l-0.6,0.4
+		l-0.1,0.2l-0.2,0l-0.2,0.2h-0.3l-0.1,0.1l-0.1,0c-0.2,0-0.3,0.1-0.4,0.2l-0.1-0.1C80.8,69,80.6,69,80.6,69c-0.2,0-0.3,0-0.4-0.1
+		c-0.1,0-0.2,0-0.3,0l-0.1-0.1c-0.4,0-0.6-0.1-0.8-0.3v-0.3l-0.3-0.2l-0.1-0.2c0-0.1-0.1-0.2-0.2-0.3v-0.2l-0.2-1l0-0.7l0.1-0.4
+		v-0.4l0.1-0.4l0-0.3c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.3-0.1-0.5l0.2-0.2l-0.2-0.2
+		c0.1-0.2,0.1-0.3,0.1-0.3l-0.1-0.6c0-0.2,0-0.3,0.1-0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.2,0,0.4-0.1c0,0,0-0.1,0-0.1
+		c0-0.1,0.1-0.2,0.2-0.3c0.1-0.3,0.3-0.7,0.5-1c0.1-0.1,0.2-0.2,0.2-0.4h0.1l0.1-0.2l0.1-0.1c0-0.1,0.1-0.2,0.2-0.3
+		c0.2,0,0.3-0.2,0.6-0.5c0,0,0.1,0,0.2,0c0,0,0.1-0.1,0.2-0.2c0.2-0.1,0.4-0.1,0.4-0.1c0.1,0,0.1,0,0.2,0.1l0.2,0l0.1,0.1h0.1
+		c0.1,0.2,0.2,0.3,0.4,0.3H83c0,0.1,0.1,0.2,0.1,0.2l-0.1,0c0.2,0.1,0.4,0.4,0.4,0.8l-0.1,0.2l0.1,0.6l-0.1,0.1l-0.2,0.6L82.6,62
+		l0,0.3c-0.5,0.4-0.9,0.7-1.2,0.8c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0l-0.5,0.3h-0.3L80,63.7l-0.2-0.1c0,0-0.2-0.1-0.4-0.1
+		C79.1,63.7,79,64,79,64.3l-0.1,0.2c0,0.3-0.1,0.4-0.1,0.5l-0.1,0.1l0.1,0.8l-0.1,0.1l0,0.2l0,0.3c0,0,0,0.2,0.1,0.4
+		s0.1,0.3,0.2,0.4c0,0.1,0,0.2,0.2,0.3c0.2,0.1,0.3,0.2,0.5,0.3V68l0.5,0.1l0.8,0l0.5-0.1c0.2-0.2,0.4-0.2,0.5-0.3l0.2-0.2h0.2
+		l0-0.1c0.3-0.1,0.5-0.2,0.5-0.2c0,0,0-0.1,0-0.1C82.9,67,83,67,83,67l0.1-0.1c0.3,0,0.5-0.3,0.6-0.6C83.8,66.2,83.8,66.2,83.9,66.2
+		z M82.2,61.4c0.1,0,0.1-0.1,0.3-0.3l0.1-0.2c0.2-0.3,0.3-0.5,0.3-0.5c0-0.1,0-0.2,0-0.3s0-0.3-0.1-0.6l-0.4-0.1c-0.1,0-0.2,0-0.2,0
+		l-0.1,0c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.3,0.1-0.6,0.2l-0.1,0.1c0,0-0.1,0-0.1,0c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0
+		c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.2l-0.2,0.2L80.2,61l-0.2,0.1c0,0-0.1,0.1-0.1,0.3
+		s-0.2,0.5-0.6,1l0.1,0.1l0.1,0.2l0.3,0.1c0.2-0.1,0.4-0.2,0.6-0.3l0.1-0.1c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2-0.1l0.2,0l0.2-0.3
+		h0.1l0.1-0.2c0.2,0,0.4-0.1,0.5-0.3V61.4z"/>
+	<path d="M87.7,60.2l1.4,0.1l1.4-0.1l0.3,0l0.1,0h0.8c0.1,0,0.2,0.1,0.2,0.2c0,0.1-0.1,0.2-0.3,0.3c0,0-0.1,0-0.2,0
+		c-0.1,0-0.2,0-0.3,0.1l-0.3-0.1l-0.6,0c-0.3,0.1-0.5,0.2-0.8,0.2l-0.4-0.1L89,61h-0.2v-0.1L88.4,61h-0.2l-0.1,0.2
+		c-0.1,0-0.3-0.1-0.6-0.1c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.1-0.1l-0.3,0l-0.2,0.2l-0.1,1l0,0.6l-0.1,0.8l0,0.9l0.1,0.4v0.4
+		l0.2,0.5v0.1c0,0.2,0.1,0.5,0.4,0.7l0.1,0.2l0.4,0.1l0.3,0.3l0.8,0.1l1-0.2l0.3,0.1l0.7-0.3l0.3,0c0.1,0.1,0.1,0.2,0.1,0.3
+		c0,0.1-0.1,0.2-0.3,0.3L91,67.6l-0.3,0.3L90,68l-0.2,0.1L89.5,68c-0.2,0.1-0.5,0.2-0.7,0.2l-0.4-0.1h-0.2l-0.8-0.4L87,67.2
+		l-0.2-0.3l-0.4-1l-0.2-0.9l0.1-0.4l-0.2-0.2l0.1-0.2l-0.1-0.4l0.2-0.2l-0.1-0.2l0.1-0.2l-0.1-0.3l0-0.4l0-0.2l0.1-0.1v-0.8
+		c0-0.2-0.1-0.3-0.2-0.3c0,0-0.1,0-0.1,0.1l-0.2-0.1l-0.3,0.1L85.1,61h-0.2c-0.2,0-0.2-0.1-0.2-0.3l0-0.3l-0.1-0.1l0.1-0.2l0.3,0
+		l0.2,0l0.3,0.1h0.9l0-0.5v-0.5l-0.1-0.4l0.2-0.1c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.2-0.2-0.2l0-0.8l-0.2-0.3l0-0.2
+		c-0.1,0-0.2-0.1-0.2-0.2l0.1-0.6c0.1-0.2,0.2-0.2,0.2-0.3c0.4,0.2,0.6,0.3,0.6,0.4v0l-0.1,0.2c0.1,0.2,0.1,0.4,0.1,0.5v0.1
+		c0,0.1-0.1,0.2-0.1,0.3c0,0.1,0,0.1,0.1,0.2l0,0.2l0,0.2l-0.2,0.3l0.1,0.5l-0.1,0.6l0.1,0.1l-0.1,0.2l0.2,0.5h0.4L87.7,60.2z"/>
+	<path d="M107.7,65.4l-0.2,0.8l0,0.2l-0.1,0.1c0.1,0.2,0.1,0.3,0.1,0.5l0,0.2l0,0.4c0,0.3,0,0.6-0.1,1s-0.1,0.7-0.1,0.8l0,0.3
+		c0,0.1-0.1,0.3-0.2,0.6h0.1l-0.1,0.3l-0.1,0.2c0,0-0.1,0.2-0.1,0.3c-0.1,0.2-0.1,0.3-0.2,0.5s-0.2,0.3-0.3,0.4
+		c-0.1,0.2-0.2,0.3-0.4,0.4c-0.1,0.1-0.3,0.3-0.6,0.5l-0.3,0.1c-0.2,0.1-0.3,0.2-0.4,0.2l-0.1,0.1c-0.5,0.1-0.7,0.1-0.8,0.1h0l0,0.1
+		c-0.2,0.1-0.4,0.1-0.7,0.1h-0.7l-0.5-0.1l-0.3,0.1l-0.2-0.1l-0.6-0.1l-0.2-0.2c-0.1-0.1-0.3-0.2-0.5-0.3c-0.4-0.2-0.6-0.4-0.7-0.7
+		l0.1-0.1l-0.1-0.4c0-0.1,0.1-0.1,0.2-0.1c0-0.1,0.1-0.1,0.1-0.1c0,0,0.1,0,0.2,0c0.1,0,0.3,0,0.5,0.1l0,0.2c0.1,0,0.2,0,0.3,0.1
+		c0,0.1,0,0.1,0,0.2l0,0.1c0,0.2,0.1,0.2,0.2,0.3c0,0.1,0,0.1,0,0.1c0,0,0.1,0,0.1,0.1L102,73l0.2,0l0,0.1h0.5c0.1,0,0.2,0,0.4,0.1
+		c0.1-0.1,0.5-0.2,1.1-0.2c0.1,0,0.2-0.1,0.3-0.2c0.3,0,0.4-0.1,0.5-0.2h0.1c0.1,0,0.1,0,0.2,0c0.1,0,0.1-0.1,0.2-0.1l0.7-0.7
+		l0.4-0.6l0-0.3l0.2-0.3l0-0.3l0.1-0.3l0.1-0.6l0.2-0.6l0-0.4V68c0-0.3,0.1-0.6,0.2-0.8l-0.1-0.5v-1.1l-0.1-0.4v-0.6l-0.2-0.4l0-0.7
+		l-0.3-0.8c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.2,0.1-0.3,0.2l0,0.2l-0.3,0.1l-0.2,0.4l-0.3,0.3l-0.4,0.6l-0.5,0.4l-0.6,0.7
+		c-0.2,0.2-0.3,0.3-0.5,0.4c-0.1,0.1-0.3,0.2-0.5,0.4c-0.2,0.1-0.2,0.2-0.3,0.2l-0.1,0.2c0,0-0.1,0.1-0.3,0.2l-0.3,0.2l-0.2,0.2
+		c-0.1,0.1-0.2,0.2-0.5,0.3c-0.1,0.1-0.1,0.1-0.3,0.1h-0.1c-0.3,0.2-0.6,0.4-0.9,0.4c-0.1,0-0.2,0-0.3,0l-0.2,0.1
+		c-0.1,0-0.2-0.1-0.4-0.1c-0.5-0.5-0.8-0.9-0.9-1.3l-0.1-0.8l0-0.5l0.2-0.8l0-0.2l0.1-0.3c0.1-0.2,0.1-0.4,0.2-0.5S99,63.2,99,63
+		l0-0.3l0.4-0.8c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0.2-0.3,0.4-0.5l0.2-0.2c0.1-0.3,0.2-0.4,0.3-0.5c0.1-0.1,0.2-0.2,0.3-0.5
+		c0.1-0.1,0.2-0.1,0.4-0.2s0.4-0.2,0.5-0.4l0.1,0l0.4-0.3c0.1-0.2,0.3-0.2,0.4-0.2c0,0,0.1,0,0.2,0l0.6-0.2l0.4,0.1h0.3l0.2,0.1h0.1
+		c0,0.1,0.2,0.2,0.4,0.4c0.2,0.2,0.4,0.4,0.4,0.4c0,0.2-0.1,0.4-0.1,0.5h-0.3l-0.3-0.4c-0.3-0.1-0.4-0.2-0.4-0.3l-0.1,0
+		c-0.2-0.1-0.3-0.1-0.4-0.1c-0.2,0-0.5,0.1-0.7,0.3l-0.1,0l0,0.1h-0.2l-0.3,0.1c-0.1,0.2-0.2,0.3-0.4,0.3c-0.2,0.2-0.3,0.3-0.4,0.3
+		l-0.1,0.3l-0.2,0.1l0,0.1h-0.2l-0.3,0.6l-0.3,0.2l-0.1,0.4l-0.3,0.4c0,0.1-0.1,0.2-0.1,0.5l-0.2,0.2l-0.2,0.9L99,64.5l0,0.4
+		l-0.3,0.9l0.1,0.3l0,0.4c0.1,0.1,0.1,0.2,0.2,0.3c0,0.2,0.1,0.3,0.2,0.3l0.1,0.2c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2-0.1,0.3-0.1
+		l0.2,0c0,0,0.1,0,0.3,0c0.1-0.1,0.4-0.2,1-0.3c0.1-0.1,0.2-0.2,0.2-0.3s0.2-0.2,0.3-0.3c0.1-0.1,0.2-0.1,0.3-0.2
+		c0.1-0.1,0.2-0.2,0.3-0.2c0.2-0.1,0.4-0.2,0.4-0.4c0.3-0.1,0.5-0.3,0.6-0.4l0.2-0.1c0,0,0.1-0.1,0.2-0.2c0.1-0.1,0.3-0.3,0.5-0.6
+		l0.1,0.1l0.1-0.2l0.2-0.1c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3c0.1,0,0.1,0,0.1,0c0,0,0.1-0.1,0.1-0.1l0.1-0.2l0.4-0.5h0.1l0.1-0.4
+		c0.1,0,0.3-0.5,0.6-1.3l0.2-0.1l-0.1-0.3l-0.1-0.3c0-0.1-0.1-0.2-0.1-0.3l-0.2-0.4l0.1-0.3l-0.1-0.4c0.1-0.1,0.1-0.2,0.2-0.2
+		c0,0,0.1,0,0.1,0s0.1,0.1,0.2,0.3l0.2,0.1l0,0.4l0.1,0.3c0,0.1,0,0.2,0.1,0.2c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.2,0.1,0.3
+		c0,0.1,0,0.1-0.1,0.1c0.1,0.2,0.2,0.4,0.3,0.5l-0.1,0.4c0.2,0.2,0.2,0.3,0.2,0.4c0,0.1,0,0.2-0.1,0.3l0.1,0.3l0.1,0.1l-0.1,0.3
+		l0.1,0.5c0.1,0.2,0.1,0.3,0.1,0.5c0,0,0,0,0,0c0,0.1-0.1,0.2-0.1,0.5l0.1,0.1L107.7,65.4z"/>
+	<path d="M116.3,66.2c0.1,0.2,0.2,0.3,0.2,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.2-0.2,0.4-0.3,0.6l-0.2,0l-0.2,0.4l-0.3,0l-0.6,0.4
+		l-0.1,0.2l-0.2,0l-0.2,0.2H114l-0.1,0.1l-0.1,0c-0.2,0-0.3,0.1-0.4,0.2l-0.1-0.1c-0.1,0.1-0.3,0.1-0.3,0.1c-0.2,0-0.3,0-0.4-0.1
+		c-0.1,0-0.2,0-0.3,0l-0.1-0.1c-0.4,0-0.6-0.1-0.8-0.3v-0.3l-0.3-0.2l-0.1-0.2c0-0.1-0.1-0.2-0.2-0.3v-0.2l-0.2-1l0-0.7l0.1-0.4
+		v-0.4l0.1-0.4l0-0.3c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.3-0.1-0.5l0.2-0.2l-0.2-0.2
+		c0.1-0.2,0.1-0.3,0.1-0.3l-0.1-0.6c0-0.2,0-0.3,0.1-0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.2,0,0.4-0.1c0,0,0-0.1,0-0.1
+		c0-0.1,0.1-0.2,0.2-0.3c0.1-0.3,0.3-0.7,0.5-1c0.1-0.1,0.2-0.2,0.2-0.4h0.1l0.1-0.2l0.1-0.1c0-0.1,0.1-0.2,0.2-0.3
+		c0.2,0,0.3-0.2,0.6-0.5c0,0,0.1,0,0.2,0c0,0,0.1-0.1,0.2-0.2c0.2-0.1,0.4-0.1,0.4-0.1c0.1,0,0.1,0,0.2,0.1l0.2,0l0.1,0.1h0.1
+		c0.1,0.2,0.2,0.3,0.4,0.3h0.1c0,0.1,0.1,0.2,0.1,0.2l-0.1,0c0.2,0.1,0.4,0.4,0.4,0.8l-0.1,0.2l0.1,0.6l-0.1,0.1l-0.2,0.6L115,62
+		l0,0.3c-0.5,0.4-0.9,0.7-1.2,0.8c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0l-0.5,0.3h-0.3l-0.4,0.2l-0.2-0.1c0,0-0.2-0.1-0.4-0.1
+		c-0.2,0.2-0.3,0.5-0.3,0.8l-0.1,0.2c0,0.3-0.1,0.4-0.1,0.5l-0.1,0.1l0.1,0.8l-0.1,0.1l0,0.2l0,0.3c0,0,0,0.2,0.1,0.4
+		s0.1,0.3,0.2,0.4c0,0.1,0,0.2,0.2,0.3c0.2,0.1,0.3,0.2,0.5,0.3V68l0.5,0.1l0.8,0l0.5-0.1c0.2-0.2,0.4-0.2,0.5-0.3l0.2-0.2h0.2
+		l0-0.1c0.3-0.1,0.5-0.2,0.5-0.2c0,0,0-0.1,0-0.1c0-0.1,0.1-0.1,0.2-0.1l0.1-0.1c0.3,0,0.5-0.3,0.6-0.6
+		C116.1,66.2,116.2,66.2,116.3,66.2z M114.6,61.4c0.1,0,0.1-0.1,0.3-0.3l0.1-0.2c0.2-0.3,0.3-0.5,0.3-0.5c0-0.1,0-0.2,0-0.3
+		s0-0.3-0.1-0.6l-0.4-0.1c-0.1,0-0.2,0-0.2,0l-0.1,0c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0-0.3,0.1-0.6,0.2l-0.1,0.1c0,0-0.1,0-0.1,0
+		c0,0,0,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0-0.1,0.1-0.1,0.2l-0.2,0.2l-0.3,0.6
+		l-0.2,0.1c0,0-0.1,0.1-0.1,0.3s-0.2,0.5-0.6,1l0.1,0.1l0.1,0.2l0.3,0.1c0.2-0.1,0.4-0.2,0.6-0.3l0.1-0.1c0.1,0,0.1,0,0.2,0
+		c0.1,0,0.1,0,0.2-0.1l0.2,0l0.2-0.3h0.1l0.1-0.2c0.2,0,0.4-0.1,0.5-0.3V61.4z"/>
+	<path d="M134.8,66.3l-0.1,0.2l-0.1,0c0,0.1,0,0.2-0.1,0.3c-0.1,0.1-0.1,0.1-0.1,0.2v0l-0.1,0c0,0.1-0.1,0.2-0.2,0.3
+		c-0.1,0.1-0.2,0.1-0.2,0.1l-0.2,0l0,0.2c-0.1,0.1-0.2,0.2-0.2,0.2c0,0-0.1,0-0.3,0c-0.2,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.7-0.1
+		c0-0.1-0.1-0.1-0.1-0.1c0,0-0.1,0-0.2,0.1c0-0.1-0.1-0.2-0.3-0.3l0-0.2c-0.2-0.1-0.2-0.2-0.2-0.4l0-0.2l-0.2-0.2l-0.1-0.6l-0.2-0.3
+		v-0.1l-0.1-0.7l0-0.3l-0.2-0.7l0-0.3l0-0.6l-0.1-0.8l-0.3,0.3l-0.4,0.8l-0.2,0.4c-0.3,0.2-0.4,0.4-0.5,0.7c-0.1,0-0.2,0.2-0.2,0.5
+		c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0.1-0.1,0.1-0.1,0.1v0.1c-0.2,0.2-0.4,0.4-0.4,0.7c0,0-0.1,0.1-0.2,0.3
+		c-0.1,0.2-0.3,0.4-0.5,0.7c-0.1,0.1-0.2,0.2-0.3,0.4c-0.1,0.1-0.1,0.2-0.2,0.2s-0.1,0.1-0.1,0.2v0.1c-0.1,0-0.3,0.1-0.6,0.2
+		c-0.1,0-0.2-0.1-0.3-0.2l0-0.3l-0.1-0.3v-0.2l-0.2-0.7c0,0,0-0.1,0-0.1c0-0.1,0-0.2-0.1-0.3l0.1-0.7l-0.1-0.2l0.1-0.3l0-0.2v-0.1
+		l-0.1-0.2l0.1-0.3l-0.1-0.7l0-0.2l0.1-0.8l-0.1-0.5l0-0.4l-0.1-0.3c-0.1-0.3-0.2-0.5-0.2-0.6c0-0.1-0.1-0.1-0.1-0.1c0,0,0,0-0.1,0
+		c0,0-0.2,0.1-0.5,0.3l-0.3,0.4l-0.3,0.3l-0.6,0.8l0,0.2l-0.3,0.4l-0.1,0.4c-0.1,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.3-0.2,0.3
+		c-0.1,0-0.2,0.1-0.3,0.2l0,0.4c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.2-0.2,0.4
+		c-0.2,0-0.2,0.1-0.2,0.3c0,0.1-0.1,0.2-0.2,0.2c-0.1,0.1-0.1,0.2-0.1,0.3v0.1c-0.2,0.1-0.3,0.2-0.3,0.3c0,0,0,0.1,0.1,0.1
+		c-0.2,0.1-0.3,0.2-0.4,0.4c-0.1,0.2-0.2,0.3-0.2,0.3v0.1c0,0.1,0,0.2-0.1,0.2s-0.1,0.1-0.3,0.3c-0.1,0.1-0.2,0.2-0.3,0.2
+		c-0.1,0-0.2-0.2-0.2-0.5c0,0,0-0.1,0-0.1c0-0.1,0-0.2-0.1-0.3v-0.3c0-0.1,0-0.2,0.1-0.3l-0.1-0.5l0-0.3l0-0.4v-0.1
+		c0-0.2,0-0.3,0.1-0.3l0-0.2c0-0.1,0-0.2,0-0.3s0-0.2,0-0.3v-0.3c0-0.1,0.1-0.2,0.2-0.3l-0.2-0.2c0.1,0,0.1-0.1,0.1-0.1
+		c0-0.1,0-0.1,0-0.1c0,0,0-0.1,0.1-0.3c0.1-0.1,0.1-0.2,0.1-0.4l-0.1-0.4l0.1-0.2l-0.1-0.7l0.1-0.3l-0.1-0.6l0-0.4l-0.1-0.3
+		c0.1-0.3,0.3-0.5,0.4-0.5l0.1,0l0.1,0.3c0.2,0,0.3,0.2,0.3,0.3l0,0.4c0,0.1,0.1,0.1,0.2,0.2c-0.1,0.2-0.2,0.3-0.2,0.4v0.1l0.1,1.1
+		l-0.1,0.8l-0.1,0.2l0.1,0.3l-0.1,0.1l0.1,0.2c-0.1,0.1-0.2,0.2-0.2,0.3l0,0.2c0,0.1,0,0.2-0.1,0.2l0.1,0.6l-0.1,0.2
+		c-0.1,0.2-0.1,0.3-0.1,0.4c0,0.1,0,0.2,0,0.2c0,0.1,0,0.1,0,0.2c0.1,0.1,0.1,0.2,0.1,0.2c0,0.1,0,0.1-0.1,0.2l0.2,0.1l0.4-0.5
+		l0.1-0.3c0.1,0,0.1-0.1,0.2-0.2c0-0.1,0.1-0.2,0.1-0.3s0.1-0.2,0.2-0.4c0,0,0.1,0,0.1-0.1c0.1-0.1,0.1-0.2,0.2-0.3
+		c0.1-0.1,0.2-0.3,0.3-0.4c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0.1-0.1,0.1-0.2s0.1-0.2,0.2-0.4l0.2-0.4l0-0.2c0-0.1,0.1-0.1,0.2-0.3
+		l0.4-0.4c0,0,0.1-0.1,0.2-0.4c0.1-0.2,0.2-0.4,0.4-0.6c0.1-0.1,0.2-0.2,0.2-0.3c0.1,0,0.2-0.1,0.2-0.2c0.2-0.1,0.2-0.2,0.3-0.3
+		l0.1,0c0.1,0,0.1-0.1,0.2-0.4c0.2-0.2,0.4-0.3,0.4-0.3c0,0,0.2,0,0.5,0.1c0,0.1,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.1,0
+		c0,0.1,0.1,0.2,0.3,0.5v0.3l0.2,0.2v0.3c0.2,0.3,0.2,0.6,0.2,0.8l-0.1,0.3l0.1,0.3l-0.2,0.2l0.1,0.7c0,0.1-0.1,0.3-0.1,0.5l0.1,0.6
+		l-0.1,0.2l0.1,0.2l-0.1,0.1c0.1,0.4,0.2,0.8,0.2,1.1l0,0.2l-0.1,0.1c0.1,0.2,0.2,0.3,0.2,0.5l0.4,0.1l1-1.2c0,0,0.1-0.2,0.2-0.4
+		c0.1-0.2,0.2-0.3,0.2-0.5c0.1,0,0.1-0.1,0.2-0.3c0-0.2,0.1-0.3,0.2-0.3c0-0.1,0-0.2,0-0.2c0,0,0.1-0.1,0.4-0.3v0
+		c0-0.2,0.1-0.4,0.4-0.6c0.1-0.2,0.2-0.4,0.3-0.6c0.2-0.2,0.3-0.3,0.4-0.5l0.2-0.4c0.1-0.2,0.2-0.3,0.2-0.5c0.2-0.1,0.4-0.4,0.6-0.8
+		c0.2,0,0.3-0.2,0.3-0.4l0.3-0.2l0.3,0.2l-0.1,0.1l0.1,0.1c-0.1,0-0.2,0.1-0.2,0.2c0,0.1,0,0.1,0.1,0.1l-0.1,0.3l-0.1,1
+		c0.1,0,0.1,0.1,0.1,0.1c-0.1,0.2-0.2,0.4-0.2,0.7l0,0.4l0,0.1l0.1,0.3c0,0,0,0-0.1,0.1c0,0-0.1,0.1-0.1,0.1s0,0.1,0.1,0.2
+		c0.1,0,0.1,0.1,0.1,0.3c0,0,0,0.1-0.1,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1-0.1,0.1c0,0.3,0.1,0.6,0.2,0.9c0.1,0.1,0.1,0.4,0.2,0.7
+		l0.3,0.1l0.1,0.5c0.2,0.1,0.3,0.2,0.3,0.3l0.3,0.1l0.3,0.1c0.1,0,0.2,0,0.2,0c0.1,0,0.2,0,0.3-0.1c0.1,0,0.2-0.1,0.3-0.1
+		c0.1-0.1,0.2-0.1,0.4-0.2c0.1-0.2,0.2-0.3,0.3-0.5l0.3-0.1l0.1-0.2l0.3,0C134.8,66.1,134.8,66.2,134.8,66.3z"/>
+	<path d="M143.7,67.9l-0.3,0.1l-0.1,0.2c-0.1,0-0.2,0.1-0.3,0.1l-0.1-0.1l-0.2,0.1l-0.3-0.4v-0.5l-0.2-0.1l0-0.6l-0.1-1.3l0.1-0.4
+		l-0.1-0.2l0.2-0.1l-0.1-0.2l0-0.2l0.1-0.1l0-0.3h0.1v-0.4l0-0.2c-0.1,0-0.1-0.1-0.2-0.2l-0.3,0.2c-0.1,0.2-0.2,0.3-0.3,0.3l0,0.2
+		l-0.2,0.1l0,0.3l-0.1,0.1v0.2c-0.1,0.1-0.2,0.2-0.3,0.4l-0.1,0.1l-0.3,0.6l-0.5,0.5l-0.2,0.3l-0.4,0.5l-0.1,0.2l-0.6,0.4l-0.7,0.8
+		l-0.2,0.1c-0.1,0-0.2,0.1-0.3,0.2h-0.1c-0.1,0-0.2-0.1-0.3-0.3c-0.5-0.2-0.8-0.5-0.8-0.9l0.2-0.1c-0.1-0.3-0.2-0.5-0.2-0.8
+		l-0.1-0.1l0.1-0.1c0,0,0-0.1,0.1-0.2c0-0.1,0-0.2,0.1-0.4l0.1-0.8c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.2c0-0.1,0-0.2,0-0.2
+		c0-0.1,0-0.1,0-0.2l0.1,0c0.1-0.2,0.2-0.3,0.2-0.4c0-0.1,0-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0,0-0.1,0.1-0.1
+		c-0.1,0-0.2-0.1-0.2-0.1s0.1-0.1,0.2-0.1v0c0-0.2,0-0.3,0.1-0.4c0.1-0.1,0.1-0.2,0.1-0.3l-0.1,0l0.3-0.4v-0.1
+		c0-0.3,0.1-0.5,0.3-0.8l0-0.4l0.1-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1,0.1-0.1v-0.3c0.1,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0-0.1
+		c0-0.1,0.1-0.2,0.3-0.3s0.2-0.3,0.3-0.4h0.1c0.2,0,0.2,0,0.2-0.1c0,0,0-0.1-0.1-0.1c0.3,0,0.4-0.1,0.4-0.2l0.4-0.2l1.1,0.1v0.1
+		l0.9,0.2h0.1c0.1,0,0.2,0.1,0.2,0.2l0.1,0c0,0.1,0.1,0.2,0.2,0.2l0.1,0l0.2,0.2l0.4,0.1v0.2c0.2-0.1,0.5-0.2,0.8-0.3v0.3h-0.1
+		l0.2,0.1l0,0l0.2,0.5l-0.2,0.2l-0.1,0.3c0,0.1-0.1,0.3-0.2,0.4l0.1,0.3c0,0-0.1,0.1-0.1,0.2c-0.1,0.1-0.1,0.2-0.1,0.5
+		c0,0,0.1,0.1,0.1,0.1l0,0.2l0,0.1l-0.1,0.2l0,0.2l-0.1,0.1l0,0.5l-0.1,0.1l0.1,0.1l-0.1,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1-0.1,0.2
+		l0.1,0.1l-0.1,0.2c-0.1,0-0.1,0.1-0.1,0.3l0.1,0.3l-0.2,0.3c0.1,0.1,0.1,0.2,0.2,0.3c-0.1,0.1-0.2,0.4-0.3,0.8l0.2,0l0,0.1
+		c0,0,0,0.1,0,0.1c0,0.1-0.1,0.3-0.2,0.4h0.1l0.1,0.3l0.4,0l0.1,0.3c0,0-0.1,0.1-0.1,0.1c0,0.1,0.1,0.1,0.2,0.2h0c0,0,0,0,0,0
+		C143.6,67.7,143.6,67.8,143.7,67.9z M142.7,60.3l-0.1-0.4l-0.3-0.1l-0.6-0.5c-0.1-0.1-0.2-0.1-0.2-0.1c0,0-0.1,0-0.2,0l-0.1-0.1
+		h-0.3l-0.1-0.1l-0.2,0.1l-0.1-0.1l-0.2,0.1l-0.3-0.1c-0.2,0-0.4,0.1-0.7,0.2l0,0.1l-0.2,0.1l0,0.1l-0.2,0v0.1
+		c-0.1,0.1-0.3,0.3-0.5,0.7c-0.1,0.4-0.2,0.8-0.4,1.1l0.2,0.1l-0.3,0.2l0.1,0.2c-0.1,0.2-0.2,0.4-0.2,0.6v0.1l-0.2,0.2v0.4
+		c-0.1,0.1-0.2,0.3-0.2,0.4l-0.1,0.1v0.4l-0.1,0.1c0,0.1,0,0.3-0.1,0.6l0.1,0.3c-0.1,0-0.2,0.1-0.3,0.3l0.1,0.2l-0.1,0.2L137,66
+		l-0.2,0.3l0,0.5l-0.1,0.2l0.1,0.1l0,0.1c0.1,0,0.2,0.1,0.3,0.2l0.5-0.1c0.1-0.2,0.2-0.3,0.5-0.3l0-0.2c0.2-0.1,0.3-0.1,0.3-0.1
+		c0,0,0,0,0-0.1c0-0.1,0.1-0.1,0.2-0.2h0c0,0,0.1,0,0.1-0.1l0.4-0.4h-0.1l0.2-0.2c0.1-0.1,0.2-0.1,0.3-0.2l0.2-0.4
+		c0.3-0.1,0.4-0.3,0.4-0.4h0.1l0.2-0.3l0-0.2l0.2,0c0,0,0-0.1,0-0.1c0,0,0-0.1,0.1-0.2c0.1-0.1,0.2-0.2,0.2-0.3l0.1,0
+		c0-0.2,0.1-0.3,0.2-0.4c0-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.1-0.1,0.2-0.1h0.1l0-0.3c0,0,0-0.1,0-0.1c0,0,0-0.1-0.1-0.1
+		c0.1-0.2,0.2-0.3,0.3-0.4l0-0.2l0.1-0.1l0-0.2c0.1-0.1,0.1-0.3,0.2-0.4l0.2-0.2L142.7,60.3z"/>
+	<path d="M158.1,66.7l-0.1,0.2c0,0.3-0.1,0.5-0.2,0.7c-0.2,0.1-0.3,0.3-0.3,0.3c0,0.1-0.1,0.2-0.2,0.4l-0.2,0.2
+		c-0.1,0-0.1,0.1-0.2,0.3l-0.7,0.4c-0.2,0.1-0.5,0.1-0.7,0.1l-0.3-0.2h-0.2l-0.2-0.2l-0.2,0l-0.8-0.4l-1.7-1.5l-0.4-0.7l-0.3-0.3
+		c0-0.1-0.2-0.3-0.3-0.5c-0.1-0.1-0.2-0.3-0.4-0.5c-0.2-0.2-0.3-0.4-0.6-0.5l-0.4-0.8c0-0.1,0.1-0.3,0.2-0.6l0.4,0.3l0.2,0.2
+		c0.1,0.1,0.3,0.2,0.6,0.4h0.3l0.1,0.1c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.2-0.1,0.3-0.2,0.6-0.3c0.2-0.1,0.4-0.1,0.6-0.2
+		l0.1-0.2h0.5c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.1,0.1-0.1h0.1c0.2,0,0.4-0.2,0.4-0.5c0.2-0.1,0.3-0.2,0.4-0.2l0.1-0.1
+		c0.1,0,0.2-0.2,0.3-0.5h0c0.1,0,0.3-0.3,0.4-0.8h0.1l0-0.2l0-0.3l0-0.4c0-0.2-0.2-0.3-0.6-0.5c-0.1-0.1-0.2-0.2-0.3-0.2h-0.1
+		l-0.1-0.1c-0.3,0-0.6-0.1-0.9-0.1c-0.3,0-0.5-0.1-0.6-0.1c-0.2,0-0.5,0.1-0.8,0.3c-0.2,0-0.4,0-0.6,0.1l0,0c-0.1,0-0.2,0-0.2,0.1
+		s-0.1,0.1-0.2,0.1c-0.1,0-0.2,0.1-0.2,0.1c-0.1,0.1-0.2,0.1-0.3,0.1l-0.3,0.1l-0.7,0.6l-0.7,0.8V62l-0.3,0.7l-0.2,0.5
+		c-0.2,0.4-0.3,0.7-0.3,0.9c0,0.1,0,0.2,0.1,0.3c0,0.1,0,0.2-0.1,0.2c-0.1,0.1-0.1,0.3-0.1,0.4l0,0.2c0,0.1,0,0.2-0.1,0.3
+		c-0.1,0.2-0.2,0.3-0.2,0.4l0.1,0.4l-0.1,0.4L148,67c-0.1,0.2-0.2,0.4-0.2,0.6v0.1c0,0.1,0,0.1,0,0.2c0,0.2-0.1,0.3-0.4,0.3
+		c-0.1,0-0.2-0.2-0.3-0.4l-0.1-0.3l0.1-0.4l-0.1-0.8l0.1-0.2v-0.8l0-0.3v-0.2c0-0.4,0-0.7,0-1s0-0.4,0-0.4v-0.3l0-0.2v-0.6l0.1-0.2
+		l-0.1-0.3l0.1-0.7v-0.9l-0.1-0.3l0.1-0.2l0-0.2l-0.1-1.2l-0.1-0.7v-0.2l0.1-0.8l-0.1-0.3l0-0.5c0-0.2,0-0.3,0-0.4
+		c0-0.3,0.2-0.4,0.5-0.4l0.1,0.2l0.1-0.1l0,0.3l0.1,0.6l-0.1,0.6l0,0.8l0.1,0.3l-0.1,0.3l0,0.6l-0.1,0.4l0.1,0.4l-0.1,0.1l0.1,0.3
+		l-0.1,0.5l-0.1,1.5c0,0.2,0,0.3,0,0.3l0,0.3l0,0.4c0,0.2,0,0.3-0.1,0.4c0.1,0.1,0.2,0.2,0.3,0.2l0.2-0.5l0-0.1c0-0.1,0.1-0.4,0.4-1
+		c0.3-0.6,0.6-1.1,0.9-1.5c0.1,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0-0.1c0.3-0.2,0.5-0.3,0.6-0.4c0.1-0.1,0.1-0.1,0.2-0.1
+		c0,0,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1-0.1c0,0,0.1-0.1,0.2-0.1c0.1-0.1,0.2-0.1,0.4-0.2
+		c0.1-0.2,0.4-0.3,0.9-0.3l0.8-0.1l1.5,0.1l0.2,0.1c0.1,0,0.2,0.1,0.4,0.1c0.5,0.5,0.8,0.7,0.8,0.7c0,0,0-0.1-0.1-0.1l0.3,0.7
+		l-0.1,0.2c0.1,0.1,0.2,0.2,0.2,0.3s-0.1,0.3-0.2,0.5v0.2l-0.2,0.7l-0.3,0.5l-0.1,0c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.2-0.2,0.3
+		c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0-0.2,0.1-0.2,0.2c-0.2,0-0.4,0.1-0.5,0.3c0,0,0,0,0.1,0h0c0,0.1-0.7,0.3-2,0.7
+		c-0.1-0.1-0.2-0.1-0.3-0.1c-0.1,0-0.2,0.1-0.2,0.2v0l0,0.1l0.2,0.2l0.1,0.3c0,0.1,0.1,0.3,0.3,0.4l0.4,0.7l0.5,0.3l0,0.1l0.2,0.1
+		l0.1,0.2l0.1,0l0.6,0.6l0.8,0.3l0.5,0.1l0.4,0l0.2-0.1c0.2,0,0.4-0.1,0.6-0.3s0.3-0.2,0.3-0.2l0.4-0.7l0.2-0.2
+		c0.1-0.1,0.1-0.2,0.2-0.4c0.1,0,0.1,0,0.2,0C158,66.5,158.1,66.6,158.1,66.7z"/>
+	<path d="M161.9,57l-0.1,0.1c0,0.1-0.1,0.2-0.1,0.3l0.1,0.6l-0.1,0.2l0.1,0.1l0,0.2l0.1,0.1c-0.1,0-0.2,0.1-0.2,0.2
+		c0,0,0,0.2,0.1,0.4l-0.1,0.3l0.1,0.2c-0.1,0.2-0.1,0.3-0.1,0.5l-0.1,1.9l0.1,0.2l-0.1,0.5l0.1,0.4l-0.1,0.3l0.1,0.2l0,0.2l0,0.2
+		l-0.1,0c0.1,0.1,0.1,0.3,0.1,0.4c0,0.1-0.1,0.2-0.2,0.2c0.1,0.1,0.1,0.2,0.1,0.3c0,0.1-0.1,0.2-0.2,0.2s-0.2-0.1-0.2-0.4v-0.5
+		c-0.1-0.4-0.1-0.7-0.2-0.9l0.1-0.3l-0.1-0.3l0.1-0.8l-0.2-0.1l0.1-0.3l0-0.3v-0.2l0.1,0l-0.1-0.3l0-0.1v0c0-0.1,0-0.2,0.1-0.3
+		l-0.1-0.2v-0.3l-0.1,0l0.2-0.2l-0.1-0.3l0.1-0.3l-0.1-0.2l0.1-0.2l0-0.3l0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1,0.1-0.2l-0.1,0
+		v-0.4l-0.2-0.2l0-0.4l0.2,0l0.3-0.1l0.5,0.2L161.9,57z M162.2,67.9l-0.3,0.2l-0.3-0.1l-0.3,0.1l-0.2-0.1H161l-0.1-0.5l0.1-0.3
+		l0.2-0.2h0.1c0,0,0,0,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0.2,0.1,0.3,0.1,0.4,0.1h0c0,0,0,0-0.1-0.1h0c0,0,0.1,0,0.2,0.1
+		c0.1,0.2,0.2,0.3,0.2,0.5c0,0-0.1,0.1-0.1,0.1C162.1,67.7,162.2,67.8,162.2,67.9z"/>
+</g>
+</svg>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 offset-md-4">
+                <a href="#" class="btn mt-0 btn-cta btn-block link_unstyled">Bekijk en boek</a>
+                <div class="arrow-after" id="arrow3">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--benefit actions-->
+<div class="container-fluid pl-0 pr-0">
+    <div class="benefit-actions pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3 pb-md-5">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-6 offset-md-3">
+                        <h2 class="title text-center">Voordeel Acties !</h2>
+                        <h5 class="subtitle text-center mb-0">De onderstaande acties zijn geldig tot: <br> 31-05-2018 </h5>
+
+                        <div class="arrow-after" id="arrow4">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions row">
+                <div class="col-10 offset-1 col-md offset-md-0 outer-card">
+                    <div class="card sr-card action position-relative">
+                        <div class="card-topside position-relative">
+                            <div class="discount position-absolute d-flex align-items-center justify-content-center">
+                                <h4 class="mb-0 white font-weight-bold">-300%</h4>
+                            </div>
+                            <div class="img" style="background-image: url('assets/img/voordeelActies.jpg')"></div>
+                            <div class="icon position-absolute d-flex align-items-center justify-content-center">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="sr-text card-title font-weight-bold">Airco weken bij ServiceRight!</p>
+                            <p class="sr-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="" class="sr-text-link btn mt-0 btn-cta btn-block link_unstyled">Profiteer van deze actie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-1 col-md offset-md-0 outer-card">
+                    <div class="card sr-card action position-relative">
+                        <div class="card-topside position-relative">
+                            <div class="discount position-absolute d-flex align-items-center justify-content-center">
+                                <h4 class="mb-0 white font-weight-bold">-300%</h4>
+                            </div>
+                            <div class="img" style="background-image: url('assets/img/voordeelActies.jpg')"></div>
+                            <div class="icon position-absolute d-flex align-items-center justify-content-center">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="sr-text card-title font-weight-bold">Airco weken bij ServiceRight!</p>
+                            <p class="sr-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="" class="sr-text-link btn mt-0 btn-cta btn-block link_unstyled">Profiteer van deze actie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-1 col-md offset-md-0 outer-card">
+                    <div class="card sr-card action position-relative">
+                        <div class="card-topside position-relative">
+                            <div class="discount position-absolute d-flex align-items-center justify-content-center">
+                                <h4 class="mb-0 white font-weight-bold">-300%</h4>
+                            </div>
+                            <div class="img" style="background-image: url('assets/img/voordeelActies.jpg')"></div>
+                            <div class="icon position-absolute d-flex align-items-center justify-content-center">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="sr-text card-title font-weight-bold">Airco weken bij ServiceRight!</p>
+                            <p class="sr-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="" class="sr-text-link btn mt-0 btn-cta btn-block link_unstyled">Profiteer van deze actie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--why serviceright-->
+<div class="container-fluid">
+    <div class="why-serviceright pt-5 pb-5">
+        <div class="container">
+            <div class="pb-3 pb-md-5">
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-6 offset-md-3">
+                        <h2 class="title text-center">Waarom ServiceRight?</h2>
+                        <h5 class="subtitle text-center mb-0">Voor de beeldvorming heb ik hier een mooie subtitel gezet.. denk ik</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-md-between text-center">
+                <div class="item col-12 col-sm-6 col-md-2 d-flex flex-column popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 col-md-12 offset-md-0">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7F817A;}
+</style>
+<path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+	c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+	C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+<path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+	c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+<path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+	s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+	s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+	c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+<path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+	c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+<path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+	c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+<path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+</svg>
+
+                        </div>
+                    </div>
+                    <p class="sr-text">Direct een vaste <br> voordeelprijs</p>
+                </div>
+                <div class="item col-12 col-sm-6 col-md-2 d-flex flex-column popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 col-md-12 offset-md-0">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7F817A;}
+</style>
+<path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+	c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+	C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+<path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+	c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+<path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+	s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+	s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+	c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+<path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+	c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+<path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+	c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+<path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+</svg>
+
+                        </div>
+                    </div>
+                    <p class="sr-text">Direct een vaste <br> voordeelprijs</p>
+                </div>
+                <div class="item col-12 col-sm-6 col-md-2 d-flex flex-column popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 col-md-12 offset-md-0">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7F817A;}
+</style>
+<path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+	c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+	C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+<path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+	c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+<path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+	s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+	s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+	c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+<path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+	c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+<path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+	c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+<path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+</svg>
+
+                        </div>
+                    </div>
+                    <p class="sr-text">Direct een vaste <br> voordeelprijs</p>
+                </div>
+                <div class="item col-12 col-sm-6 col-md-2 d-flex flex-column popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 col-md-12 offset-md-0">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7F817A;}
+</style>
+<path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+	c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+	C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+<path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+	c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+<path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+	s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+	s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+	c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+<path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+	c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+<path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+	c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+<path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+</svg>
+
+                        </div>
+                    </div>
+                    <p class="sr-text">Direct een vaste <br> voordeelprijs</p>
+
+                </div>
+                <div class="item col-12 col-sm-6 col-md-2 d-flex flex-column popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 col-md-12 offset-md-0">
+
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 101" style="enable-background:new 0 0 96 101;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7F817A;}
+</style>
+<path class="st0" d="M22.4,72.9c3.6,1.7,6.4,4.5,8.5,8.2c-1.3,4.3-4.7,8-9.4,11.3c3.8,0.9,7.3,1,10.6,0c4.8-2.5,8.3-6,10.1-10.6
+	c1.2-3.4,1-6.9,0-10.4c-2.5-4.3-5.7-7.9-10.3-9.8c-2.9-1.3-6.4-1.3-10.3-0.4c-4.4,2-7.8,5-10.3,9.1c-0.9,4.7-0.9,8.7,0,12.2
+	C14.8,77.7,18.5,74.3,22.4,72.9z"/>
+<path class="st0" d="M45.2,71c3-3.3,5.6-6.4,7.8-8.8c-1.8-1.5-3.3-3.4-4.5-5.6h-2.5c-3-0.3-5.5-1.6-7.3-4.1
+	c-1.7,1.7-3.9,3.3-6.4,4.8C38.8,60.6,43.3,65.1,45.2,71z"/>
+<path class="st0" d="M51.6,55.2c-0.1,0.5,9.9,9.8,10.8,9.8s2.7-1.8,3.1-2.6c0.3-0.8,0.6-1.7,0.9-2.1s1.9-1.1,2.4-1.3
+	s0.9-0.6,1.1-1.3c0.2-0.6,0.6-1.6,0.9-1.8s2.1-0.8,2.7-0.9c0.6-0.1,1.3-0.9,1.4-1.7c0.1-0.7,0.6-1.4,0.9-1.8s1.5-0.8,2.5-1
+	s2.1-3,2.3-3.2c0.9-0.6-9.3-11.2-10.7-10.8c-0.5,0.1-2.3,2-2.9,2.4c-0.6,0.5-0.3,1.9-0.8,2.4s-1.7,0.4-2.6,1.1s-1.4,2.2-2,2.9
+	c-0.6,0.6-2.1,1.3-2.8,1.8c-0.8,0.6-1.5,2.9-2,3c-0.4,0.1-2.2,0.6-2.9,1C53.2,51.5,51.7,54.6,51.6,55.2z"/>
+<path class="st0" d="M54.8,45.8c0.6,0,10.7-12.3,11.9-12.8c1.2-0.5,4.5-0.1,5.2,0c0.7,0.1,5.4,5.6,6.2,5.4c0.8-0.2,6.3-6.6,6.5-7.3
+	c0.2-0.7,0.2-4.9,0-5.4s-5.4-6.1-6.5-6.4c-1.1-0.3-6.1-0.1-6.8,0c-0.7,0.1-22.5,21.2-22.2,22.1C49.2,42.3,54.2,45.8,54.8,45.8z"/>
+<path class="st0" d="M60.2,25.3c0-0.7-12.1-11.3-12.7-11.3S32,29.4,31.8,30.2c-0.1,0.8-0.3,15.5,0.3,16.3c0.6,0.7,13.3,7.6,14.4,7.6
+	c1.2,0,5.5-2.9,5.8-3.5c0.3-0.6-4.4-6.4-4.8-6.6c-0.4-0.1-4.5,0.8-5,0.5c-0.5-0.3-0.5-1.5,0-2.3C43.1,41.3,60.2,26,60.2,25.3z"/>
+<path class="st0" d="M46,12.2c-0.2-1.4-3.7-4.4-4.7-4.2c-1,0.3-15.9,15-15.9,15.8s3.9,4.6,5,4.4C31.5,27.9,46.2,13.6,46,12.2z"/>
+</svg>
+
+                        </div>
+                    </div>
+                    <p class="sr-text">Direct een vaste <br> voordeelprijs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--distributieriem-->
+<div class="container-fluid">
+    <div class="distributieriem pt-5 pb-5">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col-12 col-sm-8 offset-sm-2">
+                    <h2 class="title">Distributieriem zelf vervangen?</h2>
+                    <h5 class="subtitle">Zo vervang jij je distributieriem</h5>
+                </div>
+            </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-3 text-center mb-3">
+                <img src="assets/img/distributieriem.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 col-md-6 offset-md-0">
+                    <div class="text mt-3">
+                        <p class="sr-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos expedita itaque minus molestiae molestias nulla perferendis, reprehenderit saepe sapiente sit suscipit ullam vitae. Animi earum facilis hic possimus repellendus?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est molestiae reprehenderit sit unde! A assumenda deleniti enim facere fugit illum ipsam libero neque nisi nulla, quam sit suscipit tempore.
+                        </p>
+                        <p class="sr-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda illo nihil nobis odio tempora tempore voluptas? Deserunt fugiat illum nostrum omnis possimus provident repudiandae rerum sapiente sequi voluptas! Numquam?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est molestiae reprehenderit sit unde! A assumenda deleniti enim facere fugit illum ipsam libero neque nisi nulla, quam sit suscipit tempore.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-6 offset-md-0">
+                    <div class="text mt-3">
+                        <p class="sr-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos expedita itaque minus molestiae molestias nulla perferendis, reprehenderit saepe sapiente sit suscipit ullam vitae. Animi earum facilis hic possimus repellendus?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est molestiae reprehenderit sit unde! A assumenda deleniti enim facere fugit illum ipsam libero neque nisi nulla, quam sit suscipit tempore.
+                        </p>
+                        <p class="sr-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda illo nihil nobis odio tempora tempore voluptas? Deserunt fugiat illum nostrum omnis possimus provident repudiandae rerum sapiente sequi voluptas! Numquam?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est molestiae reprehenderit sit unde! A assumenda deleniti enim facere fugit illum ipsam libero neque nisi nulla, quam sit suscipit tempore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="container-fluid without">
+    <footer class="white">
+        <div class="lists">
+            <div class="container">
+                <div class="row pt-5 pb-3">
+                    <div class="col-10 offset-1 col-md-9 mb-md-0 offset-md-0">
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Services</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Airco Service</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Kleine beurt</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remblokken achter vervangen3</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">APK keuring</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Koppakking vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remblokken voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Autobanden vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Koppeling vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remschijven achter vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Car Cleaning</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remschijven voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Carwash</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Schokdempers achter vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Distributieriem vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Schokdempers voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Grote beurt</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Uitlaat vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Katalysator vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Ozonbehandeling</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Zomerbanden</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Onderhoud</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Chrysler</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Ford</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Land Rover</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Nissan</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Skoda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Citroen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Honda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lexus</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Opel</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Smart</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Dacia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Hummer</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lotus</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Peugeot</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Subaru</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Alfa Romeo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Daewoo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Hyundai</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Maserati</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Porsche</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Suzuki</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Audi</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Daihatsu</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Jaguar</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mazda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Renault</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Toyota</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Bmw</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Dodge</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Jeep</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mercedes Benz</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Rover</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Volkswagen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Cadillac</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Ferrari</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Kia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mini</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Saab</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Volvo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Chevrolet</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Fiat</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lancia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mitsubishi</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Seat</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Auto garages</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Almere</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Haarlem</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Amsterdam</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage in uw stad</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Apeldoorn</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Nijmegen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Breda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Rotterdam</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Den Haag</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Tilburg</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Eindhoven</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Utrecht</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Enschede</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Groningen</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-10 offset-1 col-md-3 offset-md-0 text-center img-list">
+                        <h5 class="font-weight-bold second-title">Bekend van</h5>
+                        <div class="img no-background col-6 mb-3" style="background-image: url('assets/img/rtl7-logo.png');"></div>
+                        <h5 class="mt-3 mt-md-0 font-weight-bold second-title">Wij leiden vakmensen op:</h5>
+                        <div class="img no-background col-6 mb-3" style="background-image: url('assets/img/erkendLeerbedrijf-logo.png');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details pb-3">
+            <div class="container">
+                <div class="row pt-3 pb-3 d-flex align-items-center">
+                    <div class="col-10 offset-1 col-md-3 offset-md-0 text-center">
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Algemene voorwaarden</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Privacybeleid</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Contact opnemen</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Inloggen bedrijven</a></p>
+                    </div>
+
+                    <div class=" mt-1 mt-md-0 col-10 offset-1 col-md-4 offset-md-1 text-center">
+                        <div class="logo mb-2">
+                            <div class="img no-background" style="background-image: url('assets/img/serviceRight-logo-white.png');"></div>
+                        </div>
+
+                        <div class="social d-flex justify-content-between">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-google-plus"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 mt-md-0 col-10 offset-1 col-md-3 offset-md-1 text-center">
+                        <p class="mb-0 sr-text">ServiceRight Auto's is onderdeel van <br> ServiceRight B.V. | KVK 67440932 <br> &#169; 2018, alle rechten voorbehouden. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal scores/ratings -->
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="modal fade" id="aggregate-rating-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-3 score pt-3 pb-3">
+                        <h2 class="white font-weight-bold mb-0 text-center">9.5</h2>
+                    </div>
+
+                    <div class="col-7 title-text pt-3 pb-3">
+                        <h3 class="mb-0 white">Gemiddeld uit 3728 beoordelingen</h3>
+                    </div>
+                    <button type="button" class="close close-inverse" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row review-list">
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="view-all col-12">
+                            <div class="row">
+                                <p class="col-12">
+                                    <a href="" class="link-unstyled">Bekijk alle 3750 beoordelingen.</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="col-8 offset-2 btn mt-0 btn-cta btn-block link_unstyled">Boek nu</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Modal no licenseplate-->
+<div class="modal fade" id="no-licenseplate-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-10 offset-1 title-text pt-3 pb-3">
+                        <h3 class="mb-0 text-center title">Selecteer het merk, model, bouwjaar <br> en brandstof van het desbetreffende auto</h3>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 brand-select active">
+                        <div class="form-group test-selectize text-center" placeholder="Merk"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 model-select">
+                        <div class="form-group test-selectize text-center" placeholder="Model"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 buildyear-select">
+                        <div class="form-group test-selectize text-center" placeholder="Bouwjaar"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 fuel-select">
+                        <div class="form-group test-selectize text-center" placeholder="Brandstof"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal  licenseplate mobile-->
+<div class="modal licenseplate-mobile fade" id="licenseplate-mobile" tabindex="-1" role="dialog" aria-labelledby="licenseplate-mobile" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-10 offset-1 text-center">
+                        <h3 class="title">Bekijk de voordeligste kosten bij u in de regio:</h3>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 licenseplate-box">
+                            <div class="row no-gutters hover">
+                                <div class="col-12 mb-3 no-licenseplate">
+                                    <p data-toggle="modal" data-dismiss="modal" data-target="#no-licenseplate-modal" class="sr-text-link mt-2 sr-text clickable text-left font-weight-bold mb-0 pl-0 pr-0">Geen kenteken bij de hand?</p>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-10">
+                                    <input type="text" name="licenseplate" maxlength="8" class="licenseplate" placeholder="Vul uw kenteken in" autocomplete="off">
+                                </div>
+                                <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta">
+                                    <i class="fas fa-caret-right white"></i>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="select-service col-12 mt-2 mt-md-3">
+                                    <select name="service" id="service" class="custom-select">
+                                        <option value="0" selected disabled>Selecteer dienst</option>
+                                        <option value="1">Onderhoud</option>
+                                        <option value="2">Reperatie</option>
+                                        <option value="3">Car cleaning</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal full review-->
+<div class="modal fade" id="full-reference-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 review pt-3 pb-3">
+                            <div class="inner">
+                                <div class="profile d-flex justify-content-center">
+                                    <img src="assets/img/reference_2.png" alt="reference-1">
+                                </div>
+                                <div class="star-ratings-sprite">
+                                    <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                </div>
+                                <div class="details text-center">
+                                    <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                    <p class="sr-text">Type rijder</p>
+                                    <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                    <p class="sr-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-10 offset-1 col-md-8 offset-md-2">
+                            <a href="#" class="btn mt-0 btn-cta btn-block link_unstyled">Ervaar het zelf</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SCRIPTS-->
+
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<!--ajax-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--bootstrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!--jquery visible-->
+<script src="assets/js/jquery.visible.min.js"></script>
+
+<!--selectize-->
+<script src="assets/js/selectize.min.js"></script>
+<script src="assets/js/customSelectize.js"></script>
+
+<!--MOBILESWYPE-->
+<script src="assets/js/jquery.bcSwipe.min.js"></script>
+
+<!--custom-->
+<script src="assets/js/mobileSwipe.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

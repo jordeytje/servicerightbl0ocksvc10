@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>template1</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--bootstrap for sass mixins for some reason it doesn't work through the cdn-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="assets/css/selectize.default.css">-->
+
+    <link rel="stylesheet" href="assets/css/all.css">
+
+</head>
+<body>
+
+<!--fixed-nav-->
+<div class="container-fluid without">
+    <div class="header fixed-nav fixed-top">
+        <div class="container pt-2 pb-2">
+            <div class="navbar-parent pt-1 pb-1 pt-lg-0 pb-lg-0">
+
+                <div class="row">
+                    <div class="col-4 logo d-flex align-items-center">
+                        <div class="img"></div>
+                    </div>
+
+                    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" data-toggle="modal" data-target="#aggregate-rating-modal" class="clickable col-4 open-popup review d-flex justify-content-center align-items-center flex-column flex-md-row open-aggregate-modal">
+                        <div class="score">
+                            <p class="sr-text mb-0 font-weight-bold">9.5 <span>/ 10</span> </p>
+                        </div>
+                        <div class="ratings ml-md-3">
+                            <p class="sr-text mb-0">3535 beoordelingen</p>
+                            <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 licenseplate-box">
+                        <div class="inner-licenseplate-box">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-lg-4 discount text-center d-flex justify-content-center flex-row flex-lg-column">
+                                    <p class="font-weight-bold mr-2 mr-lg-0">20%</p>
+                                    <p class="font-weight-bold">Korting</p>
+                                    <div class="arrow">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C31.8,27.5,20.8,47.7,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+                                    </div>
+                                </div>
+
+                                <div class="col-8 licenseplate d-flex align-items-center">
+                                    <input type="text" name="licenseplate" maxlength="8" placeholder="Vul uw kenteken in" autocomplete="off">
+                                    <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta">
+                                        <a href=""><i class="fas fa-caret-right white"></i></a>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" data-toggle="modal" data-target="#licenseplate-mobile" class="clickable fixed-nav-btn btn mt-0 btn-cta btn-block link_unstyled">Boek nu</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 contact d-flex flex-row justify-content-end">
+                        <div class="icon flipped d-flex align-items-center mr-3">
+                            <a href="tel:088-2220-000" class="absolute"></a>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details flex-column justify-content-center align-items-center">
+                            <p class="mb-0">
+                                <a href="tel:088-2220-000" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                        <button type="button" class="nav-button navbar-toggle collapsed ml-sm-3" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="toggle-contact-details flex-column justify-content-center align-items-center">
+                            <p>
+                                <a href="tel:088-2220-000" class="sr-text-link font-weight-bold">088 2220 000</a>
+                            </p>
+                            <p class="sr-text mb-0">ma-vr van 9 tot 18 uur</p>
+                            <div class="arrow-cube"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-menu-items">
+                    <div class="row flex-column flex-lg-row">
+                        <div class="col-12 col-lg-9 d-flex flex-wrap flex-column flex-md-row">
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Auto onderhoud</p>
+                            </div>
+                            <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                                <p class="sr-text">Onderhoud</p>
+                                <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                                <div class="submenu">
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item submenu-parent d-flex flex-row flex-wrap">
+                                <p class="sr-text">Reparaties</p>
+                                <i class="fas fa-caret-down d-flex align-items-center justify-content-center"></i>
+
+                                <div class="submenu">
+                                    <div class="submenu-item">
+                                        <a href="" class="absolute"></a>
+                                        <p class="sr-text">Submenu item</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Schadeherstel</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Cleaning</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Acties</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Hoe werkt het</p>
+                            </div>
+                            <div class="menu-item">
+                                <a href="" class="absolute"></a>
+                                <p class="sr-text">Veelgestelde vragen</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 pt-2 search">
+                            <div class="search-bar">
+                                <i class="fas fa-search"></i>
+                                <input type="text" name="search" id="search" class="sr-text" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--header-->
+<div class="container-fluid without">
+    <div class="header header-banner white alternative-1" style="background-image: url('https://www.serviceright-autos.nl/images/autos/layout/header/apk_keuring.jpg');">
+        <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 pb-0 pb-md-3">
+                    <h2 class="title text-center font-weight-bold">APK keuring in Almere</h2>
+                    <h3 class="subtitle text-center">Subtitle voor de header, vul iets moois in</h3>
+                    <!--<div class="row">-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 1</h5>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 2</h5>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-4">-->
+                    <!--<h5 class="sr-text text-center">Infoveld 3</h5>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 col-lg-4 ups-list mt-4 mt-md-0">
+                    <div class="mt-3 mt-md-0 inner-ups-list d-flex flex-column justify-content-between">
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row justify-content-md-start pt-1">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Gratis haal- en brengservice</p>
+                            </div>
+                        </div>
+
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row pt-md-4 justify-content-md-start pt-1">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Bovag garantie</p>
+                            </div>
+                        </div>
+                        <div class="outer-ups">
+                            <div class="ups d-flex flex-row pt-md-4 justify-content-md-start pt-1 ">
+                                <i class="fas fa-check mr-3"></i>
+                                <p class="sr-text mb-0">Vaste voordeelprijs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 details">
+                    <div class="row">
+                        <div class="col-10 col-md-10 d-flex align-items-center justify-content-end">
+                            <p class="mb-0 small-price">€ 49,50</p>
+                            <p class="mb-0">NU Tijdelijk voor:</p>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-12 col-md-10 big-price text-center text-md-right">
+                            <p class="mb-0 font-weight-bold">€ 29,50</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 licenseplate-box">
+                            <div class="arrow-after arrow-animate white-arrow">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36.6 54.3" style="enable-background:new 0 0 36.6 54.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M29.4,3.2C36.8,25.5,23.9,44.9,5.1,48c1.6-3.8,4.5-7.2,8-10.5C9.3,41.3,6,45,4.3,48.7c4.9,0.8,9.4,1,12.1-1.1"
+	/>
+</svg>
+
+                            </div>
+
+                            <div class="col-12 col-md-10 mt-2 mb-0 no-licenseplate pr-0 pl-0">
+                                <p data-toggle="modal" data-target="#no-licenseplate-modal" class="sr-text clickable text-left open-popup white mb-0 pl-0 pr-0">Kenteken niet bij de hand?</p>
+                            </div>
+
+                            <div class="row no-gutters hover">
+                                <div class="col-10 mt-2">
+                                    <input autocomplete="off" type="text" name="licenseplate" maxlength="8" class="licenseplate" placeholder="Vul uw kenteken in">
+                                </div>
+                                <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta position-relative">
+                                    <a href="http://servicerightstappen.bitballoon.com/step1.html" class="absolute"></a>
+                                    <i class="fas fa-caret-right white"></i>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="select-service col-12 mt-2 mt-md-3">
+                                    <select name="service" id="service" class="custom-select">
+                                        <option value="0" selected disabled>Selecteer dienst</option>
+                                        <option value="1">Onderhoud</option>
+                                        <option value="2">Reperatie</option>
+                                        <option value="3">Car cleaning</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--footer-->
+<div class="container-fluid without">
+    <footer class="white">
+        <div class="lists">
+            <div class="container">
+                <div class="row pt-5 pb-3">
+                    <div class="col-10 offset-1 col-md-9 mb-md-0 offset-md-0">
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Services</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Airco Service</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Kleine beurt</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remblokken achter vervangen3</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">APK keuring</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Koppakking vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remblokken voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Autobanden vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Koppeling vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remschijven achter vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Car Cleaning</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Remschijven voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Carwash</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Schokdempers achter vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Distributieriem vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Schokdempers voor vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Grote beurt</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Uitlaat vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Katalysator vervangen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Ozonbehandeling</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-4">
+                                    <a href="" class="link-unstyled white">Zomerbanden</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Onderhoud</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Chrysler</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Ford</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Land Rover</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Nissan</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Skoda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Citroen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Honda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lexus</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Opel</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Smart</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Dacia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Hummer</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lotus</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Peugeot</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Subaru</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Alfa Romeo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Daewoo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Hyundai</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Maserati</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Porsche</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Suzuki</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Audi</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Daihatsu</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Jaguar</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mazda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Renault</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Toyota</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Bmw</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Dodge</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Jeep</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mercedes Benz</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Rover</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Volkswagen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Cadillac</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Ferrari</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Kia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mini</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Saab</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Volvo</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Chevrolet</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Fiat</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Lancia</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Mitsubishi</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Onderhoud Seat</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <div class="row text-left">
+                                <h5 class="font-weight-bold second-title col-12 text-left">Auto garages</h5>
+
+                                <div class="w-100"></div>
+
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Almere</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Haarlem</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Amsterdam</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage in uw stad</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Apeldoorn</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Nijmegen</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Breda</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Rotterdam</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Den Haag</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Tilburg</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Eindhoven</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Utrecht</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Enschede</a>
+                                </p>
+                                <p class="mb-0 sr-text col-12 col-sm-3">
+                                    <a href="" class="link-unstyled white">Auto garage Groningen</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-10 offset-1 col-md-3 offset-md-0 text-center img-list">
+                        <h5 class="font-weight-bold second-title">Bekend van</h5>
+                        <div class="img no-background col-6 mb-3" style="background-image: url('assets/img/rtl7-logo.png');"></div>
+                        <h5 class="mt-3 mt-md-0 font-weight-bold second-title">Wij leiden vakmensen op:</h5>
+                        <div class="img no-background col-6 mb-3" style="background-image: url('assets/img/erkendLeerbedrijf-logo.png');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details pb-3">
+            <div class="container">
+                <div class="row pt-3 pb-3 d-flex align-items-center">
+                    <div class="col-10 offset-1 col-md-3 offset-md-0 text-center">
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Algemene voorwaarden</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Privacybeleid</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Contact opnemen</a></p>
+                        <p class="mb-0 sr-text"><a href="" class="sr-text-link">Inloggen bedrijven</a></p>
+                    </div>
+
+                    <div class=" mt-1 mt-md-0 col-10 offset-1 col-md-4 offset-md-1 text-center">
+                        <div class="logo mb-2">
+                            <div class="img no-background" style="background-image: url('assets/img/serviceRight-logo-white.png');"></div>
+                        </div>
+
+                        <div class="social d-flex justify-content-between">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-google-plus"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 mt-md-0 col-10 offset-1 col-md-3 offset-md-1 text-center">
+                        <p class="mb-0 sr-text">ServiceRight Auto's is onderdeel van <br> ServiceRight B.V. | KVK 67440932 <br> &#169; 2018, alle rechten voorbehouden. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal scores/ratings -->
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="modal fade" id="aggregate-rating-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-3 score pt-3 pb-3">
+                        <h2 class="white font-weight-bold mb-0 text-center">9.5</h2>
+                    </div>
+
+                    <div class="col-7 title-text pt-3 pb-3">
+                        <h3 class="mb-0 white">Gemiddeld uit 3728 beoordelingen</h3>
+                    </div>
+                    <button type="button" class="close close-inverse" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row review-list">
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review col-12 pt-0 pt-md-3 popover-trigger" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!">
+                            <div class="row align-items-center">
+                                <p class="col-6 col-sm-8 mb-0 font-weight-bold">Bos - Subaru (Deventer)</p>
+                                <div class="col-6 col-sm-4">
+                                    <div class="star-ratings-sprite"><span style="width: 70%" class="star-ratings-sprite-rating"></span></div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 review-text">
+                                    <p>Prima service en snelle terugkoppeling over een mogelijkheid...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="view-all col-12">
+                            <div class="row">
+                                <p class="col-12">
+                                    <a href="" class="link-unstyled">Bekijk alle 3750 beoordelingen.</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="col-8 offset-2 btn mt-0 btn-cta btn-block link_unstyled">Boek nu</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Modal no licenseplate-->
+<div class="modal fade" id="no-licenseplate-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-10 offset-1 title-text pt-3 pb-3">
+                        <h3 class="mb-0 text-center title">Selecteer het merk, model, bouwjaar <br> en brandstof van het desbetreffende auto</h3>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 brand-select active">
+                        <div class="form-group test-selectize text-center" placeholder="Merk"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 model-select">
+                        <div class="form-group test-selectize text-center" placeholder="Model"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 buildyear-select">
+                        <div class="form-group test-selectize text-center" placeholder="Bouwjaar"></div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 fuel-select">
+                        <div class="form-group test-selectize text-center" placeholder="Brandstof"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal  licenseplate mobile-->
+<div class="modal licenseplate-mobile fade" id="licenseplate-mobile" tabindex="-1" role="dialog" aria-labelledby="licenseplate-mobile" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-10 offset-1 text-center">
+                        <h3 class="title">Bekijk de voordeligste kosten bij u in de regio:</h3>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 licenseplate-box">
+                            <div class="row no-gutters hover">
+                                <div class="col-12 mb-3 no-licenseplate">
+                                    <p data-toggle="modal" data-dismiss="modal" data-target="#no-licenseplate-modal" class="sr-text-link mt-2 sr-text clickable text-left font-weight-bold mb-0 pl-0 pr-0">Geen kenteken bij de hand?</p>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-10">
+                                    <input type="text" name="licenseplate" maxlength="8" class="licenseplate" placeholder="Vul uw kenteken in" autocomplete="off">
+                                </div>
+                                <div class="col-2 d-flex justify-content-center align-items-center submit-licenseplate btn-cta">
+                                    <i class="fas fa-caret-right white"></i>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="select-service col-12 mt-2 mt-md-3">
+                                    <select name="service" id="service" class="custom-select">
+                                        <option value="0" selected disabled>Selecteer dienst</option>
+                                        <option value="1">Onderhoud</option>
+                                        <option value="2">Reperatie</option>
+                                        <option value="3">Car cleaning</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal full review-->
+<div class="modal fade" id="full-reference-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content sr-card">
+            <div class="modal-header">
+                <div class="row">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 review pt-3 pb-3">
+                            <div class="inner">
+                                <div class="profile d-flex justify-content-center">
+                                    <img src="assets/img/reference_2.png" alt="reference-1">
+                                </div>
+                                <div class="star-ratings-sprite">
+                                    <span style="width: 70%" class="star-ratings-sprite-rating"></span>
+                                </div>
+                                <div class="details text-center">
+                                    <p class="sr-text name-place"><b>Naam uit Plaats</b></p>
+                                    <p class="sr-text">Type rijder</p>
+                                    <p class="sr-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo</p>
+                                    <p class="sr-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id laudantium magnam maiores molestiae rerum sequi, tenetur. Autem blanditiis, dignissimos est ex excepturi fugit ipsa ipsum perferendis sapiente veritatis! Explicabo, qui!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-10 offset-1 col-md-8 offset-md-2">
+                            <a href="#" class="btn mt-0 btn-cta btn-block link_unstyled">Ervaar het zelf</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SCRIPTS-->
+
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<!--ajax-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--bootstrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!--jquery visible-->
+<script src="assets/js/jquery.visible.min.js"></script>
+
+<!--selectize-->
+<script src="assets/js/selectize.min.js"></script>
+<script src="assets/js/customSelectize.js"></script>
+
+<!--MOBILESWYPE-->
+<script src="assets/js/jquery.bcSwipe.min.js"></script>
+
+<!--custom-->
+<script src="assets/js/mobileSwipe.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
